@@ -1,6 +1,6 @@
 //main computer screen page containing pages routes, and background display for desktop screen
 import React from "react";
-//import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Pieces from './pieces';
 import Resume from './resume';
@@ -14,7 +14,6 @@ const Main=()=> {
     <StyledMain>
       <StyledSocial>
         <SocialList>
-  
           <p>
             <SocialLinks
               href="https://www.linkedin.com/in/jasmineterry92"
@@ -29,42 +28,44 @@ const Main=()=> {
           </p>
         </SocialList>
       </StyledSocial> {/*socials div end */}
+
       <Computer>
-  
-        
         <ComputerHead>
-          <a to = '/' component = {Main}>
-        <h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </a>
+          
+        <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+    
+
         <IconsBar>
         <FontAwesomeIcon icon={faWindowRestore} />
           <FontAwesomeIcon icon={faWindowMinimize} />
           <FontAwesomeIcon icon={faWindowClose} />
-          
           </IconsBar>
+
           </ComputerHead>
+
         <div className = "exit-bar">
         <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
         </div>
         <IconsDiv>
           <div className="browse-div">
         {/* <Link to='/'></Link>  */}
-            <a to='/browser' component = {Pieces}> 
-            <FontAwesomeIcon icon={faNetworkWired} /> </a>
-            <h4>Browser</h4>
+            <Link to ='/projects'><FontAwesomeIcon icon={faNetworkWired} /> 
+            <h4> Browser</h4> </Link>
+            
       </div> {/*browser div end */}
       <div className="specs-div">
-            <a href='/specs' component = {Skills}>
-            <FontAwesomeIcon icon={faToolbox} /> </a>
-            <h4>Sepcs</h4>
+          <Link to = '/specs'>  <FontAwesomeIcon icon={faToolbox} /> 
+            <h4>Sepcs</h4> </Link>
+            
       </div> {/*skills div end */}
       <div className="history-div">
-            <a to='/history' component = {Resume}>
-            <FontAwesomeIcon icon={faArchive} /> </a>
-            <h4>History</h4>
+            <Link to='/history'>
+            <FontAwesomeIcon icon={faArchive} />
+            <h4>History</h4> </Link>
         </div> {/*resume div end */}
       <div className="contact-div">
-            <a href='contact' component = {''}> <FontAwesomeIcon icon={faEnvelopeOpenText} /> </a>
-            <h4>Contact</h4>
+            <Link to='/contact'> <FontAwesomeIcon icon={faEnvelopeOpenText} /> 
+            <h4>Contact</h4> </Link>
           </div> {/*contact div end */}
             </IconsDiv> {/*icons div end */}
          <div className='about'>

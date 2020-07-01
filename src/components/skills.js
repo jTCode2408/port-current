@@ -1,6 +1,10 @@
 //tech skills/people skills page
 import React from "react";
 import styled from "styled-components";
+import {Route, Link} from 'react-router-dom';
+
+import { faHdd} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const SkillsCont = styled.div`
@@ -35,6 +39,7 @@ text-align:center;
 const Skills = () => {
   return (
     <div>
+        <Link to ='/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
     <SkillsHead>
     <h3> Skills </h3>
   </SkillsHead>
