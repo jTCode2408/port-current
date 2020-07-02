@@ -1,23 +1,22 @@
 //'browser' projects page
 import React from "react";
-import {Route, Link} from 'react-router-dom';
-import Main from './main';
-import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired, faArchive, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
+import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar, IconsDiv } from '../styles'
+import { ComputerHead, IconsBar, ExitBar } from '../styles';
+import GOL from '../images/GOL.png'; //TODO:resize this
+import spotifyOg from '../images/spotifyOg.png';
+
 const Pieces = () => {
   return (
     <div className="pieces-cont">
        <ComputerHead>
-          
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-
           <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
-  
             </ComputerHead>
             <div className = "exit-bar">
         <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
@@ -28,46 +27,35 @@ const Pieces = () => {
         <h3>Browse my project selection:</h3>
       </div>
       <div class="story-squad">
-          <div class="tech-used">ReactJS/TypeScript/TypeORM    </div>
-          <h4 class="project-title">StorySquad</h4>
-        </div>
-        <a href="https://front-end-sss.now.sh/login"
+      <a href="https://front-end-sss.now.sh/login"
           title="Project Link"
-          class="project-link"
-        >
-          Site Link
+          class="project-link" >
+         <h4 class="project-title">StorySquad</h4>
         </a>
+          <div class="tech-used">ReactJS/TypeScript/TypeORM/DS  </div>
+        </div>
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe"
           title="Github Link"
-          class="github-link"
-        >
-          Github Link
+          class="github-link"v>
+          Repo
         </a>
         <div class="project-info">
           <p>
           Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6
-Built using ReactJS, Typescript, TypeORM, and Material UI, and incorporating data science
 Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project
 Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A
           </p>
         </div>{" "}
       <div className="pieces">
       <div className="life">
-          <div class="tech-used">ReactJS/Styled Components</div>
-          <h4 class="project-title">Game Of Life</h4>
-        </div>
-        <a href="https://game-of-life.jasmineterry.vercel.app/"
+      <a href="https://game-of-life.jasmineterry.vercel.app/"
           title="Project Link"
-          class="project-link"
-        >
-          Site Link
+          class="project-link" >
+          <h4 class="project-title">Game Of Life</h4>
         </a>
-        <a href="https://github.com/jTCode2408/game-of-life"
-          title="Github Link"
-          class="github-link"
-        >
-          Github Link
-        </a>
+          <div class="tech-used">ReactJS/Styled Components</div>
+        </div>
+        <a class='gh-links' href = 'https://github.com/jTCode2408/game-of-life'> <img src ={GOL} alt='game of life screenshot'></img> </a>
         <div class="project-info">
           <p> Adaptation of John Conway's 'Game Of Life'.
 Built using ReactJS , CSS, and Styled Components
@@ -76,102 +64,127 @@ Utilized React hooks and Immer dependency for state changes of cells, CSS to imp
           </p>
         </div>{" "}
         {/*game of life project end */}
-
         <div class="spotify-bw2">
-          <div class="tech-used">ReactJS/Styled Components/NodeJS </div>
-          <h4 class="project-title">Symphinity</h4>
-        </div>
         <a href="https://front-end-sss.now.sh/login"
           title="Project Link"
-          class="project-link"
-        >
-          Site Link
+          class="project-link" >
+         <h4 class="project-title">Symphinity</h4>
         </a>
-        <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS"
-          title="Github Link"
-          class="github-link"
-        >
-          Github Link
+          <div class="tech-used">ReactJS/Styled Components/NodeJS/DS </div>
+        </div>
+        <a class='gh-links' href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
+         <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
+      
         <div class="project-info">
- <p> Application to mimic a Spotify song suggester add on feature that allows users to visualize song features as well as add songs to their favorites and receive a list of recommendations.
+ <p> Application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.
 Contributed to cross functional team of front-end, back-end, data science, and machine learning students.
-As a junior React developer, I was tasked with the log-in form creation, as well as the dashboard, recommened, favorite songs list components by pulling data from an api created by my backend team member.
-As well as team styling contributions across front-end.
+Solely responsible for log-in, dashboard, recommened, and favorite songs list components by pulling data from an API created by my backend team member.
+Styling contributions across front-end.
      </p>
         </div>{" "}
         {/*SSS project end */}
         <div class="refugee-stories">
-          <div class="tech-used">Web UI</div>
-          <h4 class="project-title">Refugee Stories</h4>
-        </div>
         <a href="https://refugee-stories1119.netlify.com/"
           title="Project Link"
-          class="project-link"
-        >
-          Site Link
+          class="project-link" >
+           <h4 class="project-title">Refugee Stories</h4>
         </a>
+          <div class="tech-used">HTML/CSS/LESS</div>
+        </div>
         <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page"
           title="Github Link"
-          class="github-link"
-        >
-          Github Link
+          class="github-link" >
+          Repo
         </a>
         <div class="project-info">
           <p>
-          Web application project to help bring awareness to the refugee crisis.
-Built using HTML/CSS/LESS
+    Web application project to help bring awareness to the refugee crisis.
 Contributed to team of 5 cross-functional full-stack and data science students.
-Solely responsible for design and creation of 'landing' page and 'about the team' page.
-            Completed and fully responsive, using HTML and CSS(LESS)
+Solely responsible for design and creation of fully responsive 'landing' page and 'about the team' page.
           </p>
         </div> {/*refugees end */}
         <div class="todo-app">
-          <div class="tech-used">ReactJS</div>
-          <h4 class="project-title">To-Do App</h4>
-        </div>
         <a href="#"
           title="Project Link"
-          class="project-link"
-        >
-          NO LIVE Site Link {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+          class="project-link" >
+        <h4 class="project-title">To-Do App</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
         </a>
+          <div class="tech-used">ReactJS/Redux</div>
+        </div>
         <a href="https://github.com/jTCode2408/reducer-todo"
           title="Github Link"
-          class="github-link"
-        >
-          Github Link
+          class="github-link" >
+          Repo
         </a>
         <div class="project-info">
           <p>
-          <p>A straight forward to-do application for web. Built using React-Redux orginally, and re-factored to use reducers in React.</p>
+          <p>A straight forward to-do application for web. Solely responsible for implementation of Todo app functionality, using Redux for state handling</p>
           </p>
         </div>{" "}
         {/*todo project end */}
-
         <div class="bubbles">
-          <div class="tech-used">ReactJS</div>
-          <h4 class="project-title">To-Do App</h4>
-        </div>
         <a href="#"
           title="Project Link"
           class="project-link"
         >
-          NO LIVE Site Link {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+          <h4 class="project-title">Bubbles</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
         </a>
-        <a href="#"
+          <div class="tech-used">ReactJS</div>
+        </div>
+        <a href="https://github.com/jTCode2408/react-bubbles"
           title="Github Link"
-          class="github-link"
-        >
-          Github Link
+          class="github-link" >
+          Repo
         </a>
         <div class="project-info">
           <p>
           <p>Bubbles/Other About</p>
           </p>
         </div>{" "}
-        {/*todo project end */}
+        {/*OTHER TBD project end */}
 
+        <p> SEE MORE</p>
+{/*TODO: add slider/carosel/next page to view more project */}
+
+        <div class="newsfeed">
+        <a href="#"
+          title="Project Link"
+          class="project-link" >
+          <h4 class="project-title">NewsFeed</h4>{/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+        </a>
+          <div class="tech-used">JS/CSS/LESS</div>
+        </div>
+        <a href="https://github.com/jTCode2408/Newsfeed-Components"
+          title="Github Link"
+          class="github-link" >
+          Repo
+        </a>
+        <div class="project-info">
+          <p>
+          <p>Newsfeed components</p>
+          </p>
+        </div>{" "}
+        {/*NEWSFEED project end */}
+        <div class="gh-cards">
+        <a href="#"
+          title="Project Link"
+          class="project-link" >
+            <h4 class="project-title">Github Usercards</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+        </a>
+          <div class="tech-used">ReatJS/CSS</div>
+        </div>
+        <a href="https://github.com/jTCode2408/React-Github-User-Card"
+          title="Github Link"
+          class="github-link" >
+         Repo
+        </a>
+        <div class="project-info">
+          <p>
+          <p>Github User Cards </p>
+          </p>
+        </div>{" "}
+        {/*GH CARDS project end */}
       </div>{" "}
       {/* pieces div holder end --- pieces cont end below*/}
     </div>

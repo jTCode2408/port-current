@@ -22,11 +22,10 @@ const Resume = () => {
             <div className = "exit-bar">
         <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
         </div>
-        
             
             <h2>Resume</h2>
             <iframe src="https://resume.creddle.io/embed/h5u3cm2twor"
-  width="850" height="1100" seamless></iframe>
+  width="850" height="1100" seamless title='resume'></iframe>
         </div>
     )
 }

@@ -87,9 +87,40 @@ export const IconsBar = styled.div`
 export const IconsDiv = styled.div`
   border: 2px solid black;
   display: flex;
-  justify-content: center;
-  height: 300px;
+  justify-content: space-around;
   width: 80%;
   margin: 10px;
   margin-left: 10%;
 `;
+
+///////SKILLS PAGE STYLES//// 
+
+export const SkillsCont = styled.div`
+  border: 2px solid green;
+  display: flex;
+  width: 100%;
+`;
+export const SkillsHead = styled.div`
+  position: relative;
+  border: 2px solid blue;
+  width: 80%;
+  font-size: 35px;
+`;
+export const SkillsDiv = styled.div`
+  border: 5px solid yellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top:10px;
+`;
+export const SkillsNames = styled.div`
+font-size: 20px;
+border:2px solid red;
+width:80%;
+`
+export const SkillsTitle = styled.div`
+font-size: 15x;
+text-align:center;
+`
