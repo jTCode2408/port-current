@@ -4,11 +4,25 @@ import {Route, Link} from 'react-router-dom';
 import Main from './main';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired, faArchive, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar, IconsDiv } from '../styles'
 const Pieces = () => {
   return (
     <div className="pieces-cont">
+       <ComputerHead>
+          
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
       
-        <Link to ='/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+  
+          <IconsBar>
+          <FontAwesomeIcon icon={faWindowRestore} />
+            <FontAwesomeIcon icon={faWindowMinimize} />
+            <FontAwesomeIcon icon={faWindowClose} />
+            </IconsBar>
+  
+            </ComputerHead>
+            <div className = "exit-bar">
+        <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
+        </div>
        
       <div className="pieces-head">
         <h2>Browser</h2>

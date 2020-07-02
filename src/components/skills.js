@@ -2,10 +2,9 @@
 import React from "react";
 import styled from "styled-components";
 import {Route, Link} from 'react-router-dom';
-
-import { faHdd} from '@fortawesome/free-solid-svg-icons';
+import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired, faArchive, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar, IconsDiv } from '../styles'
 
 const SkillsCont = styled.div`
   border: 2px solid green;
@@ -39,7 +38,23 @@ text-align:center;
 const Skills = () => {
   return (
     <div>
-        <Link to ='/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+       <ComputerHead>
+          
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+      
+  
+          <IconsBar>
+          <FontAwesomeIcon icon={faWindowRestore} />
+            <FontAwesomeIcon icon={faWindowMinimize} />
+            <FontAwesomeIcon icon={faWindowClose} />
+            </IconsBar>
+  
+            </ComputerHead>
+            <div className = "exit-bar">
+        <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
+        </div>
+        
+
     <SkillsHead>
     <h3> Skills </h3>
   </SkillsHead>
@@ -47,12 +62,13 @@ const Skills = () => {
         <SkillsNames>
           <SkillsTitle>Front End: </SkillsTitle>
           <ul>
-            <li> HTML/CSS </li>
+            <li> HTML</li>
+            <li>CSS</li>
             <li> ReactJS </li>
             <li> Redux</li>
             <li> Javascript </li>
             <li> Styled Components </li>
-            <li> Bootstrp </li>
+            <li> Reactstrap </li>
             <li> Material UI </li>
             <li> Typescript </li>
           </ul>
@@ -62,21 +78,24 @@ const Skills = () => {
           <ul>
             <li> NodeJs </li>
             <li> Express </li>
-            <li> SQLite3 </li>
-            <li> Knex</li>
+            <li> Knex </li>
+            <li> SQLite3</li>
+            <li> SQL </li>
             <li> TypeORM </li>
+            <li> DB Design</li>
           </ul>
         </SkillsNames>
         <SkillsNames>
           <SkillsTitle>General: </SkillsTitle>
           <ul>
-            <li> APIs </li>
+            <li> REST APIs </li>
             <li> Git/Version control </li>
+            <li> Slack</li>
             <li> Command Line </li>
             <li> Peer programming/review </li>
             <li> Python</li>
             <li> Docker </li>
-            <li> SQL </li>
+            <li> Jest </li>
           </ul>
         </SkillsNames>
       </SkillsDiv>
