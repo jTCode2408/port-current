@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ComputerHead, IconsBar, ExitBar } from '../styles';
-import GOL from '../images/GOL.png'; //TODO:resize this
+import GOL_opt from '../images/GOL_opt.png'; //TODO:resize this
 import spotifyOg from '../images/spotifyOg.png';
-
+import refugees_opt from '../images/refugees_opt.png';
 const Pieces = () => {
   return (
     <div className="pieces-cont">
@@ -36,7 +36,7 @@ const Pieces = () => {
         </div>
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe"
           title="Github Link"
-          class="github-link"v>
+          class="github-link">
           Repo
         </a>
         <div class="project-info">
@@ -55,7 +55,7 @@ Contributed to creating dashboard and match-up pages for child users,  as well a
         </a>
           <div class="tech-used">ReactJS/Styled Components</div>
         </div>
-        <a class='gh-links' href = 'https://github.com/jTCode2408/game-of-life'> <img src ={GOL} alt='game of life screenshot'></img> </a>
+        <a class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'> <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <div class="project-info">
           <p> Adaptation of John Conway's 'Game Of Life'.
 Built using ReactJS , CSS, and Styled Components
@@ -72,7 +72,7 @@ Utilized React hooks and Immer dependency for state changes of cells, CSS to imp
         </a>
           <div class="tech-used">ReactJS/Styled Components/NodeJS/DS </div>
         </div>
-        <a class='gh-links' href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
+        <a class='gh-link' href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
          <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
       
@@ -92,10 +92,8 @@ Styling contributions across front-end.
         </a>
           <div class="tech-used">HTML/CSS/LESS</div>
         </div>
-        <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page"
-          title="Github Link"
-          class="github-link" >
-          Repo
+        <a class = 'gh-link' href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
+        <img src={refugees_opt} alt='spotify song suggestory screenshot'></img>
         </a>
         <div class="project-info">
           <p>
@@ -105,7 +103,7 @@ Solely responsible for design and creation of fully responsive 'landing' page an
           </p>
         </div> {/*refugees end */}
         <div class="todo-app">
-        <a href="#"
+        <a href="https://reducer-todo-alpha.vercel.app/"
           title="Project Link"
           class="project-link" >
         <h4 class="project-title">To-Do App</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
