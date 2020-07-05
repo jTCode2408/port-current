@@ -1,12 +1,7 @@
 import styled from "styled-components";
 
-export const StyledMain = styled.div`
-  border: 3px solid blue;
-`;
+//////// SOCIAL STYLES /////
 
-/*----------------------------------------------------------------
-## hero social styles
-------------------------------------------------------------------- */
 export const StyledSocial = styled.div`
   list-style: none;
   display: flex;
@@ -26,16 +21,10 @@ export const StyledSocial = styled.div`
 
 export const SocialLinks = styled.a`
   color: black;
+  &:hover{
+    color: orange;
+}
 `;
-
-// export const SocialHover = styled.a: hover `
-// color: #F9861A
-//    `
-//    .hero-social a:focus,
-//    .hero-social a:active `
-//     color: #f9861a;
-//    `
-///^^^^^ TODO: LOOKUP HOVER IN STYLED COMPONENTS ^^^
 
 export const SocialList = styled.div`
   display: flex;
@@ -44,25 +33,13 @@ export const SocialList = styled.div`
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
+ `;
+
+/////// MAIN PAGE STYLES /////
+
+export const StyledMain = styled.div`
+  border: 3px solid blue;
 `;
-
-//    export const SocialListHover = styled.li::after `
-//     content: '/';
-//     color: rgba(255, 255, 255, 0.1);
-//     margin-left: 0rem;
-//     margin-right: 1rem;
-//    `
-
-//    .hero-social li:last-child::after `
-//     display: none;
-//    `
-
-// ^^TODO: LOOKUP AFTER HOVER IN STYLED COMPONENTS ^^
-/*----------------------------------------------------------------
-## computer screen styles
-------------------------------------------------------------------- */
-
-//my computer head----//
 
 export const Computer = styled.div`
   border: 4px solid pink;
@@ -119,8 +96,16 @@ export const SkillsNames = styled.div`
 font-size: 20px;
 border:2px solid red;
 width:80%;
-`
+`;
+
 export const SkillsTitle = styled.div`
 font-size: 15x;
 text-align:center;
-`
+`;
+
+
+////////PIECES PAGE STYLES //////
+
+/////CONTACT PAGE STYLES ////
+
+

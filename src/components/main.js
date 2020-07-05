@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar, IconsDiv } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired, faArchive, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import meRed from '../images/meRed.jpg';//TODO:resize this
+import meCard from '../images/meCard-other.jpg';
 
 const Main=()=> {
   return (
@@ -67,7 +67,7 @@ const Main=()=> {
             </IconsDiv> {/*icons div end */}
          <div className='about'>
            <h3> Meet The Dev:</h3>
-           <img src={meRed} alt='jasmine terry'></img>
+           <img src={meCard} alt='jasmine terry'></img>
              <p>Full stack developer specializing in creating user friendly beautifully crafted websites.
         After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began to 'Google-up' on the world of code. After teaching myself SQL online through "W3Schools", I then began to research bootcamp's to fully submerged myself into this journey to change not only mine, but the lives of others. Since making that wonderful decision I have learned how many ways I can positively affect the world as a developer. My drive to learn has never been higher and I look forward to my continued journey of knowledge.</p>
          </div>

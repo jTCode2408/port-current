@@ -4,9 +4,14 @@ import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ComputerHead, IconsBar, ExitBar } from '../styles';
-import GOL_opt from '../images/GOL_opt.png'; //TODO:resize this
+import GOL_opt from '../images/GOL_opt.png';
 import spotifyOg from '../images/spotifyOg.png';
 import refugees_opt from '../images/refugees_opt.png';
+import news from '../images/news.png';
+import todo from '../images/todo.png';
+import SSDash from '../images/SSDash.png';
+
+
 const Pieces = () => {
   return (
     <div className="pieces-cont">
@@ -28,45 +33,45 @@ const Pieces = () => {
       </div>
       <div class="story-squad">
       <a href="https://front-end-sss.now.sh/login"
-          title="Project Link"
           class="project-link" >
          <h4 class="project-title">StorySquad</h4>
         </a>
           <div class="tech-used">ReactJS/TypeScript/TypeORM/DS  </div>
         </div>
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe"
-          title="Github Link"
           class="github-link">
-          Repo
+          <img src={SSDash} alt='spotify song suggestory screenshot'></img>
         </a>
         <div class="project-info">
-          <p>
-          Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6
-Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project
-Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A
-          </p>
+          <ul>
+          <li> Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6 </li>
+          <li> Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project </li>
+          <li> Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A </li>
+          <li> Solely responsible for front-end code cleanup by extracting repeated code from multiple files and creating reusable components</li>
+          </ul>
         </div>{" "}
       <div className="pieces">
       <div className="life">
       <a href="https://game-of-life.jasmineterry.vercel.app/"
-          title="Project Link"
           class="project-link" >
           <h4 class="project-title">Game Of Life</h4>
         </a>
           <div class="tech-used">ReactJS/Styled Components</div>
         </div>
-        <a class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'> <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
+        <a class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'>
+      <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <div class="project-info">
-          <p> Adaptation of John Conway's 'Game Of Life'.
-Built using ReactJS , CSS, and Styled Components
-Solely responsible for adopting rules based on Conway's original Game Of Life, application styling, and deployment
-Utilized React hooks and Immer dependency for state changes of cells, CSS to implement grid feature, and Styled Components for main styling
-          </p>
+          <ul> 
+          <li> Adaptation of John Conway's 'Game Of Life'.</li>
+          <li> Built using ReactJS, CSS, and Styled Components. </li>
+          <li> Solely responsible for adopting rules based on Conway's original Game Of Life, application styling, and deployment </li>
+          <li> Utilized React hooks and Immer dependency for state changes of cells, CSS to implement grid feature, and Styled Components for main styling </li>
+          </ul>
         </div>{" "}
         {/*game of life project end */}
+
         <div class="spotify-bw2">
         <a href="https://front-end-sss.now.sh/login"
-          title="Project Link"
           class="project-link" >
          <h4 class="project-title">Symphinity</h4>
         </a>
@@ -75,57 +80,58 @@ Utilized React hooks and Immer dependency for state changes of cells, CSS to imp
         <a class='gh-link' href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
          <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
-      
         <div class="project-info">
- <p> Application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.
-Contributed to cross functional team of front-end, back-end, data science, and machine learning students.
-Solely responsible for log-in, dashboard, recommened, and favorite songs list components by pulling data from an API created by my backend team member.
-Styling contributions across front-end.
-     </p>
+<ul> 
+   <li> Application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.</li>
+   <li> Contributed to cross functional team of front-end, back-end, data science, and machine learning students. </li>
+   <li> Solely responsible for log-in, dashboard, recommened, and favorite songs list components by pulling data from an API created by my backend team member.</li>
+   <li> Styling contributions across front-end. </li>
+</ul>
         </div>{" "}
         {/*SSS project end */}
+
         <div class="refugee-stories">
         <a href="https://refugee-stories1119.netlify.com/"
-          title="Project Link"
           class="project-link" >
            <h4 class="project-title">Refugee Stories</h4>
         </a>
           <div class="tech-used">HTML/CSS/LESS</div>
         </div>
         <a class = 'gh-link' href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
-        <img src={refugees_opt} alt='spotify song suggestory screenshot'></img>
+        <img src={refugees_opt} alt='refugee stories website screenshot'></img>
         </a>
         <div class="project-info">
-          <p>
-    Web application project to help bring awareness to the refugee crisis.
-Contributed to team of 5 cross-functional full-stack and data science students.
-Solely responsible for design and creation of fully responsive 'landing' page and 'about the team' page.
-          </p>
+          <ul>
+            <li> Web application to help bring awareness to the refugee crisis. </li>
+            <li> Contributed to team of 5 cross-functional full-stack and data science students. </li>
+            <li> Solely responsible for design and creation of fully responsive 'landing' and 'about the team' pages. </li>
+          </ul>
         </div> {/*refugees end */}
+
         <div class="todo-app">
         <a href="https://reducer-todo-alpha.vercel.app/"
-          title="Project Link"
           class="project-link" >
         <h4 class="project-title">To-Do App</h4>
         </a>
-          <div class="tech-used">ReactJS/Redux</div>
+          <div class="tech-used">ReactJS/Redux/CSS</div>
         </div>
         <a href="https://github.com/jTCode2408/reducer-todo"
-          title="Github Link"
           class="github-link" >
-          Repo {/*TODO: add image link to gh */}
+          <img src={todo} alt='todo app screenshot'></img>{/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
-          <p>
-          <p>A straight forward to-do application for web. Solely responsible for implementation of Todo app functionality such as adding and clearing tasks.
-            Redux used for state handling
-          </p>
-          </p>
+          
+          <ul>
+            <li> A straight forward to-do application for web. </li>
+            <li> Solely responsible for creation of Todo app functionality such as adding and clearing tasks and styling. </li>
+            <li> Implementation of Redux used for state handling </li>
+          
+          </ul>
         </div>{" "}
         {/*todo project end */}
+
         <div class="adventure">
         <a href="#"
-          title="Project Link"
           class="project-link"
         >
           <h4 class="project-title">Adventure Game</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
@@ -133,16 +139,17 @@ Solely responsible for design and creation of fully responsive 'landing' page an
           <div class="tech-used">Python</div>
         </div>
         <a href="https://github.com/jTCode2408/Intro-Python-II"
-          title="Github Link"
           class="github-link" >
           Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
-          <p>
-          <p>An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms.
-            Built with Python.
-            Solely responsible for implementation of game by creating mini programs using classes, lists, and algorithms.  </p>
-          </p>
+          
+          <ul>
+            <li> An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms. </li>
+            <li> Built with Python. </li>
+            <li> Solely responsible for implementation of game by creating mini programs using classes, lists, and algorithms. </li>
+            </ul>
+        
         </div>{" "}
         {/*Adv game project end */}
 
@@ -151,35 +158,33 @@ Solely responsible for design and creation of fully responsive 'landing' page an
 
         <div class="newsfeed">
         <a href="https://jt-news.netlify.app/"
-          title="Project Link"
           class="project-link" >
           <h4 class="project-title">NewsFeed</h4>
         </a>
           <div class="tech-used">JS/CSS/LESS</div>
         </div>
         <a href="https://github.com/jTCode2408/Newsfeed-Components"
-          title="Github Link"
           class="github-link" >
-          Repo {/*TODO: add image link to gh */}
+          <img src={news} alt='newsfeed site screenshot'></img>{/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
-          <p>Sample newspaper website built with vanilla JS.
-            Solely responsible for DOM manipulation for articles components, click events, and styling with LESS.
-          </p>
+          <ul>
+            <li> Sample newspaper website </li>
+            <li> Built with JS/LESS. </li>
+            <li> Solely responsible for DOM manipulation for articles components, click events, and styling with LESS. </li>
+          </ul>
           
         </div>{" "}
         {/*NEWSFEED project end */}
 
         <div class="gh-cards">
         <a href="https://react-github-user-card.jasmineterry.vercel.app/"
-          title="Project Link"
           class="project-link" >
             <h4 class="project-title">Github Usercards</h4> {/*TODO: UPDATE STYLES*/}
         </a>
           <div class="tech-used">ReatJS/CSS</div>
         </div>
         <a href="https://github.com/jTCode2408/React-Github-User-Card"
-          title="Github Link"
           class="github-link" >
          Repo {/*TODO: add image link to gh */}
         </a>
