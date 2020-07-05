@@ -113,7 +113,7 @@ Solely responsible for design and creation of fully responsive 'landing' page an
         <a href="https://github.com/jTCode2408/reducer-todo"
           title="Github Link"
           class="github-link" >
-          Repo
+          Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
           <p>
@@ -121,42 +121,44 @@ Solely responsible for design and creation of fully responsive 'landing' page an
           </p>
         </div>{" "}
         {/*todo project end */}
-        <div class="bubbles">
+        <div class="adventure">
         <a href="#"
           title="Project Link"
           class="project-link"
         >
-          <h4 class="project-title">Bubbles</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+          <h4 class="project-title">Adventure Game</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
         </a>
-          <div class="tech-used">ReactJS</div>
+          <div class="tech-used">Python</div>
         </div>
-        <a href="https://github.com/jTCode2408/react-bubbles"
+        <a href="https://github.com/jTCode2408/Intro-Python-II"
           title="Github Link"
           class="github-link" >
-          Repo
+          Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
           <p>
-          <p>Bubbles/Other About</p>
+          <p>An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms.
+            Built with Python.
+            Solely responsible for implementation of game by creating mini programs using classes, lists, and algorithms.  </p>
           </p>
         </div>{" "}
-        {/*OTHER TBD project end */}
+        {/*Adv game project end */}
 
         <p> SEE MORE</p>
 {/*TODO: add slider/carosel/next page to view more project */}
 
         <div class="newsfeed">
-        <a href="#"
+        <a href="https://jt-news.netlify.app/"
           title="Project Link"
           class="project-link" >
-          <h4 class="project-title">NewsFeed</h4>{/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+          <h4 class="project-title">NewsFeed</h4>
         </a>
           <div class="tech-used">JS/CSS/LESS</div>
         </div>
         <a href="https://github.com/jTCode2408/Newsfeed-Components"
           title="Github Link"
           class="github-link" >
-          Repo
+          Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
           <p>
@@ -164,6 +166,7 @@ Solely responsible for design and creation of fully responsive 'landing' page an
           </p>
         </div>{" "}
         {/*NEWSFEED project end */}
+        
         <div class="gh-cards">
         <a href="#"
           title="Project Link"
@@ -175,7 +178,7 @@ Solely responsible for design and creation of fully responsive 'landing' page an
         <a href="https://github.com/jTCode2408/React-Github-User-Card"
           title="Github Link"
           class="github-link" >
-         Repo
+         Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
           <p>
