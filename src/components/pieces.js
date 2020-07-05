@@ -106,7 +106,7 @@ Solely responsible for design and creation of fully responsive 'landing' page an
         <a href="https://reducer-todo-alpha.vercel.app/"
           title="Project Link"
           class="project-link" >
-        <h4 class="project-title">To-Do App</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+        <h4 class="project-title">To-Do App</h4>
         </a>
           <div class="tech-used">ReactJS/Redux</div>
         </div>
@@ -117,7 +117,9 @@ Solely responsible for design and creation of fully responsive 'landing' page an
         </a>
         <div class="project-info">
           <p>
-          <p>A straight forward to-do application for web. Solely responsible for implementation of Todo app functionality, using Redux for state handling</p>
+          <p>A straight forward to-do application for web. Solely responsible for implementation of Todo app functionality such as adding and clearing tasks.
+            Redux used for state handling
+          </p>
           </p>
         </div>{" "}
         {/*todo project end */}
@@ -161,17 +163,18 @@ Solely responsible for design and creation of fully responsive 'landing' page an
           Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
-          <p>
-          <p>Newsfeed components</p>
+          <p>Sample newspaper website built with vanilla JS.
+            Solely responsible for DOM manipulation for articles components, click events, and styling with LESS.
           </p>
+          
         </div>{" "}
         {/*NEWSFEED project end */}
-        
+
         <div class="gh-cards">
-        <a href="#"
+        <a href="https://react-github-user-card.jasmineterry.vercel.app/"
           title="Project Link"
           class="project-link" >
-            <h4 class="project-title">Github Usercards</h4> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+            <h4 class="project-title">Github Usercards</h4> {/*TODO: UPDATE STYLES*/}
         </a>
           <div class="tech-used">ReatJS/CSS</div>
         </div>
@@ -181,8 +184,11 @@ Solely responsible for design and creation of fully responsive 'landing' page an
          Repo {/*TODO: add image link to gh */}
         </a>
         <div class="project-info">
-          <p>
-          <p>Github User Cards </p>
+          
+          <p>Single page application to display Github followers.
+            Built using ReactJS and styled with CSS.
+            Solely responsible for implementation by calling and displaying data from github API. 
+
           </p>
         </div>{" "}
         {/*GH CARDS project end */}
