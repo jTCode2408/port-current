@@ -17,14 +17,16 @@ const Pieces = () => {
     <div className="pieces-cont">
        <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+          
+            </ComputerHead>
+            <div className = "exit-bar">
+        <ExitBar> <span> File  </span>
           <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />
             <FontAwesomeIcon icon={faWindowClose} />
-            </IconsBar>
-            </ComputerHead>
-            <div className = "exit-bar">
-        <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
+            </IconsBar> 
+            </ExitBar>
         </div>
        
       <div className="pieces-head">
@@ -47,7 +49,7 @@ const Pieces = () => {
           <li> Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6 </li>
           <li> Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project </li>
           <li> Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A </li>
-          <li> Solely responsible for front-end code cleanup by extracting repeated code from multiple files and creating reusable components</li>
+          <li> Solely responsible for front-end code cleanup by extracting repeated code from multiple files to create reusable components, as well as maintaining clear documentation </li>
           </ul>
         </div>{" "}
       <div className="pieces">

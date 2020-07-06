@@ -1,13 +1,21 @@
-const express = require ('express');
+const express = require('express');
+const bodyParser = require("body-parser");
+// !!!!!REQUIRE IN OUR MAILER MODULE HERE!!!!!
+const mailer = require("./actions/mailer");
+const app = express();
 
-const server = express();
-const path = require('path');
-const PORT = 8080;
+// environmental variable or default 5000 
+const PORT = process.env.PORT || 5000;
 
-server.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-})
 
-server.listen(PORT, ()=>{
-    console.log('SERVER RUNNING')
-})
+// this tells the app to attach a body object {} to the front end http req and parse any
+// json data that was included 
+app.use(bodyParser.json());
+
+app.get('/contact', function(req, res) {
+    const { email } = req.body;
+    // !!!!!use nodemailer here!!!!!
+    mailer.sendConfirmationEmail(email);
+});
+
+app.listen(PORT);

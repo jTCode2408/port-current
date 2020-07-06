@@ -9,18 +9,18 @@ const Resume = () => {
     return (
         <div>
            <ComputerHead>
-          
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+  
+            </ComputerHead>
+            <div className = "exit-bar">
+        <ExitBar> <span> File  </span>
     
-          <IconsBar>
+        <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
-  
-            </ComputerHead>
-            <div className = "exit-bar">
-        <ExitBar> <span> File  Edit  View  Help </span> </ExitBar>
+             </ExitBar>
         </div>
             
             <h2>Resume</h2>
