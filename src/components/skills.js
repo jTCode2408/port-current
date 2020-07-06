@@ -8,10 +8,7 @@ import {  SkillsHead,SkillsDiv, SkillsNames, SkillsTitle , SkillsCont, ComputerH
 const Skills = () => {
   return (
     <div>
-       <ComputerHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-          
-            </ComputerHead>
+    
             <div className = "exit-bar">
         <ExitBar> <span> File </span>
         <IconsBar>
@@ -21,6 +18,10 @@ const Skills = () => {
             </IconsBar>
          </ExitBar>
         </div>
+        <ComputerHead>
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+          
+            </ComputerHead>
         
     <SkillsHead>
     <h3> Skills </h3>

@@ -15,10 +15,7 @@ import SSDash from '../images/SSDash.png';
 const Pieces = () => {
   return (
     <div className="pieces-cont">
-       <ComputerHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-          
-            </ComputerHead>
+       
             <div className = "exit-bar">
         <ExitBar> <span> File  </span>
           <IconsBar>
@@ -28,6 +25,10 @@ const Pieces = () => {
             </IconsBar> 
             </ExitBar>
         </div>
+        <ComputerHead>
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+          
+            </ComputerHead>
        
       <div className="pieces-head">
         <h2>Browser</h2>

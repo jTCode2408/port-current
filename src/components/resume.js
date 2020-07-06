@@ -8,10 +8,7 @@ import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHe
 const Resume = () => {
     return (
         <div>
-           <ComputerHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-  
-            </ComputerHead>
+           
             <div className = "exit-bar">
         <ExitBar> <span> File  </span>
     
@@ -22,7 +19,10 @@ const Resume = () => {
             </IconsBar>
              </ExitBar>
         </div>
-            
+        <ComputerHead>
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+  
+            </ComputerHead>
             <h2>Resume</h2>
             <iframe src="https://resume.creddle.io/embed/h5u3cm2twor"
   width="850" height="1100" seamless title='resume'></iframe>

@@ -8,19 +8,26 @@ a{
 
 }
 a, a:link{
-  color: grey;
+  color: inherit;
    text-decoration:none; 
 
 }
 
 h1{
+  font-size: 3rem;
+  color:rgb(1, 109, 109)
+}
+
+h2{
+  font-size: 1.5rem;
 
 }
 
-h2{}
+h3{
+  font-size: 2rem;
 
-h3{}
+}
 
 h4{
-
+font-size: 1.2rem;
 }

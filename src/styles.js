@@ -11,9 +11,8 @@ export const AppHeader= styled.header`
   flex-direction: column;
   align-items:center;
   justify-content: center;
- font-size: 1.5rem;
   color: white;
-  height:45vh
+  height:33vh
 `
 
 //////// SOCIAL STYLES /////
@@ -49,24 +48,43 @@ width:100%;
 /////// MAIN PAGE STYLES /////
 
 export const StyledMain = styled.div`
-  border: 3px solid blue;
+background-color: rgb(1, 109, 109);
 `;
 
 export const Computer = styled.div`
-  border: 4px solid pink;
   display: flex;
   justify-content: center;
-  background-color: teal;
+ 
  
 `;
 
 export const About =styled.div`
-border:2px solid red;
+justify-content: center;
+align-items:center;
+
 
 `
+
+export const AboutHead = styled.div`
+align-items:center;
+width:100%;
+display:flex;
+flex-direction:column
+
+`
+
+export const AboutInfo = styled.div`
+margin: 5%;
+`
+
+export const Me = styled.img`
+  border-radius:10%;
+  `
+
 export const ComputerHead = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-left:1%
 `;
 
 export const ExitBar = styled.div`
@@ -74,6 +92,7 @@ export const ExitBar = styled.div`
   background-color: darkblue;
   justify-content:space-between;
 `;
+
 export const Footer =styled.div`
 display: flex;
 background-color: darkgray;
@@ -88,63 +107,47 @@ export const IconsBar = styled.div`
 `;
 
 export const IconsDiv = styled.div`
-  border: 2px solid black;
   display: flex;
   flex-direction:column;
   justify-content: space-around;
   align-items:center;
-  width: 100%;
-
  
 `;
 
 export const BrowseIcon = styled.div`
-
+color: rgba(235, 235, 235, 0.774);
 width:50%;
 font-size: 1.2rem;
 `
 
 export const SkillsIcon = styled.div`
-
+color: rgba(235, 235, 235, 0.774);
 width:50%;
 font-size: 1.2rem;
 `
 
 export const ResumeIcon = styled.div`
-
+color: rgba(235, 235, 235, 0.774);
 width:50%;
 font-size: 1.2rem;
 
 `
 
 export const ContactIcon = styled.div`
-
+color: rgba(235, 235, 235, 0.774);
 width:50%;
 font-size: 1.2rem;
 
 `
-export const Me = styled.img`
-  border:2px solid blue;
-  `
-export const Button= styled.button`
-    width:10%;
-    height:25px;
 
+export const Button= styled.button`
+    width:5%;
+    height:25px;
     color:black;
     font-weight:bold;
     background-color:gray
   `
   
-export const Time=styled.div`
-  border:2px solid orange;
-  width: 50%;
-  justify-content:flex-end
-  `
-  
-  export const Start=  styled.div`
-    border:2px solid green;
-    width: 50%
-  `
 
 ///////SKILLS PAGE STYLES//// 
 
