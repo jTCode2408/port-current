@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar,Footer,  IconsDiv, About, AboutInfo, AboutHead, BrowseIcon, SkillsIcon, ResumeIcon, ContactIcon, Me, Start, Button, Time } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faArchive, faFolder, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import meCard from '../images/meCard-other.jpg';
-import Moment from 'react-moment';
-import 'moment-timezone'
+import meCardOther from '../images/meCard-other.jpg';
+
 
 const Main=()=> {
 
@@ -40,7 +39,7 @@ const Main=()=> {
          <About>
            <AboutHead>
            <h3> Meet The Dev:</h3>
-           <Me src={meCard} alt='jasmine terry'></Me>
+           <Me src={meCardOther} alt='jasmine terry'></Me>
            </AboutHead>
              <AboutInfo>
                <div className = 'background'>
