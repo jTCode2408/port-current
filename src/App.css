@@ -45,3 +45,7 @@ list-style-type: square;
 ul{
   width:100%;
 }
+
+img{
+  border-radius: 5%;
+}

@@ -11,7 +11,7 @@ import news_opt from '../images/news_opt.jpg';
 import todo from '../images/todo.png';
 import SSDash from '../images/SSDash.png';
 import GHCards from '../images/GHCards.jpg';
-
+import advGame_opt from '../images/advGame_opt.jpg';
 const Pieces = () => {
   return (
 <>
@@ -126,7 +126,7 @@ const Pieces = () => {
     
         <a href="https://github.com/jTCode2408/reducer-todo"
           class="github-link" >
-          <img src={todo} alt='todo app screenshot'></img>{/*TODO: add image link to gh */}
+          <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
     
@@ -149,7 +149,7 @@ const Pieces = () => {
       
         <a href="https://github.com/jTCode2408/Intro-Python-II"
           class="github-link" >
-          Repo {/*TODO: add image link to gh */}
+         <img src={advGame_opt} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
           

@@ -241,3 +241,11 @@ font-size:1.3rem;
 /////CONTACT PAGE STYLES ////
 
 
+///////RESUME STYLES//////////
+
+export const ResumeDiv = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0 auto;
+`
