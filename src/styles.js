@@ -148,7 +148,7 @@ export const Button= styled.button`
   `
   
 
-///////SKILLS PAGE STYLES////  ---- post it note styling
+///////SKILLS PAGE STYLES////  
 export const SkillsPage = styled.div`
 border:2px solid green;
 `
@@ -196,10 +196,10 @@ text-decoration:underline;
 
 ////////PIECES PAGE STYLES //////
 export const PiecesCont = styled.div`
-border: 2px solid red;
+
 display:flex;
 flex-wrap:wrap;
-background-color: rgb(1, 109, 109);
+//background-color: rgb(1, 109, 109);
 
 
 `
@@ -214,7 +214,7 @@ justify-content:center;
 
 `
 export const ProjectCont = styled.div`
-border 2px solid black;
+border 2px solid grey;
 display:flex;
 flex-direction:column;
 
@@ -233,7 +233,7 @@ export const ProjectInfo = styled.div`
 display:flex;
 flex-direction:row;
 font-size:1rem;
-color:white;
+color:black;
 &:hover{
   color:rgb(1, 109, 109);
 }

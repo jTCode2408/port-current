@@ -12,9 +12,16 @@ import todo from '../images/todo.png';
 import SSDash from '../images/SSDash.png';
 import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
+import {useClippy} from 'use-clippy-now'
+import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
+
 const Pieces = () => {
+  const withClippy = useClippy('Clippy')
+ 
+
   return (
 <>
+
     <ExitBar> <span> Browser  </span>
       <IconsBar>
       <FontAwesomeIcon icon={faWindowRestore} />
@@ -35,6 +42,7 @@ const Pieces = () => {
       </PiecesHead >
 
       <PiecesCont>
+     
       <ProjectCont>
       <a href="https://front-end-sss.now.sh/login"
           class="project-link" >
@@ -47,12 +55,10 @@ const Pieces = () => {
           <img src={SSDash} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
-          <ul>
-          <li> Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6 </li>
-          <li> Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project </li>
-          <li> Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A </li>
-          <li> Solely responsible for front-end code cleanup by extracting repeated code from multiple files to create reusable components, as well as maintaining clear documentation </li>
-          </ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(SSInfo))}>
+        What's This?
+      </button>
+          
         </ProjectInfo>
         </ProjectCont>
 
@@ -67,12 +73,9 @@ const Pieces = () => {
         <a class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'>
       <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <ProjectInfo>
-          <ul> 
-          <li> Adaptation of John Conway's 'Game Of Life'.</li>
-          <li> Built using ReactJS, CSS, and Styled Components. </li>
-          <li> Solely responsible for adopting rules based on Conway's original Game Of Life, application styling, and deployment </li>
-          <li> Utilized React hooks and Immer dependency for state changes of cells, CSS to implement grid feature, and Styled Components for main styling </li>
-          </ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(GOLInfo))}>
+        What's This?
+      </button>
           </ProjectInfo>
         </ProjectCont>
         {/*game of life project end */}
@@ -88,12 +91,9 @@ const Pieces = () => {
          <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
-<ul> 
-   <li> Application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.</li>
-   <li> Contributed to cross functional team of front-end, back-end, data science, and machine learning students. </li>
-   <li> Solely responsible for log-in, dashboard, recommened, and favorite songs list components by pulling data from an API created by my backend team member.</li>
-   <li> Styling contributions across front-end. </li>
-</ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(SpotifyInfo))}>
+        What's This?
+      </button>
     </ProjectInfo>
         </ProjectCont>
         {/*SSS project end */}
@@ -109,11 +109,9 @@ const Pieces = () => {
         <img src={refugees_opt} alt='refugee stories website screenshot'></img>
         </a>
         <ProjectInfo>
-          <ul>
-            <li> Web application to help bring awareness to the refugee crisis. </li>
-            <li> Contributed to team of 5 cross-functional full-stack and data science students. </li>
-            <li> Solely responsible for design and creation of fully responsive 'landing' and 'about the team' pages. </li>
-          </ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(RefugeeInfo))}>
+        What's This?
+      </button>
         </ProjectInfo> 
         </ProjectCont> {/*refugees end */}
 
@@ -129,13 +127,10 @@ const Pieces = () => {
           <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
-    
-          <ul>
-            <li> A straight forward to-do application for web. </li>
-            <li> Solely responsible for creation of Todo app functionality such as adding and clearing tasks and styling. </li>
-            <li> Implementation of Redux used for state handling </li>
+        <button onClick={() => withClippy(clippy => clippy.speak(TodoInfo))}>
+        What's This?
+      </button>
           
-          </ul>
         </ProjectInfo>
         </ProjectCont> {/*todo project end */}
 
@@ -152,13 +147,10 @@ const Pieces = () => {
          <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
+        <button onClick={() => withClippy(clippy => clippy.speak(AdvInfo))}>
+        What's This?
+      </button>
           
-          <ul>
-            <li> An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms and collect items. </li>
-            <li> Built with Python. </li>
-            <li> Solely responsible for implementation of game by creating mini programs using classes, lists, and algorithms. </li>
-            </ul>
-        
         </ProjectInfo>
         </ProjectCont>{/*Adv game project end */}
 
@@ -176,11 +168,9 @@ const Pieces = () => {
           <img src={news_opt} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-          <ul>
-            <li> Sample newspaper website </li>
-            <li> Built with JS/LESS. </li>
-            <li> Solely responsible for DOM manipulation for articles components, click events, and styling with LESS. </li>
-          </ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(NewsInfo))}>
+        What's This?
+      </button>
           
         </ProjectInfo>
         </ProjectCont>{/*NEWSFEED project end */}
@@ -197,12 +187,9 @@ const Pieces = () => {
            <img src={GHCards} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-          <ul>
-          <li>Single page application to display Github followers. </li>
-          <li> Built using ReactJS and styled with CSS. </li>  
-           <li>Solely responsible for implementation by calling and displaying data from github API. </li> 
-
-          </ul>
+        <button onClick={() => withClippy(clippy => clippy.speak(GHCardsInfo))}>
+        What's This?
+      </button>
         </ProjectInfo>
         </ProjectCont> {/*GH CARDS project end */}
       
