@@ -3,13 +3,12 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar } from '../styles'
+import {  SkillsHead,SkillsDiv, SkillsNames, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button } from '../styles'
 
 const Skills = () => {
   return (
-    <div>
+    <SkillsPage>
     
-            <div className = "exit-bar">
         <ExitBar> <span> File </span>
         <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
@@ -17,14 +16,15 @@ const Skills = () => {
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
          </ExitBar>
-        </div>
+   
         <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
           
             </ComputerHead>
-        
+
+        <SkillsCont>
     <SkillsHead>
-    <h3> Skills </h3>
+     Skills 
   </SkillsHead>
       <SkillsDiv>
         <SkillsNames>
@@ -42,7 +42,7 @@ const Skills = () => {
           </ul>
         </SkillsNames>
         <SkillsNames>
-          <SkillsTitle>Back End: </SkillsTitle>
+          <SkillsTitle> Back End: </SkillsTitle>
           <ul>
             <li> NodeJs </li>
             <li> Express </li>
@@ -67,7 +67,12 @@ const Skills = () => {
           </ul>
         </SkillsNames>
       </SkillsDiv>
-      </div>
+      </SkillsCont>
+      
+      <Footer>  <Button> Start </Button>
+ 
+ </Footer>
+      </SkillsPage>
   );
 };
 

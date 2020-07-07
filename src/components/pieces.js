@@ -3,7 +3,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar } from '../styles';
+import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
 import spotifyOg from '../images/spotifyOg.png';
 import refugees_opt from '../images/refugees_opt.png';
@@ -14,45 +14,49 @@ import SSDash from '../images/SSDash.png';
 
 const Pieces = () => {
   return (
-    <div className="pieces-cont">
+<>
+ 
+    <ExitBar> <span> File  </span>
+      <IconsBar>
+      <FontAwesomeIcon icon={faWindowRestore} />
+        <FontAwesomeIcon icon={faWindowMinimize} />
+        <FontAwesomeIcon icon={faWindowClose} />
+        </IconsBar> 
+        </ExitBar>
+    <ComputerHead>
+      <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+      
+        </ComputerHead>
+
        
-            <div className = "exit-bar">
-        <ExitBar> <span> File  </span>
-          <IconsBar>
-          <FontAwesomeIcon icon={faWindowRestore} />
-            <FontAwesomeIcon icon={faWindowMinimize} />
-            <FontAwesomeIcon icon={faWindowClose} />
-            </IconsBar> 
-            </ExitBar>
-        </div>
-        <ComputerHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-          
-            </ComputerHead>
-       
-      <div className="pieces-head">
+      <PiecesHead>
         <h2>Browser</h2>
         <h3>Browse my project selection:</h3>
-      </div>
-      <div class="story-squad">
+      </PiecesHead >
+
+      <PiecesCont>
+      <ProjectCont>
       <a href="https://front-end-sss.now.sh/login"
           class="project-link" >
-         <h4 class="project-title">StorySquad</h4>
+         <ProjectTitle>StorySquad</ProjectTitle>
         </a>
-          <div class="tech-used">ReactJS/TypeScript/TypeORM/DS  </div>
-        </div>
+          <TechUsed>ReactJS/TypeScript/TypeORM/DS  </TechUsed>
+    
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe"
           class="github-link">
           <img src={SSDash} alt='spotify song suggestory screenshot'></img>
         </a>
-        <div class="project-info">
+
+        <ProjectInfo>
           <ul>
           <li> Story Squad is a web 'gaming' application to encourage reading, and writing for children grades 3-6 </li>
           <li> Collaborated with other Lambda students as part of a team of 5 full stack developers, working with a stakeholder over 7 weeks on ongoing project </li>
           <li> Contributed to creating dashboard and match-up pages for child users,  as well as increasing code climate score on both front and back end from a F to an A </li>
           <li> Solely responsible for front-end code cleanup by extracting repeated code from multiple files to create reusable components, as well as maintaining clear documentation </li>
           </ul>
-        </div>{" "}
+        </ProjectInfo>
+        </ProjectCont>
+        
       <div className="pieces">
       <div className="life">
       <a href="https://game-of-life.jasmineterry.vercel.app/"
@@ -198,11 +202,17 @@ const Pieces = () => {
             Solely responsible for implementation by calling and displaying data from github API. 
 
           </p>
-        </div>{" "}
+        </div>
         {/*GH CARDS project end */}
-      </div>{" "}
+      </div>
       {/* pieces div holder end --- pieces cont end below*/}
-    </div>
+      </PiecesCont>
+      
+      <Footer>  <Button> Start </Button>
+ 
+ </Footer>
+  
+    </> //placement fragment end
   );
 };
 

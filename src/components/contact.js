@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, StyledSocial, SocialLinks, SocialList } from '../styles'
+import { ComputerHead, IconsBar, ExitBar, StyledSocial, SocialLinks, SocialList, Footer, Button } from '../styles'
 
 
 const Contact =()=>{
@@ -40,6 +40,8 @@ const Contact =()=>{
       </StyledSocial> {/*socials div end */}
 
 
+      <Footer>  <Button> Start </Button>
+ </Footer>
         </div>
     )
 }

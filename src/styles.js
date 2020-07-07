@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 
 export const AppHeader= styled.header` 
-  background-color: #282c34;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -32,7 +32,7 @@ export const SocialLinks = styled.a`
 text-decoration:none;
   margin:20%;
   &:hover{
-    color: orange;
+    color: black;
 }
 `;
 
@@ -150,40 +150,74 @@ export const Button= styled.button`
   
 
 ///////SKILLS PAGE STYLES//// 
-
+export const SkillsPage = styled.div`
+border:2px solid green;
+`
 export const SkillsCont = styled.div`
-  border: 2px solid green;
   display: flex;
-  width: 100%;
+  flex-direction:column;
+  margin:5%;
+
 `;
 export const SkillsHead = styled.div`
-  position: relative;
-  border: 2px solid blue;
-  width: 80%;
-  font-size: 35px;
+  display:flex;
+  justify-content:center;
+  font-size: 4.5rem;
+  
 `;
 export const SkillsDiv = styled.div`
-  border: 5px solid yellow;
+  border: 1px solid yellow;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-around;
   width: 100%;
-  margin-top:10px;
+
 `;
 export const SkillsNames = styled.div`
-font-size: 20px;
-border:2px solid red;
-width:80%;
+font-size: 1.7rem;
+border:2px dotted gray;
+width:30%;
+
 `;
 
 export const SkillsTitle = styled.div`
-font-size: 15x;
-text-align:center;
+font-size:3rem;
+align-items:center;
 `;
 
 
 ////////PIECES PAGE STYLES //////
+export const PiecesCont = styled.div`
+border: 2px solid red;
+display:flex;
+
+`
+
+export const PiecesHead = styled.div`
+border: 2px solid blue;
+`
+export const ProjectCont = styled.div`
+border 2px solid black;
+display:flex;
+flex-direction:column;
+
+align-items:center
+
+`
+export const ProjectTitle = styled.div`
+border: 2px solid green;
+`
+
+export const ProjectInfo = styled.div`
+border: 2px solid purple;
+`
+
+export const TechUsed = styled.div`
+border: 2px solid yellow;
+`
+
+
+
 
 /////CONTACT PAGE STYLES ////
 

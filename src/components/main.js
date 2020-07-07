@@ -51,7 +51,7 @@ const Main=()=> {
         
           </Computer> { /*computer div end */}
 
-        <Footer>  <Button> Start </Button>
+        <Footer>  <Button> Start </Button>  {/*TODO: ADD HAMBURGER MENU FOR OTHER PAGES */}
  
          </Footer>
         
