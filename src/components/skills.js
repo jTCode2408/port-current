@@ -3,7 +3,7 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button } from '../styles'
+import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button } from '../styles'
 
 const Skills = () => {
   return (
@@ -24,46 +24,49 @@ const Skills = () => {
 
         <SkillsCont>
     <SkillsHead>
-     Skills 
+     <SkillsMain>Skills </SkillsMain>
   </SkillsHead>
       <SkillsDiv>
         <div className = 'postit'>
           <SkillsTitle>Front End: </SkillsTitle>
           <ul>
-            <li> HTML</li>
-            <li>CSS</li>
+            <li> CSS </li>
+            <li> HTML </li>
+            <li> Redux </li>
             <li> ReactJS </li>
-            <li> Redux</li>
             <li> Javascript </li>
-            <li> Styled Components </li>
+            <li> Typescript </li>
             <li> Reactstrap </li>
             <li> Material UI </li>
-            <li> Typescript </li>
+            <li> Styled Components </li>
           </ul>
         </div>
         <div className = 'postit'>
           <SkillsTitle> Back End: </SkillsTitle>
           <ul>
+            <li> SQL </li>
+            <li> Knex </li>
             <li> NodeJs </li>
             <li> Express </li>
-            <li> Knex </li>
-            <li> SQLite3</li>
-            <li> SQL </li>
+            <li> SQLite3 </li>
             <li> TypeORM </li>
-            <li> DB Design</li>
+            <li> DB Design </li>
           </ul>
         </div>
         <div className = 'postit'>
           <SkillsTitle>General: </SkillsTitle>
           <ul>
-            <li> REST APIs </li>
-            <li> Git/Version control </li>
-            <li> Slack</li>
-            <li> Command Line </li>
-            <li> Peer programming/review </li>
-            <li> Python</li>
-            <li> Docker </li>
+            <li> Git </li>
             <li> Jest </li>
+            <li> Slack </li>
+            <li> Python </li>
+            <li> Docker </li>
+            <li> REST APIs </li>
+            <li> Code review </li>
+            <li> Command Line </li>
+            <li> Peer programming </li>
+            
+            
           </ul>
         </div>
       </SkillsDiv>

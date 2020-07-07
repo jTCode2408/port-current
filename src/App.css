@@ -38,15 +38,14 @@ h5{
 
 
 li{
-list-style-type: square;
+list-style-type: none;
+ margin: 0 auto;
+
 ;
 }
 
 ul{
-  width:100%;
-  font-family:'Reenie Beanie';
-font-size:22px;
-text-align:center;
+
 }
 
 img{
@@ -63,7 +62,7 @@ img{
   border:1px solid #E8E8E8;  
   border-top:60px solid #fdfd86;
   font-family:'Reenie Beanie';    
-  font-size:22px;      
+  font-size:2rem;  
   border-bottom-right-radius: 60px 5px;
   display:inline-block;    
    background: #ffff88; /* Old browsers */

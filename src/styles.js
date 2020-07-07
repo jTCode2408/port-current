@@ -159,11 +159,19 @@ export const SkillsCont = styled.div`
 
 `;
 export const SkillsHead = styled.div`
-  display:flex;
-  justify-content:center;
-  font-size: 4.5rem;
+
+border: 2px solid red;
   
 `;
+
+export const SkillsMain = styled.p`
+font-size: 5rem;
+border: 2px solid blue;
+width:100%;
+display:flex;
+justify-content:center;
+align-content:center;
+`
 export const SkillsDiv = styled.div`
   display: flex;
   flex-direction: row;
@@ -172,18 +180,17 @@ export const SkillsDiv = styled.div`
 
 `;
 
+//list styling//
+export const SkillsNames = styled.div` 
 
-export const SkillsNames = styled.div`
-font-size: 1.7rem;
-background-color:yellow;
-width:40%;
 
  
 `;
 
 export const SkillsTitle = styled.div`
-font-size:3rem;
+font-size:4rem;
 align-items:center;
+text-decoration:underline;
 `;
 
 
