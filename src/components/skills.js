@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <SkillsPage>
     
-        <ExitBar> <span> File </span>
+        <ExitBar> <span> Specs </span>
         <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />

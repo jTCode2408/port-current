@@ -12,7 +12,7 @@ export const AppHeader= styled.header`
   align-items:center;
   justify-content: center;
   color: white;
-  height:33vh
+  height:30vh
 `
 
 //////// SOCIAL STYLES /////
@@ -54,7 +54,6 @@ background-color: rgb(1, 109, 109);
 export const Computer = styled.div`
   display: flex;
   justify-content: center;
- 
  
 `;
 
@@ -190,30 +189,50 @@ align-items:center;
 export const PiecesCont = styled.div`
 border: 2px solid red;
 display:flex;
+flex-wrap:wrap;
+background-color: rgb(1, 109, 109);
+
 
 `
 
 export const PiecesHead = styled.div`
 border: 2px solid blue;
 `
+
+export const BrowserHead =styled.div`
+display:flex;
+justify-content:center;
+
+`
 export const ProjectCont = styled.div`
 border 2px solid black;
 display:flex;
 flex-direction:column;
 
+width:45%;
+margin:2%;
 align-items:center
 
 `
 export const ProjectTitle = styled.div`
 border: 2px solid green;
+font-size:1.7rem;
+text-decoration: underline;
 `
 
 export const ProjectInfo = styled.div`
-border: 2px solid purple;
+display:flex;
+flex-direction:row;
+font-size:1rem;
+color:white;
+&:hover{
+  color:rgb(1, 109, 109);
+}
 `
 
 export const TechUsed = styled.div`
 border: 2px solid yellow;
+font-size:1.3rem;
 `
 
 

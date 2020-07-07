@@ -43,8 +43,14 @@ const Main=()=> {
            <Me src={meCard} alt='jasmine terry'></Me>
            </AboutHead>
              <AboutInfo>
-               <p>Full stack developer specializing in creating user friendly beautifully crafted websites.
-        After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began to 'Google-up' on the world of code. After teaching myself SQL online through "W3Schools", I then began to research bootcamp's to fully submerged myself into this journey to change not only mine, but the lives of others. Since making that wonderful decision I have learned how many ways I can positively affect the world as a developer. My drive to learn has never been higher and I look forward to my continued journey of knowledge.</p>
+               <div className = 'background'>
+               <h5>Background: </h5>
+               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning via "W3Schools". I then decided to fully submerge myself into this journey to change not only mine, but the lives of others through code. </p>
+               </div>
+               <div className = 'services'>
+        <h5>Services: </h5>
+        <p>I specialize in crafting fully functional and user friendly websites. From static sites, to full stack applications, I can help to create the website of your dreams! </p>
+        </div>
         </AboutInfo>
          </About>
         

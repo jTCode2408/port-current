@@ -10,7 +10,7 @@ const Resume = () => {
         <div>
            
             <div className = "exit-bar">
-        <ExitBar> <span> File  </span>
+        <ExitBar> <span> Resume  </span>
     
         <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />

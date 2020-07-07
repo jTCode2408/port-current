@@ -15,7 +15,7 @@ const Contact =()=>{
         
             </ComputerHead>
             <div className = "exit-bar">
-        <ExitBar> <span> File </span>
+        <ExitBar> <span> Contact </span>
         <IconsBar>
           <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />
