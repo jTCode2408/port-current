@@ -140,21 +140,21 @@ const Pieces = () => {
         </ProjectCont> {/*todo project end */}
 
         <ProjectCont>
-        <a href="#"
+        <a href="https://github.com/jTCode2408/Intro-Python-II"
           class="project-link"
         >
-          <ProjectTitle> Adventure Game </ProjectTitle> {/*TODO: HOST/GET LIVE LINK/UPDATE*/}
+          <ProjectTitle> Adventure Game </ProjectTitle> 
         </a>
           <TechUsed> Python </TechUsed>
       
         <a href="https://github.com/jTCode2408/Intro-Python-II"
           class="github-link" >
-         <img src={advGame_opt} alt='todo app screenshot'></img>
+         <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
           
           <ul>
-            <li> An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms. </li>
+            <li> An in terminal 'Adventure Game' that allows users to enter commands and travel to various rooms and collect items. </li>
             <li> Built with Python. </li>
             <li> Solely responsible for implementation of game by creating mini programs using classes, lists, and algorithms. </li>
             </ul>

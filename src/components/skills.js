@@ -27,7 +27,7 @@ const Skills = () => {
      Skills 
   </SkillsHead>
       <SkillsDiv>
-        <SkillsNames>
+        <div className = 'postit'>
           <SkillsTitle>Front End: </SkillsTitle>
           <ul>
             <li> HTML</li>
@@ -40,8 +40,8 @@ const Skills = () => {
             <li> Material UI </li>
             <li> Typescript </li>
           </ul>
-        </SkillsNames>
-        <SkillsNames>
+        </div>
+        <div className = 'postit'>
           <SkillsTitle> Back End: </SkillsTitle>
           <ul>
             <li> NodeJs </li>
@@ -52,8 +52,8 @@ const Skills = () => {
             <li> TypeORM </li>
             <li> DB Design</li>
           </ul>
-        </SkillsNames>
-        <SkillsNames>
+        </div>
+        <div className = 'postit'>
           <SkillsTitle>General: </SkillsTitle>
           <ul>
             <li> REST APIs </li>
@@ -65,7 +65,7 @@ const Skills = () => {
             <li> Docker </li>
             <li> Jest </li>
           </ul>
-        </SkillsNames>
+        </div>
       </SkillsDiv>
       </SkillsCont>
       

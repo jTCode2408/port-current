@@ -148,7 +148,7 @@ export const Button= styled.button`
   `
   
 
-///////SKILLS PAGE STYLES//// 
+///////SKILLS PAGE STYLES////  ---- post it note styling
 export const SkillsPage = styled.div`
 border:2px solid green;
 `
@@ -165,18 +165,20 @@ export const SkillsHead = styled.div`
   
 `;
 export const SkillsDiv = styled.div`
-  border: 1px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
 
 `;
+
+
 export const SkillsNames = styled.div`
 font-size: 1.7rem;
-border:2px dotted gray;
-width:30%;
+background-color:yellow;
+width:40%;
 
+ 
 `;
 
 export const SkillsTitle = styled.div`
