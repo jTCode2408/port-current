@@ -28,47 +28,55 @@ const Skills = () => {
   </SkillsHead>
       <SkillsDiv>
         <div className = 'postit'>
-          <SkillsTitle>Front End: </SkillsTitle>
+        
+          <SkillsTitle> Front End: </SkillsTitle>
           <ul>
-            <li> CSS </li>
             <li> HTML </li>
-            <li> Redux </li>
+            <li> CSS </li>
+            <li> Styled Components </li>
             <li> ReactJS </li>
             <li> Javascript </li>
-            <li> Typescript </li>
             <li> Reactstrap </li>
             <li> Material UI </li>
-            <li> Styled Components </li>
+            <li> Redux </li>  
+            <li> Typescript </li>
+       
+          
           </ul>
+     
         </div>
         <div className = 'postit'>
+
           <SkillsTitle> Back End: </SkillsTitle>
           <ul>
-            <li> SQL </li>
-            <li> Knex </li>
+            
             <li> NodeJs </li>
+            <li> Knex </li>
             <li> Express </li>
             <li> SQLite3 </li>
             <li> TypeORM </li>
+            <li> SQL </li>
             <li> DB Design </li>
           </ul>
         </div>
+  
+   
         <div className = 'postit'>
-          <SkillsTitle>General: </SkillsTitle>
+          <SkillsTitle> General: </SkillsTitle>
           <ul>
             <li> Git </li>
-            <li> Jest </li>
-            <li> Slack </li>
-            <li> Python </li>
-            <li> Docker </li>
             <li> REST APIs </li>
+            <li> Slack </li>
             <li> Code review </li>
             <li> Command Line </li>
+            <li> Python </li>
+            <li> Jest </li>
+            <li> Docker </li>
             <li> Peer programming </li>
-            
             
           </ul>
         </div>
+       
       </SkillsDiv>
       </SkillsCont>
       

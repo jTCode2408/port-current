@@ -150,23 +150,23 @@ export const Button= styled.button`
 
 ///////SKILLS PAGE STYLES////  
 export const SkillsPage = styled.div`
-border:2px solid green;
+
 `
 export const SkillsCont = styled.div`
   display: flex;
   flex-direction:column;
   margin:5%;
+  background-color:white;
+
 
 `;
 export const SkillsHead = styled.div`
 
-border: 2px solid red;
-  
+width:100%;
 `;
 
 export const SkillsMain = styled.p`
 font-size: 5rem;
-border: 2px solid blue;
 width:100%;
 display:flex;
 justify-content:center;
@@ -177,12 +177,14 @@ export const SkillsDiv = styled.div`
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  list-style-type: none;
+
 
 `;
 
 //list styling//
 export const SkillsNames = styled.div` 
-
+list-style-type: none;
 
  
 `;
@@ -240,7 +242,7 @@ width:100%;
 
 export const TechUsed = styled.div`
 border: 2px solid yellow;
-font-size:1.3rem;
+font-size:1rem;
 `
 
 
@@ -249,7 +251,6 @@ width:100%;
 &:hover{
   color:rgb(1, 109, 109);
 }
-border:2px solid red;
 `
 export const CloseButton = styled.button`
 color:grey;

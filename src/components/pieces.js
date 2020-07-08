@@ -58,10 +58,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {SSInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -84,10 +85,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {GOLInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -111,10 +113,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {SpotifyInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -138,10 +141,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {RefugeeInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -163,10 +167,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {TodoInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -189,10 +194,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {AdvInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -219,10 +225,11 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {NewsInfo}
-
+<CloseButton>
   <a onClick={close}>
     &times;
   </a>
+  </CloseButton>
 </Modal>
 
 )}
@@ -236,8 +243,7 @@ const Pieces = () => {
         </a>
           <TechUsed> ReatJS/CSS </TechUsed>
         
-        <a href="https://github.com/jTCode2408/React-Github-User-Card"
-          class="github-link" >
+        <a href="https://github.com/jTCode2408/React-Github-User-Card">
            <img src={GHCards} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
