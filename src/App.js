@@ -7,13 +7,19 @@ import Pieces from './components/pieces';
 import Contact from './components/contact';
 import Resume from './components/resume';
 import {AppHeader, StyledSocial, SocialList, SocialLinks} from './styles';
+import {useClippy} from 'use-clippy-now'
+
+
+
 function App() {
+  const withClippy = useClippy('Clippy') 
+  
   return (
     <div className="App">
       <AppHeader>
         <h1>Jasmine Terry</h1>
         <h1>Full Stack Developer</h1>
-     
+       
         <StyledSocial>
         <SocialList>
             <SocialLinks

@@ -199,13 +199,12 @@ export const PiecesCont = styled.div`
 
 display:flex;
 flex-wrap:wrap;
-//background-color: rgb(1, 109, 109);
-
-
+border 10px solid grey;
 `
 
 export const PiecesHead = styled.div`
 border: 2px solid blue;
+margin:0 auto;
 `
 
 export const BrowserHead =styled.div`
@@ -217,12 +216,13 @@ export const ProjectCont = styled.div`
 border 2px solid grey;
 display:flex;
 flex-direction:column;
-
+background-color:white;
 width:45%;
 margin:2%;
 align-items:center
 
 `
+
 export const ProjectTitle = styled.div`
 border: 2px solid green;
 font-size:1.7rem;
@@ -234,9 +234,8 @@ display:flex;
 flex-direction:row;
 font-size:1rem;
 color:black;
-&:hover{
-  color:rgb(1, 109, 109);
-}
+width:100%;
+
 `
 
 export const TechUsed = styled.div`
@@ -245,8 +244,19 @@ font-size:1.3rem;
 `
 
 
+export const Modal = styled.div`
+width:100%;
+&:hover{
+  color:rgb(1, 109, 109);
+}
+border:2px solid red;
+`
+export const CloseButton = styled.button`
+color:grey;
+border-radius:50%;
+border:3px solid grey
 
-
+`
 /////CONTACT PAGE STYLES ////
 
 

@@ -3,7 +3,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead } from '../styles';
+import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
 import spotifyOg from '../images/spotifyOg.png';
 import refugees_opt from '../images/refugees_opt.png';
@@ -12,11 +12,12 @@ import todo from '../images/todo.png';
 import SSDash from '../images/SSDash.png';
 import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
-import {useClippy} from 'use-clippy-now'
 import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
+import Popup from 'reactjs-popup';
+
 
 const Pieces = () => {
-  const withClippy = useClippy('Clippy')
+  
  
 
   return (
@@ -55,10 +56,19 @@ const Pieces = () => {
           <img src={SSDash} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(SSInfo))}>
-        What's This?
-      </button>
-          
+       <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {SSInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
+        
         </ProjectInfo>
         </ProjectCont>
 
@@ -70,12 +80,22 @@ const Pieces = () => {
         </a>
           <TechUsed> ReactJS/Styled Components </TechUsed>
        
-        <a class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'>
+        <a  class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'>
       <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(GOLInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top"  closeOnDocumentClick modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {GOLInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
+       
           </ProjectInfo>
         </ProjectCont>
         {/*game of life project end */}
@@ -91,9 +111,19 @@ const Pieces = () => {
          <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(SpotifyInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {SpotifyInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
+   
     </ProjectInfo>
         </ProjectCont>
         {/*SSS project end */}
@@ -109,9 +139,18 @@ const Pieces = () => {
         <img src={refugees_opt} alt='refugee stories website screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(RefugeeInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {RefugeeInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
         </ProjectInfo> 
         </ProjectCont> {/*refugees end */}
 
@@ -127,9 +166,18 @@ const Pieces = () => {
           <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(TodoInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {TodoInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
           
         </ProjectInfo>
         </ProjectCont> {/*todo project end */}
@@ -147,9 +195,18 @@ const Pieces = () => {
          <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(AdvInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {AdvInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
           
         </ProjectInfo>
         </ProjectCont>{/*Adv game project end */}
@@ -168,10 +225,18 @@ const Pieces = () => {
           <img src={news_opt} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(NewsInfo))}>
-        What's This?
-      </button>
-          
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {NewsInfo}
+
+  <a class="close" onClick={close}>
+    &times;
+  </a>
+</Modal>
+
+)}
+       </Popup>
         </ProjectInfo>
         </ProjectCont>{/*NEWSFEED project end */}
 
@@ -187,15 +252,33 @@ const Pieces = () => {
            <img src={GHCards} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-        <button onClick={() => withClippy(clippy => clippy.speak(GHCardsInfo))}>
-        What's This?
-      </button>
+        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {GHCardsInfo}
+ <CloseButton
+ onClick={() => {
+
+   close();
+ }}
+>
+<a onClick={close}>
+    &times;
+  </a>
+</CloseButton>
+ 
+</Modal>
+
+)}
+ 
+       </Popup>
+      
         </ProjectInfo>
         </ProjectCont> {/*GH CARDS project end */}
       
       {/* pieces div holder end --- pieces cont end below*/}
-      </PiecesCont>
-      
+     
+      </PiecesCont> 
       <Footer> <Button> Start </Button> </Footer>
   
     </> //placement fragment end
