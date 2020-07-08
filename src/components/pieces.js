@@ -45,14 +45,12 @@ const Pieces = () => {
       <PiecesCont>
      
       <ProjectCont>
-      <a href="https://front-end-sss.now.sh/login"
-          class="project-link" >
+      <a href="https://front-end-sss.now.sh/login" >
          <ProjectTitle>StorySquad</ProjectTitle>
         </a>
           <TechUsed>ReactJS/TypeScript/TypeORM/DS  </TechUsed>
     
-        <a href="https://github.com/Lambda-School-Labs/story-squad-fe"
-          class="github-link">
+        <a href="https://github.com/Lambda-School-Labs/story-squad-fe">
           <img src={SSDash} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
@@ -61,7 +59,7 @@ const Pieces = () => {
 <Modal>
  {SSInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -74,13 +72,12 @@ const Pieces = () => {
 
       
       <ProjectCont>
-      <a href="https://game-of-life.jasmineterry.vercel.app/"
-          class="project-link" >
+      <a href="https://game-of-life.jasmineterry.vercel.app/">
           <ProjectTitle> Game Of Life </ProjectTitle>
         </a>
           <TechUsed> ReactJS/Styled Components </TechUsed>
        
-        <a  class='gh-link' href = 'https://github.com/jTCode2408/game-of-life'>
+        <a href = 'https://github.com/jTCode2408/game-of-life'>
       <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <ProjectInfo>
         <Popup trigger = {<button> Info </button>} position ="top"  closeOnDocumentClick modal="true" repositionOnResize="true">
@@ -88,7 +85,7 @@ const Pieces = () => {
 <Modal>
  {GOLInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -101,13 +98,12 @@ const Pieces = () => {
         {/*game of life project end */}
 
         <ProjectCont>
-        <a href="https://front-end-sss.now.sh/login"
-          class="project-link" >
+        <a href="https://front-end-sss.now.sh/login" >
          <ProjectTitle> Symphinity </ProjectTitle>
         </a>
           <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
         
-        <a class='gh-link' href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
+        <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
          <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
@@ -116,7 +112,7 @@ const Pieces = () => {
 <Modal>
  {SpotifyInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -129,13 +125,12 @@ const Pieces = () => {
         {/*SSS project end */}
 
         <ProjectCont>
-        <a href="https://refugee-stories1119.netlify.com/"
-          class="project-link" >
+        <a href="https://refugee-stories1119.netlify.com/">
            <ProjectTitle> Refugee Stories </ProjectTitle>
         </a>
           <TechUsed> HTML/CSS/LESS </TechUsed>
        
-        <a class = 'gh-link' href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
+        <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
         <img src={refugees_opt} alt='refugee stories website screenshot'></img>
         </a>
         <ProjectInfo>
@@ -144,7 +139,7 @@ const Pieces = () => {
 <Modal>
  {RefugeeInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -155,14 +150,12 @@ const Pieces = () => {
         </ProjectCont> {/*refugees end */}
 
         <ProjectCont>
-        <a href="https://reducer-todo-alpha.vercel.app/"
-          class="project-link" >
+        <a href="https://reducer-todo-alpha.vercel.app/">
         <ProjectTitle> To-Do App </ProjectTitle>
         </a>
           <TechUsed> ReactJS/Redux/CSS </TechUsed>
     
-        <a href="https://github.com/jTCode2408/reducer-todo"
-          class="github-link" >
+        <a href="https://github.com/jTCode2408/reducer-todo">
           <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
@@ -171,7 +164,7 @@ const Pieces = () => {
 <Modal>
  {TodoInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -183,15 +176,12 @@ const Pieces = () => {
         </ProjectCont> {/*todo project end */}
 
         <ProjectCont>
-        <a href="https://github.com/jTCode2408/Intro-Python-II"
-          class="project-link"
-        >
+        <a href="https://github.com/jTCode2408/Intro-Python-II">
           <ProjectTitle> Adventure Game </ProjectTitle> 
         </a>
           <TechUsed> Python </TechUsed>
       
-        <a href="https://github.com/jTCode2408/Intro-Python-II"
-          class="github-link" >
+        <a href="https://github.com/jTCode2408/Intro-Python-II">
          <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
@@ -200,7 +190,7 @@ const Pieces = () => {
 <Modal>
  {AdvInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -230,7 +220,7 @@ const Pieces = () => {
 <Modal>
  {NewsInfo}
 
-  <a class="close" onClick={close}>
+  <a onClick={close}>
     &times;
   </a>
 </Modal>
@@ -241,8 +231,7 @@ const Pieces = () => {
         </ProjectCont>{/*NEWSFEED project end */}
 
         <ProjectCont>
-        <a href="https://react-github-user-card.jasmineterry.vercel.app/"
-          class="project-link" >
+        <a href="https://react-github-user-card.jasmineterry.vercel.app/" >
             <ProjectTitle> Github Usercards </ProjectTitle>
         </a>
           <TechUsed> ReatJS/CSS </TechUsed>
