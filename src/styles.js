@@ -318,6 +318,12 @@ border:3px solid grey;
 //STYLE LIKE OLD SCHOOL SOLITARE> CARDS FOR EACH THINGS< EXTRA CARDS FOR MISC.
 //CARDS WITH INFO FLIP/HAVE TITLE
 
+export const CardsCont =styled.div`
+border:2px solid green;
+display:flex;
+flex-wrap:wrap;
+`
+
 ///////RESUME STYLES//////////
 
 export const ResumeDiv = styled.div`

@@ -116,15 +116,18 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 
 
 /* entire container, keeps perspective */
-.flip-cont {
-	perspective: 1000px;
+.email-flip-cont {
+  perspective: 1000px;
+  border:2px solid blue;
+
 }
 	/* flip the pane when hovered */
-	.flip-cont:hover .email-flipper, .flip-cont.hover .email-flipper {
-		transform: rotateY(180deg);
+	.email-flip-cont:hover .email-flipper, .email-flip-cont.hover .email-flipper {
+    transform: rotateY(180deg);
+    border:2px solid red;
 	}
 
-.flip-cont, .email-front, .email-back {
+.email-flip-cont, .email-front, .email-back {
 	width: 320px;
 	height: 480px;
 }
@@ -150,10 +153,171 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 .email-front {
 	z-index: 2;
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border:2px solid purple;
 }
 
 /* back, initially hidden pane */
 .email-back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border:2px solid green;
+}
+
+
+/* LINKEDIN ------- entire container, keeps perspective */
+.linked-flip-cont {
+  perspective: 1000px;
+  border:2px solid blue;
+  width: 100%;
+
+
+}
+	/* flip the pane when hovered */
+	.linked-flip-cont:hover .linked-flipper, .linked-flip-cont.hover .linked-flipper {
+    transform: rotateY(180deg);
+    border:2px solid red;
+	}
+
+.linked-flip-cont, .linked-front, .linked-back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.linked-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.linked-front, .linked-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.linked-front {
+	z-index: 2;
+	/* for firefox 31 */
+  transform: rotateY(0deg);
+  border:2px solid purple;
+}
+
+/* back, initially hidden pane */
+.linked-back {
+  transform: rotateY(180deg);
+  border:2px solid green;
+}
+
+
+
+/* GH ------- entire container, keeps perspective */
+.gh-flip-cont {
+  perspective: 1000px;
+  border:2px solid blue;
+  width: 100%;
+
+
+}
+	/* flip the pane when hovered */
+	.gh-flip-cont:hover .gh-flipper, .gh-flip-cont.hover .gh-flipper {
+    transform: rotateY(180deg);
+    border:2px solid red;
+	}
+
+.gh-flip-cont, .gh-front, .gh-back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.gh-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.gh-front, .gh-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.gh-front {
+	z-index: 2;
+	/* for firefox 31 */
+  transform: rotateY(0deg);
+  border:2px solid purple;
+}
+
+/* back, initially hidden pane */
+.gh-back {
+  transform: rotateY(180deg);
+  border:2px solid green;
+}
+
+/* TWITTER ------- entire container, keeps perspective */
+.twitter-flip-cont {
+  perspective: 1000px;
+  border:2px solid blue;
+  width: 100%;
+
+
+}
+	/* flip the pane when hovered */
+	.twitter-flip-cont:hover .twitter-flipper, .twitter-flip-cont.hover .twitter-flipper {
+    transform: rotateY(180deg);
+    border:2px solid red;
+	}
+
+.twitter-flip-cont, .twitter-front, .twitter-back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.twitter-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.twitter-front, .twitter-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.twitter-front {
+	z-index: 2;
+	/* for firefox 31 */
+  transform: rotateY(0deg);
+  border:2px solid purple;
+}
+
+/* back, initially hidden pane */
+.twitter-back {
+  transform: rotateY(180deg);
+  border:2px solid green;
+}
+
+.empty-card{
+  border:2px solid red;
+  width: 320px;
+	height: 480px;
 }
