@@ -20,6 +20,8 @@ const Main=()=> {
             <Link to ='/projects'><FontAwesomeIcon icon={faFolder} size="2x" /> 
             <h4> Browser</h4> </Link>
             
+
+            
       </BrowseIcon> {/*browser div end */}
       <SkillsIcon>
           <Link to = '/specs'>  <FontAwesomeIcon size="2x" icon={faToolbox} /> 

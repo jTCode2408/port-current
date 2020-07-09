@@ -41,3 +41,8 @@
 <i class="fas fa-toolbox"></i>
 
   CONTACT FORM BLOG🧮 https://hackernoon.com/setting-up-a-serverless-contact-form-in-react-using-nodemailer-and-express-19df9fdb20ed
+
+
+  CONTACT ICONS:
+
+  

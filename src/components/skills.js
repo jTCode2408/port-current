@@ -3,16 +3,17 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button } from '../styles'
+import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList } from '../styles'
 
 const Skills = () => {
   return (
     <SkillsPage>
     
         <ExitBar> <span> Specs </span>
+        
         <IconsBar>
-          <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowMinimize} />
+            <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
          </ExitBar>
@@ -23,10 +24,12 @@ const Skills = () => {
             </ComputerHead>
 
         <SkillsCont>
-    <SkillsHead>
-     <SkillsMain>Skills </SkillsMain>
-  </SkillsHead>
+    
+     <SkillsMain> Skills </SkillsMain>
       <SkillsDiv>
+      <div class="hole first-hole"></div>
+  <div class="hole second-hole"></div>
+  <div class="hole third-hole"></div>
         <div className = 'postit'>
         
           <SkillsTitle> Front End: </SkillsTitle>
@@ -45,6 +48,7 @@ const Skills = () => {
           </ul>
      
         </div>
+      
         <div className = 'postit'>
 
           <SkillsTitle> Back End: </SkillsTitle>

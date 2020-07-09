@@ -1,11 +1,11 @@
 //'browser' projects page
-import React from "react";
+import React, {useState} from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton } from '../styles';
+import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, GHOverlay } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
-import spotifyOg from '../images/spotifyOg.png';
+import spotify from '../images/spotify.jpg';
 import refugees_opt from '../images/refugees_opt.png';
 import news_opt from '../images/news_opt.jpg';
 import todo from '../images/todo.png';
@@ -14,10 +14,10 @@ import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
 import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
 import Popup from 'reactjs-popup';
-
+import CustomScroller from 'react-custom-scroller';
 
 const Pieces = () => {
-  
+  const [isShown, setIsShown] = useState(false);
  
 
   return (
@@ -25,36 +25,43 @@ const Pieces = () => {
 
     <ExitBar> <span> Browser  </span>
       <IconsBar>
-      <FontAwesomeIcon icon={faWindowRestore} />
+      
         <FontAwesomeIcon icon={faWindowMinimize} />
+        <FontAwesomeIcon icon={faWindowRestore} />
         <FontAwesomeIcon icon={faWindowClose} />
         </IconsBar> 
         </ExitBar>
-    <ComputerHead>
-      <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-      
-        </ComputerHead>
-
-      <PiecesHead>
         <BrowserHead>
+      <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+    
      
-        <h3>BROWSE PROJECTS:</h3>
+      <h2>BROWSE PROJECTS</h2>
         </BrowserHead>
-      </PiecesHead >
-
+      
       <PiecesCont>
+
+    
+        
      
       <ProjectCont>
-      <a href="https://front-end-sss.now.sh/login" >
+
+      <a href="https://front-end-sss.now.sh/login"   onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
          <ProjectTitle>StorySquad</ProjectTitle>
+         {isShown && (
+        <div>
+          Visit project
+        </div>
+      )}
         </a>
-          <TechUsed>ReactJS/TypeScript/TypeORM/DS  </TechUsed>
-    
+          <TechUsed> ReactJS/TypeScript/TypeORM/DS  </TechUsed>
+  
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe">
-          <img src={SSDash} alt='spotify song suggestory screenshot'></img>
+          <img src={SSDash} alt='spotify song suggestory screenshot' className ="images"/>
         </a>
+     
         <ProjectInfo>
-       <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+       <Popup trigger = {<ButtonDiv><AboutButton   > What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {SSInfo}
@@ -73,15 +80,22 @@ const Pieces = () => {
 
       
       <ProjectCont>
-      <a href="https://game-of-life.jasmineterry.vercel.app/">
-          <ProjectTitle> Game Of Life </ProjectTitle>
+      <a href="https://game-of-life.jasmineterry.vercel.app/"
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}>
+       <ProjectTitle>Game Of Life</ProjectTitle>
+       {isShown && (
+      <div>
+        Visit project
+      </div>
+    )}
         </a>
           <TechUsed> ReactJS/Styled Components </TechUsed>
        
         <a href = 'https://github.com/jTCode2408/game-of-life'>
       <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top"  closeOnDocumentClick modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv> } position ="top"  closeOnDocumentClick modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {GOLInfo}
@@ -100,16 +114,23 @@ const Pieces = () => {
         {/*game of life project end */}
 
         <ProjectCont>
-        <a href="https://front-end-sss.now.sh/login" >
-         <ProjectTitle> Symphinity </ProjectTitle>
+        <a href="https://front-end-sss.now.sh/login"
+  onMouseEnter={() => setIsShown(true)}
+  onMouseLeave={() => setIsShown(false)}>
+   <ProjectTitle>Symphinity</ProjectTitle>
+   {isShown && (
+  <div>
+    Visit project
+  </div>
+)}
         </a>
           <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
         
         <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
-         <img src={spotifyOg} alt='spotify song suggestory screenshot'></img>
+         <img src={spotify} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {SpotifyInfo}
@@ -122,22 +143,30 @@ const Pieces = () => {
 
 )}
        </Popup>
-   
     </ProjectInfo>
         </ProjectCont>
         {/*SSS project end */}
 
         <ProjectCont>
-        <a href="https://refugee-stories1119.netlify.com/">
-           <ProjectTitle> Refugee Stories </ProjectTitle>
+        <a href="https://refugee-stories1119.netlify.com/"
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}>
+           <ProjectTitle>Refugee Stories</ProjectTitle>
+           {isShown && (
+          <div>
+            Visit project
+          </div>
+        )}
         </a>
           <TechUsed> HTML/CSS/LESS </TechUsed>
        
         <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
+       
+        
         <img src={refugees_opt} alt='refugee stories website screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {RefugeeInfo}
@@ -154,8 +183,16 @@ const Pieces = () => {
         </ProjectCont> {/*refugees end */}
 
         <ProjectCont>
-        <a href="https://reducer-todo-alpha.vercel.app/">
-        <ProjectTitle> To-Do App </ProjectTitle>
+        <a href="https://reducer-todo-alpha.vercel.app/"
+        
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+         <ProjectTitle>ToDo App</ProjectTitle>
+         {isShown && (
+        <div>
+          Visit
+        </div>
+      )}
         </a>
           <TechUsed> ReactJS/Redux/CSS </TechUsed>
     
@@ -163,7 +200,7 @@ const Pieces = () => {
           <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {TodoInfo}
@@ -181,8 +218,16 @@ const Pieces = () => {
         </ProjectCont> {/*todo project end */}
 
         <ProjectCont>
-        <a href="https://github.com/jTCode2408/Intro-Python-II">
-          <ProjectTitle> Adventure Game </ProjectTitle> 
+        <a href="https://github.com/jTCode2408/Intro-Python-II"
+        
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+         <ProjectTitle>Adventure Game</ProjectTitle>
+         {isShown && (
+        <div>
+          Visit
+        </div>
+      )}
         </a>
           <TechUsed> Python </TechUsed>
       
@@ -190,7 +235,7 @@ const Pieces = () => {
          <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {AdvInfo}
@@ -211,8 +256,15 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://jt-news.netlify.app/"
-          class="project-link" >
-          <ProjectTitle> NewsFeed </ProjectTitle>
+          class="project-link" 
+          onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+         <ProjectTitle>Newfeed</ProjectTitle>
+         {isShown && (
+        <div>
+          Visit
+        </div>
+      )}
         </a>
           <TechUsed> JS/CSS/LESS </TechUsed>
         
@@ -221,7 +273,7 @@ const Pieces = () => {
           <img src={news_opt} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {NewsInfo}
@@ -238,8 +290,15 @@ const Pieces = () => {
         </ProjectCont>{/*NEWSFEED project end */}
 
         <ProjectCont>
-        <a href="https://react-github-user-card.jasmineterry.vercel.app/" >
-            <ProjectTitle> Github Usercards </ProjectTitle>
+        <a href="https://react-github-user-card.jasmineterry.vercel.app/" 
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+         <ProjectTitle>Github Usercards</ProjectTitle>
+         {isShown && (
+        <div>
+          Visit
+        </div>
+      )}
         </a>
           <TechUsed> ReatJS/CSS </TechUsed>
         
@@ -247,7 +306,7 @@ const Pieces = () => {
            <img src={GHCards} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
-        <Popup trigger = {<button> Info </button>} position ="top" modal="true" repositionOnResize="true">
+        <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {GHCardsInfo}
@@ -272,7 +331,7 @@ const Pieces = () => {
         </ProjectCont> {/*GH CARDS project end */}
       
       {/* pieces div holder end --- pieces cont end below*/}
-     
+      
       </PiecesCont> 
       <Footer> <Button> Start </Button> </Footer>
   
@@ -281,3 +340,7 @@ const Pieces = () => {
 };
 
 export default Pieces;
+
+
+
+/////TODO: extract projects to own files, reduce file length

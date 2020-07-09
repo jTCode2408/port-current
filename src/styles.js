@@ -11,11 +11,12 @@ export const AppHeader= styled.header`
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  color: white;
-  height:30vh
+
+  height:33vh
 `
 
 //////// SOCIAL STYLES /////
+
 
 export const StyledSocial = styled.div`
   font-family: "Gothic A1", sans-serif;
@@ -24,15 +25,14 @@ export const StyledSocial = styled.div`
   line-height: 3.2px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-
+  background-color: grey;
+  
 `;
 
 export const SocialLinks = styled.a`
-  color: black;
-text-decoration:none;
-  margin:20%;
+
   &:hover{
-    color: black;
+    color: white;
 }
 `;
 
@@ -155,13 +155,29 @@ export const SkillsPage = styled.div`
 export const SkillsCont = styled.div`
   display: flex;
   flex-direction:column;
-  margin:5%;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:5%;
   background-color:white;
+  height: 900px;
+  background-image: repeating-linear-gradient(white 0px, white 24px, black 25px);
+  position: relative;
+  padding-bottom: 10%;
+  box-shadow: 0px 0px 5px 0px #888;
+  
+  &:after{
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    background-color: rgba(255,0,0,0.6);
+  }
 
 
 `;
 export const SkillsHead = styled.div`
-
 width:100%;
 `;
 
@@ -169,8 +185,12 @@ export const SkillsMain = styled.p`
 font-size: 5rem;
 width:100%;
 display:flex;
+border-bottom:2px solid black;
+background-color:white;
+color:Black;
 justify-content:center;
 align-content:center;
+margin:0 auto;
 `
 export const SkillsDiv = styled.div`
   display: flex;
@@ -185,7 +205,6 @@ export const SkillsDiv = styled.div`
 //list styling//
 export const SkillsNames = styled.div` 
 list-style-type: none;
-
  
 `;
 
@@ -198,24 +217,25 @@ text-decoration:underline;
 
 ////////PIECES PAGE STYLES //////
 export const PiecesCont = styled.div`
-
+margin:0 auto;
 display:flex;
 flex-wrap:wrap;
-border 10px solid grey;
+border 15px solid grey;
 `
 
-export const PiecesHead = styled.div`
-border: 2px solid blue;
-margin:0 auto;
-`
 
 export const BrowserHead =styled.div`
 display:flex;
-justify-content:center;
+justify-content: space-between;
+margin-left:2%;
+margin-right:2%;
+margin-bottom:5%;
+height:0px;
+font-size:3rem;
 
 `
 export const ProjectCont = styled.div`
-border 2px solid grey;
+border 4px solid grey;
 display:flex;
 flex-direction:column;
 background-color:white;
@@ -226,9 +246,13 @@ align-items:center
 `
 
 export const ProjectTitle = styled.div`
-border: 2px solid green;
-font-size:1.7rem;
+margin-bottom:5%;
+font-size:2rem;
 text-decoration: underline;
+width:100%;
+align-content:center;
+display:flex;
+justify-content:center;
 `
 
 export const ProjectInfo = styled.div`
@@ -238,11 +262,18 @@ font-size:1rem;
 color:black;
 width:100%;
 
+
 `
 
+
+
 export const TechUsed = styled.div`
-border: 2px solid yellow;
-font-size:1rem;
+
+font-size:1.3rem;
+width:100%;
+align-content:center;
+display:flex;
+justify-content:center;
 `
 
 
@@ -252,14 +283,40 @@ width:100%;
   color:rgb(1, 109, 109);
 }
 `
+export const ButtonDiv = styled.div`
+
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%
+
+`
+export const AboutButton = styled.button`
+margin-bottom:2%;
+margin-top:2%;
+display:flex;
+align-items:center;
+justify-content:center;
+width: 25%;
+border-radius:5%;
+background-color:grey;
+height:40px;
+color:rgb(1, 109, 109);
+&:hover{
+  color:grey;
+  background-color: rgb(1, 109, 109);
+}
+`
 export const CloseButton = styled.button`
 color:grey;
 border-radius:50%;
-border:3px solid grey
+border:3px solid grey;
+
 
 `
 /////CONTACT PAGE STYLES ////
-
+//STYLE LIKE OLD SCHOOL SOLITARE> CARDS FOR EACH THINGS< EXTRA CARDS FOR MISC.
+//CARDS WITH INFO FLIP/HAVE TITLE
 
 ///////RESUME STYLES//////////
 

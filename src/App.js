@@ -8,7 +8,7 @@ import Contact from './components/contact';
 import Resume from './components/resume';
 import {AppHeader, StyledSocial, SocialList, SocialLinks} from './styles';
 import {useClippy} from 'use-clippy-now'
-
+import Socials from './components/socials';
 
 
 function App() {
@@ -20,21 +20,9 @@ function App() {
         <h1>Jasmine Terry</h1>
         <h1>Full Stack Developer</h1>
        
-        <StyledSocial>
-        <SocialList>
-            <SocialLinks
-              href="https://www.linkedin.com/in/jasmineterry92"
-              title="LinkedIn"> LinkedIn </SocialLinks>
-          
-            <SocialLinks href="https://Github.com/jTCode2408"> Github
-            </SocialLinks>
-          
-            <SocialLinks href="mailto:jasmine.terry91@gmail.com" title="email"> Email </SocialLinks>
 
-        </SocialList>
-      </StyledSocial> {/*socials div end */}
       </AppHeader>
-
+      <Socials/>
 <Switch>
         <Route exact path ='/'>
         <Main/>

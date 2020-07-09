@@ -9,7 +9,7 @@ const Contact =()=>{
 
 
     return(
-        <div className='contact'>
+        <div className='contact-cont'>
         <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
         
@@ -17,27 +17,40 @@ const Contact =()=>{
             <div className = "exit-bar">
         <ExitBar> <span> Contact </span>
         <IconsBar>
-          <FontAwesomeIcon icon={faWindowRestore} />
+          
             <FontAwesomeIcon icon={faWindowMinimize} />
+            <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
         
          </ExitBar>
         </div>
         
-            <h2>Get In Touch!</h2>
-            <StyledSocial>
-        <SocialList>
+            <h2>Get In Touch</h2>
+            <p>
+            Have an idea or a concept that really excites you? We can turn that idea into reality. Let's chat!
+            </p>
+            <div className = "contact-social">
+              <button>
+          <a href="mailto:jasmine.terry91@gmail.com"> Contact Me </a>
+          </button>
           <p>
+          <SocialLinks href="https://twitter.com/jTCode2408"> Jasmine.Terry91@gmail.com
+            </SocialLinks>
             <SocialLinks
               href="https://www.linkedin.com/in/jasmineterry92"
               title="LinkedIn"> LinkedIn </SocialLinks>
           </p>
-          <p>
-            <SocialLinks href="mailto:jasmine.terry91@gmail.com" title="email"> Email </SocialLinks>
-          </p>
-        </SocialList>
-      </StyledSocial> {/*socials div end */}
+          <SocialLinks href="https://Github.com/jTCode2408"> Github
+            </SocialLinks>
+
+            <SocialLinks href="https://twitter.com/jTCode2408"> Twitter
+            </SocialLinks>
+        
+
+    
+          
+      </div> {/*contact cont div end */}
 
 
       <Footer>  <Button> Start </Button>
@@ -46,9 +59,6 @@ const Contact =()=>{
     )
 }
 
-
-// project idd: port-contact-282421
-// API key: AIzaSyCMMyykPWQH9t13LWbdeeUkB3MJ7lyFGVQ
 
 
 export default Contact

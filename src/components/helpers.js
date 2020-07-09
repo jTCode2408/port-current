@@ -21,7 +21,7 @@ export const GOLInfo = <ul>
     </ul>
 
 export const SpotifyInfo = <ul> 
-    <li> Application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.
+    <li> Symphinity is an application to mimic a Spotify song suggester feature that allows users to visualize song features, add songs to their favorites and receive a list of recommendations.
     </li>
     <li> Contributed to cross functional team of front-end, back-end, data science, and machine learning students. 
      </li>
@@ -31,7 +31,7 @@ export const SpotifyInfo = <ul>
 </ul>
 
 export const RefugeeInfo = <ul> 
-    <li> Web application to help bring awareness to the refugee crisis. </li>
+    <li> Refugees Stories is a Web application to help bring awareness to the refugee crisis. </li>
     <li> Contributed to team of 5 cross-functional full-stack and data science students.</li>
      <li> Solely responsible for design and creation of fully responsive 'landing' and 'about the team' pages. </li>
 </ul>
@@ -58,7 +58,7 @@ export const NewsInfo = <ul>
 </ul> 
 
 export const GHCardsInfo= <ul> 
-    <li> Single page application to display Github followers.  </li>
+    <li> Github Cards is a single page application to display current Github followers.  </li>
     <li> Built using ReactJS and styled with CSS.</li> 
     <li> Solely responsible for implementation by calling and displaying data from github API.</li>
 
