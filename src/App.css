@@ -113,3 +113,47 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
  .third-hole {
   bottom: 30px;
  }
+
+
+/* entire container, keeps perspective */
+.flip-cont {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-cont:hover .email-flipper, .flip-cont.hover .email-flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-cont, .email-front, .email-back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.email-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.email-front, .email-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.email-front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.email-back {
+	transform: rotateY(180deg);
+}
