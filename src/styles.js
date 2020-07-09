@@ -320,8 +320,22 @@ border:3px solid grey;
 
 export const CardsCont =styled.div`
 border:2px solid green;
+background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
+   background-size: cover;
+   background-position: center;
 display:flex;
 flex-wrap:wrap;
+margin:3%;
+margin-top:0;
+`
+
+export const CardHolder=styled.div`
+border:2px solid black;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+
 `
 
 ///////RESUME STYLES//////////

@@ -118,18 +118,25 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 /* entire container, keeps perspective */
 .email-flip-cont {
   perspective: 1000px;
-  border:2px solid blue;
+  
 
 }
 	/* flip the pane when hovered */
 	.email-flip-cont:hover .email-flipper, .email-flip-cont.hover .email-flipper {
     transform: rotateY(180deg);
     border:2px solid red;
+    width: 320px;
+    height: 480px;
+    border-radius:5px;
+   
 	}
 
 .email-flip-cont, .email-front, .email-back {
 	width: 320px;
-	height: 480px;
+  height: 480px;
+  border:3px solid black;
+  border-radius:5px;
+  
 }
 
 /* flip speed goes here */
@@ -154,20 +161,34 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
-  border:2px solid purple;
+ background-image: url('./images//cardfront.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+  font-size: 2rem;
+}
+
+.email-front-text{
+  color: blue;
+  text-align: center;
+ display:flex;
+ font-size: 2rem;
+ position: absolute;
+ 
 }
 
 /* back, initially hidden pane */
 .email-back {
+ 
   transform: rotateY(180deg);
-  border:2px solid green;
+
+  background-color: pink;
 }
 
 
 /* LINKEDIN ------- entire container, keeps perspective */
 .linked-flip-cont {
   perspective: 1000px;
-  border:2px solid blue;
   width: 100%;
 
 
@@ -175,7 +196,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	/* flip the pane when hovered */
 	.linked-flip-cont:hover .linked-flipper, .linked-flip-cont.hover .linked-flipper {
     transform: rotateY(180deg);
-    border:2px solid red;
 	}
 
 .linked-flip-cont, .linked-front, .linked-back {
@@ -205,13 +225,11 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
-  border:2px solid purple;
 }
 
 /* back, initially hidden pane */
 .linked-back {
   transform: rotateY(180deg);
-  border:2px solid green;
 }
 
 
@@ -219,7 +237,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 /* GH ------- entire container, keeps perspective */
 .gh-flip-cont {
   perspective: 1000px;
-  border:2px solid blue;
   width: 100%;
 
 
@@ -227,7 +244,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	/* flip the pane when hovered */
 	.gh-flip-cont:hover .gh-flipper, .gh-flip-cont.hover .gh-flipper {
     transform: rotateY(180deg);
-    border:2px solid red;
 	}
 
 .gh-flip-cont, .gh-front, .gh-back {
@@ -257,19 +273,18 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
-  border:2px solid purple;
 }
 
 /* back, initially hidden pane */
 .gh-back {
   transform: rotateY(180deg);
-  border:2px solid green;
+ 
 }
 
 /* TWITTER ------- entire container, keeps perspective */
 .twitter-flip-cont {
   perspective: 1000px;
-  border:2px solid blue;
+ 
   width: 100%;
 
 
@@ -277,7 +292,7 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	/* flip the pane when hovered */
 	.twitter-flip-cont:hover .twitter-flipper, .twitter-flip-cont.hover .twitter-flipper {
     transform: rotateY(180deg);
-    border:2px solid red;
+   
 	}
 
 .twitter-flip-cont, .twitter-front, .twitter-back {
@@ -307,13 +322,13 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
-  border:2px solid purple;
+
 }
 
 /* back, initially hidden pane */
 .twitter-back {
   transform: rotateY(180deg);
-  border:2px solid green;
+
 }
 
 .empty-card{

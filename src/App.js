@@ -15,6 +15,7 @@ function App() {
   const withClippy = useClippy('Clippy') 
   
   return (
+    <Switch>
     <div className="App">
       <AppHeader>
         <h1>Jasmine Terry</h1>
@@ -23,7 +24,7 @@ function App() {
 
       </AppHeader>
       <Socials/>
-<Switch>
+
         <Route exact path ='/'>
         <Main/>
         </Route>
@@ -43,9 +44,8 @@ function App() {
       </Route>
 
 
-      </Switch>
       </div>
-   
+      </Switch>
   );
 }
 
