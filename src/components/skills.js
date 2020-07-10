@@ -3,7 +3,7 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList } from '../styles'
+import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList, SkillsBottom } from '../styles'
 
 const Skills = () => {
   return (
@@ -57,10 +57,11 @@ const Skills = () => {
             <li> NodeJs </li>
             <li> Knex </li>
             <li> Express </li>
+            <li> Python </li>
             <li> SQLite3 </li>
             <li> TypeORM </li>
             <li> SQL </li>
-            <li> DB Design </li>
+            
           </ul>
         </div>
   
@@ -73,7 +74,9 @@ const Skills = () => {
             <li> Slack </li>
             <li> Code review </li>
             <li> Command Line </li>
-            <li> Python </li>
+            <li> Netlify </li>
+            <li> Vercel </li>
+            <li> Heroku </li>
             <li> Jest </li>
             <li> Docker </li>
             <li> Peer programming </li>
@@ -81,7 +84,12 @@ const Skills = () => {
           </ul>
         </div>
        
+        
       </SkillsDiv>
+      <SkillsBottom>
+
+<p className = "skills-text">...More in progress!</p>
+</SkillsBottom>
       </SkillsCont>
       
       <Footer>  <Button> Start </Button>

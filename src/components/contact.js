@@ -88,12 +88,17 @@ const Contact =()=>{
             
 
             <div className="twitter-flip-cont">
+              
               <div className="twitter-flipper">
+                
 <div className="twitter-front"> 
+
+
+
 <div className="twitter-front-text">Twitter</div>
 
-
 </div>
+
 <div className="twitter-back">
             <a href="https://twitter.com/jTCode2408"> Twitter
             </a>

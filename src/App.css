@@ -161,11 +161,8 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
- background-image: url('./images//cardfront.png');
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-  font-size: 2rem;
+  
+
 }
 
 .email-front-text{
@@ -174,7 +171,10 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
  display:flex;
  font-size: 2rem;
  position: absolute;
- 
+ width:100%;
+ justify-content: center;
+ align-content: center;
+margin-top:65%;
 }
 
 /* back, initially hidden pane */
@@ -182,7 +182,9 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
  
   transform: rotateY(180deg);
 
-  background-color: pink;
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
@@ -225,11 +227,27 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+ 
+}
+
+.linked-front-text{
+  color: blue;
+  text-align: center;
+ display:flex;
+ font-size: 2rem;
+ position: absolute;
+ width:100%;
+ justify-content: center;
+ align-content: center;
+margin-top:65%;
 }
 
 /* back, initially hidden pane */
 .linked-back {
   transform: rotateY(180deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
@@ -273,11 +291,26 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+
+}
+.gh-front-text{
+  color: blue;
+  text-align: center;
+ display:flex;
+ font-size: 2rem;
+ position: absolute;
+ width:100%;
+ justify-content: center;
+ align-content: center;
+margin-top:65%;
 }
 
 /* back, initially hidden pane */
 .gh-back {
   transform: rotateY(180deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
  
 }
 
@@ -322,17 +355,47 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_face_bg.png');
+  content: '♥';
+  color:#cc0000;
+   border-radius: 5px;
+   content: '\02665';
+
+
+}
+
+.twitter-front-text{
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+ display:flex;
+ font-size: 2rem;
+ position: absolute;
+ width:100%;
+ justify-content: center;
+ align-content: center;
+ 
+ 
+
+
 
 }
 
 /* back, initially hidden pane */
 .twitter-back {
   transform: rotateY(180deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 
 }
 
 .empty-card{
   border:2px solid red;
   width: 320px;
-	height: 480px;
+  height: 480px;
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }

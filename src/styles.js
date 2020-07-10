@@ -202,6 +202,18 @@ export const SkillsDiv = styled.div`
 
 `;
 
+export const SkillsBottom=styled.div`
+
+display:flex;
+font-size:4rem;
+margin:5%;
+margin-top:10%;
+justify-content:center;
+align-content:center;
+
+
+`
+
 //list styling//
 export const SkillsNames = styled.div` 
 list-style-type: none;
