@@ -92,17 +92,25 @@ const Contact =()=>{
               <div className="twitter-flipper">
                 
 <div className="twitter-front"> 
-
-
-
 <p className="twitter-front-text">Twitter</p>
 
 </div>
 
 <div className="twitter-back">
-            <a href="https://twitter.com/jTCode2408"> Twitter
-            </a>
 
+  
+
+  <div className="twitter-back-text">
+ 
+    <span class="top-rank">A</span>
+    <span class="top-suit">&hearts;</span>
+   
+            <a class="mid-suit" href="https://twitter.com/jTCode2408">&hearts; TwitterICON HERE</a>
+    
+    <span class="bottom-suit">&hearts;</span>
+    <span class="bottom-rank">A</span>
+         
+            </div>
             </div>
             </div>{/* flipper cont div end */}
             </div>{/*twitter flip cont div end */}

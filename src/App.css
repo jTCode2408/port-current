@@ -393,11 +393,57 @@ background-color: rgba(250, 245, 245, 0.075);
   transform: rotateY(180deg);
   background-repeat: no-repeat;
   background-size: contain;
+  
 
 }
 
+.twitter-back-text{
+  height: 400px;
+    border-radius: 10%;
+    margin:5%;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
+span{
+  display:block;
+  color:red;
+  
+}
+
+.top-rank{
+  border:2px solid green;
+  font-size: 30px;
+margin-top:0;
+margin-bottom: 0;
+text-align: left; 
+}
+.top-suit{
+  border:2px solid green;
+  font-size: 30px;
+  text-align: left; 
+
+}
+
+.mid-suit{
+  border:2px solid blue;
+  text-align: center;
+}
+
+.bottom-rank{
+  border:2px solid orange;
+  font-size: 30px;
+margin-top:0;
+margin-bottom: 0;
+text-align: right; 
+}
+.bottom-suit{
+  border:2px solid orange;
+  font-size: 30px;
+  text-align: right; 
+
+}
 .empty-card{
-  border:2px solid red;
   width: 320px;
   height: 480px;
   background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
