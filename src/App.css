@@ -124,7 +124,7 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	/* flip the pane when hovered */
 	.email-flip-cont:hover .email-flipper, .email-flip-cont.hover .email-flipper {
     transform: rotateY(180deg);
-    border:2px solid red;
+    
     width: 320px;
     height: 480px;
     border-radius:5px;
@@ -134,8 +134,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 .email-flip-cont, .email-front, .email-back {
 	width: 320px;
   height: 480px;
-  border:3px solid black;
-  border-radius:5px;
   
 }
 
@@ -143,14 +141,12 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 .email-flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .email-front, .email-back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -161,28 +157,34 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   
 
 }
 
 .email-front-text{
-  color: blue;
+  color: black(253, 253, 253);
+  text-shadow: 1px 1px 1px black;
+background-color: rgba(250, 245, 245, 0.075);
+  font-weight: bolder;
+  text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
  position: absolute;
  width:100%;
+ margin: 0;
  justify-content: center;
  align-content: center;
-margin-top:65%;
 }
 
 /* back, initially hidden pane */
 .email-back {
  
   transform: rotateY(180deg);
-
-  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+background-color:white;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -209,14 +211,12 @@ margin-top:65%;
 .linked-flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .linked-front, .linked-back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -227,25 +227,32 @@ margin-top:65%;
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
  
 }
 
 .linked-front-text{
-  color: blue;
+  color: black(253, 253, 253);
+  text-shadow: 1px 1px 1px black;
+background-color: rgba(250, 245, 245, 0.075);
+  font-weight: bolder;
+  text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
  position: absolute;
  width:100%;
+ margin: 0;
  justify-content: center;
  align-content: center;
-margin-top:65%;
 }
 
 /* back, initially hidden pane */
 .linked-back {
   transform: rotateY(180deg);
-  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+ 
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -273,14 +280,12 @@ margin-top:65%;
 .gh-flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .gh-front, .gh-back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -291,24 +296,31 @@ margin-top:65%;
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
 
 }
 .gh-front-text{
-  color: blue;
+  color: black(253, 253, 253);
+  text-shadow: 1px 1px 1px black;
+background-color: rgba(250, 245, 245, 0.075);
+  font-weight: bolder;
+  text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
  position: absolute;
  width:100%;
+ margin: 0;
  justify-content: center;
  align-content: center;
-margin-top:65%;
 }
 
 /* back, initially hidden pane */
 .gh-back {
   transform: rotateY(180deg);
-  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
   background-repeat: no-repeat;
   background-size: contain;
  
@@ -337,14 +349,12 @@ margin-top:65%;
 .twitter-flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .twitter-front, .twitter-back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -355,17 +365,15 @@ margin-top:65%;
 	z-index: 2;
 	/* for firefox 31 */
   transform: rotateY(0deg);
-  background-image: url('https://bfa.github.io/solitaire-js/img/card_face_bg.png');
-  content: '♥';
-  color:#cc0000;
-   border-radius: 5px;
-   content: '\02665';
-
-
+  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .twitter-front-text{
-  color: black;
+  color: black(253, 253, 253);
+  text-shadow: 1px 1px 1px black;
+background-color: rgba(250, 245, 245, 0.075);
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
@@ -373,19 +381,16 @@ margin-top:65%;
  font-size: 2rem;
  position: absolute;
  width:100%;
+ margin: 0;
  justify-content: center;
  align-content: center;
- 
- 
-
-
 
 }
 
+ 
 /* back, initially hidden pane */
 .twitter-back {
   transform: rotateY(180deg);
-  background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
   background-repeat: no-repeat;
   background-size: contain;
 

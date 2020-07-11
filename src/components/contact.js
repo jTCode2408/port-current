@@ -95,7 +95,7 @@ const Contact =()=>{
 
 
 
-<div className="twitter-front-text">Twitter</div>
+<p className="twitter-front-text">Twitter</p>
 
 </div>
 
