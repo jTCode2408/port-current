@@ -12,9 +12,6 @@ a, a:link{
    text-decoration:none; 
 
 }
-a:link:hover{
-
-}
 
 h1{
   font-size: 3rem;
@@ -44,7 +41,6 @@ li{
 
  margin: 0 auto;
  
-;
 }
 
 ul{
@@ -165,28 +161,28 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 }
 
 .email-front-text{
-  color: black(253, 253, 253);
+  color: black;
   text-shadow: 1px 1px 1px black;
-background-color: rgba(250, 245, 245, 0.075);
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
- position: absolute;
  width:100%;
  margin: 0;
  justify-content: center;
  align-content: center;
+  z-index: 1;
+  position:absolute;
 }
 
 /* back, initially hidden pane */
 .email-back {
  
   transform: rotateY(180deg);
-background-color:white;
   background-repeat: no-repeat;
   background-size: contain;
+
 }
 
 
@@ -234,19 +230,19 @@ background-color:white;
 }
 
 .linked-front-text{
-  color: black(253, 253, 253);
+  color: black;
   text-shadow: 1px 1px 1px black;
-background-color: rgba(250, 245, 245, 0.075);
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
- position: absolute;
  width:100%;
  margin: 0;
  justify-content: center;
  align-content: center;
+  z-index: 1;
+  position:absolute;
 }
 
 /* back, initially hidden pane */
@@ -303,19 +299,19 @@ background-color: rgba(250, 245, 245, 0.075);
 
 }
 .gh-front-text{
-  color: black(253, 253, 253);
+  color: black;
   text-shadow: 1px 1px 1px black;
-background-color: rgba(250, 245, 245, 0.075);
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
- position: absolute;
  width:100%;
  margin: 0;
  justify-content: center;
  align-content: center;
+  z-index: 1;
+  position:absolute;
 }
 
 /* back, initially hidden pane */
@@ -368,80 +364,119 @@ background-color: rgba(250, 245, 245, 0.075);
   background-image: url('https://bfa.github.io/solitaire-js/img/card_back_bg.png');
   background-repeat: no-repeat;
   background-size: contain;
+  
+}
+
+.front-text::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(241, 241, 241, 0.4);
+  width: 100%;
+  height: 10%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px);
+  
+  
 }
 
 .twitter-front-text{
-  color: black(253, 253, 253);
+  color: black;
   text-shadow: 1px 1px 1px black;
-background-color: rgba(250, 245, 245, 0.075);
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
  font-size: 2rem;
- position: absolute;
  width:100%;
  margin: 0;
  justify-content: center;
  align-content: center;
+  z-index: 1;
+  position:absolute;
+color:rgba(2, 44, 2, 0.507);
 
+  
 }
 
- 
 /* back, initially hidden pane */
 .twitter-back {
   transform: rotateY(180deg);
   background-repeat: no-repeat;
   background-size: contain;
   
-
 }
 
-.twitter-back-text{
-  height: 400px;
-    border-radius: 10%;
-    margin:5%;
+.back-text{
+  height: 450px;
+  width: 320px;
+    border-radius: 20px;
     display:flex;
     flex-direction: column;
     background-color: white;
 }
-span{
-  display:block;
-  color:red;
-  
-}
 
+
+.back-top{
+  display:flex;
+  flex-direction: column;
+}
+.back-bottom{
+  display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top:20%;
+
+}
 .top-rank{
-  border:2px solid green;
   font-size: 30px;
-margin-top:0;
-margin-bottom: 0;
+margin-left:5%;
 text-align: left; 
+color:red;
+width:90%;
+height:auto;
 }
 .top-suit{
-  border:2px solid green;
+  
   font-size: 30px;
   text-align: left; 
-
+  color:red;
+  width:90%;
+  margin-left:5%;
+  height:auto;
 }
 
 .mid-suit{
-  border:2px solid blue;
+
   text-align: center;
+  color:red;
+  height:200px;
+  margin-top:25%;
+
+}
+.mid-suit a:after{
+  color: red;
 }
 
 .bottom-rank{
-  border:2px solid orange;
   font-size: 30px;
-margin-top:0;
-margin-bottom: 0;
-text-align: right; 
+  margin-left:5%;
+  text-align: right; 
+  color:red;
+  width:90%;
+  height:auto;
 }
 .bottom-suit{
-  border:2px solid orange;
-  font-size: 30px;
+ font-size: 30px;
+  margin-left:5%;
   text-align: right; 
-
+  color:red;
+  width:90%;
+  height:auto;
 }
 .empty-card{
   width: 320px;

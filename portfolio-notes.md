@@ -37,8 +37,12 @@
 <i class="fas fa-clipboard-list"></i> (clipboard list contact)
 <i class="fas fa-paper-plane"></i> (contact plane icon)
 <i class="fas fa-envelope-open-text"></i> (email envelope icon)
+
 <i class="fas fa-hdd"></i> (harddrive icon)
 <i class="fas fa-toolbox"></i>
+<i class="fab fa-twitter"></i> (TWITTER)
+<i class="fab fa-linkedin-in"></i> (LINKEDIN)
+<i class="fab fa-github"></i> (GITHUB)
 
   CONTACT FORM BLOG🧮 https://hackernoon.com/setting-up-a-serverless-contact-form-in-react-using-nodemailer-and-express-19df9fdb20ed
 

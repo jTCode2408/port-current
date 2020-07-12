@@ -1,11 +1,14 @@
 //resume//history page
-import React from 'react';
+import React, {useState} from 'react';
 import {Route, Link} from 'react-router-dom';
 import Main from './main';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired, faArchive, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {ResumeDiv, Computer, ComputerHead, IconsBar, ExitBar, Footer, Button } from '../styles'
+import resumeSS from '../images/resumeSS.png';
+
 const Resume = () => {
+
     return (
        
            <>
@@ -24,13 +27,14 @@ const Resume = () => {
   
             </ComputerHead>
              <ResumeDiv>
-            <iframe src="https://resume.creddle.io/embed/h5u3cm2twor"
-  width="850" height="1100" seamless title='resume'></iframe>
-
-  
+               {/*TODO: replace with PDF*/}
+               <img src={resumeSS}></img>
+           
 
         </ResumeDiv>
     
+        <Footer>  <Button> Start </Button>
+ </Footer>
         </>
             
     )

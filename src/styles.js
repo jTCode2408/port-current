@@ -331,22 +331,47 @@ border:3px solid grey;
 //CARDS WITH INFO FLIP/HAVE TITLE
 
 export const CardsCont =styled.div`
-border:2px solid green;
 background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
    background-size: cover;
    background-position: center;
 display:flex;
 flex-wrap:wrap;
-margin:3%;
+margin:5%;
+
 margin-top:0;
 `
 
 export const CardHolder=styled.div`
-border:2px solid black;
+
 display:flex;
 flex-wrap:wrap;
 align-items:center;
 justify-content:center;
+
+`
+
+export const ContactHead=styled.div`
+width:100%;
+display:flex;
+flex-direction:column;
+margin-bottom:3%;
+
+`
+
+export const ContactText=styled.div`
+background-color:rgba(0,0,0,.15);
+padding: 0.5%;
+color:white;
+display:flex;
+justify-content:space-between;
+font-size:1.2rem;
+`
+
+
+export const ContactButton=styled.button`
+background-color:rgba(0,0,0,.15);
+color:white;
+font-size:1rem;
 
 `
 
@@ -357,4 +382,5 @@ display:flex;
 justify-content:center;
 align-items:center;
 margin:0 auto;
+
 `

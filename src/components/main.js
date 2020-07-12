@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar,Footer,  IconsDiv, About, AboutInfo, AboutHead, BrowseIcon, SkillsIcon, ResumeIcon, ContactIcon, Me, Start, Button, Time } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faArchive, faFolder, faEnvelopeOpenText, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faArchive, faFolder,  faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import meCardOther from '../images/meCard-other.jpg';
 
 
@@ -34,7 +34,7 @@ const Main=()=> {
             <h4> History</h4> </Link>
         </ResumeIcon> {/*resume div end */}
       <ContactIcon>
-            <Link to='/contact'> <FontAwesomeIcon size="2x"  icon={faEnvelopeOpenText} /> 
+            <Link to='/contact'> <FontAwesomeIcon size="2x"  icon={faPaperPlane} /> 
             <h4> Contact</h4> </Link>
           </ContactIcon> {/*contact div end */}
             </IconsDiv> {/*icons div end */}

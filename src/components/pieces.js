@@ -14,7 +14,6 @@ import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
 import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
 import Popup from 'reactjs-popup';
-import CustomScroller from 'react-custom-scroller';
 
 const Pieces = () => {
   const [isShown, setIsShown] = useState(false);
