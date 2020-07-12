@@ -50,7 +50,12 @@ img:hover{
   opacity: 0.3;
 }
 
+ 
 
+a:hover p{
+  display:flex;
+  color:red;
+}
 
 
 

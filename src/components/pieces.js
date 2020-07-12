@@ -16,7 +16,7 @@ import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, 
 import Popup from 'reactjs-popup';
 
 const Pieces = () => {
-  const [isShown, setIsShown] = useState(false);
+
  
 
   return (
@@ -38,24 +38,16 @@ const Pieces = () => {
         </BrowserHead>
       
       <PiecesCont>
-
-    
-        
      
       <ProjectCont>
 
-      <a href="https://front-end-sss.now.sh/login"   onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
+      <a href="https://front-end-sss.now.sh/login" title="visit project">
          <ProjectTitle>StorySquad</ProjectTitle>
-         {isShown && (
-        <div>
-          Visit project
-        </div>
-      )}
+         
         </a>
           <TechUsed> ReactJS/TypeScript/TypeORM/DS  </TechUsed>
   
-        <a href="https://github.com/Lambda-School-Labs/story-squad-fe">
+        <a href="https://github.com/Lambda-School-Labs/story-squad-fe" title="github repo">
           <img src={SSDash} alt='spotify song suggestory screenshot' className ="images"/>
         </a>
      
@@ -79,20 +71,16 @@ const Pieces = () => {
 
       
       <ProjectCont>
-      <a href="https://game-of-life.jasmineterry.vercel.app/"
-      onMouseEnter={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}>
+      <a href="https://game-of-life.jasmineterry.vercel.app/" title="visit project">
        <ProjectTitle>Game Of Life</ProjectTitle>
-       {isShown && (
-      <div>
-        Visit project
-      </div>
-    )}
+      
         </a>
           <TechUsed> ReactJS/Styled Components </TechUsed>
        
-        <a href = 'https://github.com/jTCode2408/game-of-life'>
+        <a href = 'https://github.com/jTCode2408/game-of-life' title="github repo" >
       <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
+
+
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv> } position ="top"  closeOnDocumentClick modal="true" repositionOnResize="true">
 {close=>(
@@ -113,19 +101,13 @@ const Pieces = () => {
         {/*game of life project end */}
 
         <ProjectCont>
-        <a href="https://front-end-sss.now.sh/login"
-  onMouseEnter={() => setIsShown(true)}
-  onMouseLeave={() => setIsShown(false)}>
+        <a href="https://front-end-sss.now.sh/login" title="visit project">
    <ProjectTitle>Symphinity</ProjectTitle>
-   {isShown && (
-  <div>
-    Visit project
-  </div>
-)}
+   
         </a>
           <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
         
-        <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS">
+        <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS" title="github repo">
          <img src={spotify} alt='spotify song suggestory screenshot'></img>
         </a>
         <ProjectInfo>
@@ -148,18 +130,13 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://refugee-stories1119.netlify.com/"
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}>
+         title="visit project">
            <ProjectTitle>Refugee Stories</ProjectTitle>
-           {isShown && (
-          <div>
-            Visit project
-          </div>
-        )}
+           
         </a>
           <TechUsed> HTML/CSS/LESS </TechUsed>
        
-        <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page">
+        <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page" title="github repo">
        
         
         <img src={refugees_opt} alt='refugee stories website screenshot'></img>
@@ -183,19 +160,13 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://reducer-todo-alpha.vercel.app/"
-        
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
+        title="visit project">
          <ProjectTitle>ToDo App</ProjectTitle>
-         {isShown && (
-        <div>
-          Visit
-        </div>
-      )}
+  
         </a>
           <TechUsed> ReactJS/Redux/CSS </TechUsed>
     
-        <a href="https://github.com/jTCode2408/reducer-todo">
+        <a href="https://github.com/jTCode2408/reducer-todo" title="github repo">
           <img src={todo} alt='todo app screenshot'></img>
         </a>
         <ProjectInfo>
@@ -218,19 +189,12 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://github.com/jTCode2408/Intro-Python-II"
-        
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
+        title="visit project">
          <ProjectTitle>Adventure Game</ProjectTitle>
-         {isShown && (
-        <div>
-          Visit
-        </div>
-      )}
         </a>
           <TechUsed> Python </TechUsed>
       
-        <a href="https://github.com/jTCode2408/Intro-Python-II">
+        <a href="https://github.com/jTCode2408/Intro-Python-II" title="github repo">
          <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
         </a>
         <ProjectInfo>
@@ -256,19 +220,14 @@ const Pieces = () => {
         <ProjectCont>
         <a href="https://jt-news.netlify.app/"
           class="project-link" 
-          onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
+          title="visit project">
          <ProjectTitle>Newfeed</ProjectTitle>
-         {isShown && (
-        <div>
-          Visit
-        </div>
-      )}
+        
         </a>
           <TechUsed> JS/CSS/LESS </TechUsed>
         
         <a href="https://github.com/jTCode2408/Newsfeed-Components"
-          class="github-link" >
+          class="github-link" title="github repo" >
           <img src={news_opt} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
@@ -290,18 +249,12 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://react-github-user-card.jasmineterry.vercel.app/" 
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
+        title="visit project">
          <ProjectTitle>Github Usercards</ProjectTitle>
-         {isShown && (
-        <div>
-          Visit
-        </div>
-      )}
         </a>
           <TechUsed> ReatJS/CSS </TechUsed>
         
-        <a href="https://github.com/jTCode2408/React-Github-User-Card">
+        <a href="https://github.com/jTCode2408/React-Github-User-Card" title="github repo">
            <img src={GHCards} alt='newsfeed site screenshot'></img>
         </a>
         <ProjectInfo>
