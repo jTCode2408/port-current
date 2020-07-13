@@ -3,7 +3,7 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList, SkillsBottom } from '../styles'
+import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList, SkillsBottom, BrowserHead } from '../styles'
 
 const Skills = () => {
   return (
@@ -18,14 +18,14 @@ const Skills = () => {
             </IconsBar>
          </ExitBar>
    
-        <ComputerHead>
+        <BrowserHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
-          
-            </ComputerHead>
+          <h2> Specs </h2>  
+            </BrowserHead>
 
         <SkillsCont>
-    
-     <SkillsMain> Skills </SkillsMain>
+    <SkillsMain>Skills</SkillsMain>
+
       <SkillsDiv>
       <div class="hole first-hole"></div>
   <div class="hole second-hole"></div>
@@ -88,7 +88,7 @@ const Skills = () => {
       </SkillsDiv>
       <SkillsBottom>
 
-<p className = "skills-text">...More in progress!</p>
+...More in progress!
 </SkillsBottom>
       </SkillsCont>
       

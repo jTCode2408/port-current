@@ -61,7 +61,6 @@ export const About =styled.div`
 justify-content: center;
 align-items:center;
 
-
 `
 
 export const AboutHead = styled.div`
@@ -75,7 +74,12 @@ flex-direction:column
 export const AboutInfo = styled.div`
 margin: 5%;
 `
-
+export const Background =styled.div`
+font-family: 'Special Elite', cursive;
+`
+export const Services =styled.div`
+font-family: 'Special Elite', cursive;
+`
 export const Me = styled.img`
   border-radius:10%;
   `
@@ -191,6 +195,7 @@ color:Black;
 justify-content:center;
 align-content:center;
 margin:0 auto;
+font-family: 'VT323', monospace;
 `
 export const SkillsDiv = styled.div`
   display: flex;
@@ -210,7 +215,7 @@ margin:5%;
 margin-top:10%;
 justify-content:center;
 align-content:center;
-
+font-family: 'VT323', monospace;
 
 `
 
@@ -224,6 +229,7 @@ export const SkillsTitle = styled.div`
 font-size:4rem;
 align-items:center;
 text-decoration:underline;
+
 `;
 
 
@@ -265,6 +271,8 @@ width:100%;
 align-content:center;
 display:flex;
 justify-content:center;
+font-family: 'Press Start 2P', cursive;
+
 `
 
 export const ProjectInfo = styled.div`
@@ -273,14 +281,14 @@ flex-direction:row;
 font-size:1rem;
 color:black;
 width:100%;
-
+font-family: 'Special Elite', cursive;
 
 `
 
 
 
 export const TechUsed = styled.div`
-
+font-family: 'VT323', monospace;
 font-size:1.3rem;
 width:100%;
 align-content:center;
@@ -365,6 +373,7 @@ color:white;
 display:flex;
 justify-content:space-between;
 font-size:1.2rem;
+font-family: 'Special Elite', cursive;
 `
 
 
@@ -372,7 +381,7 @@ export const ContactButton=styled.button`
 background-color:rgba(0,0,0,.15);
 color:white;
 font-size:1rem;
-
+font-family: 'VT323', monospace;
 `
 
 ///////RESUME STYLES//////////

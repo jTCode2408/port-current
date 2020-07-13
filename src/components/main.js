@@ -1,7 +1,7 @@
 //main computer screen page containing pages routes, and background display for desktop screen
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar,Footer,  IconsDiv, About, AboutInfo, AboutHead, BrowseIcon, SkillsIcon, ResumeIcon, ContactIcon, Me, Start, Button, Time } from '../styles'
+import { StyledMain, StyledSocial, SocialLinks, SocialList, Computer, ComputerHead, IconsBar, ExitBar,Footer,  IconsDiv, About, AboutInfo, AboutHead, BrowseIcon, SkillsIcon, ResumeIcon, ContactIcon, Me, Start, Button, Time, Services, Background } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faArchive, faFolder,  faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import meCardOther from '../images/meCard-other.jpg';
@@ -44,14 +44,14 @@ const Main=()=> {
            <Me src={meCardOther} alt='jasmine terry'></Me>
            </AboutHead>
              <AboutInfo>
-               <div className = 'background'>
-               <h5>Background: </h5>
-               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning via "W3Schools". I then decided to fully submerge myself into this journey to change not only mine, but the lives of others through code. </p>
-               </div>
-               <div className = 'services'>
+               <Background>
+               <h5> About Me: </h5>
+               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning and attending a coding bootcamp. My goal is to be able to enrich as many lives as possible through technology. </p>
+               </Background>
+               <Services>
         <h5>Services: </h5>
         <p>I specialize in crafting fully functional and user friendly websites. From static sites, to full stack applications, I can help to create the website of your dreams! </p>
-        </div>
+        </Services>
         </AboutInfo>
          </About>
         
