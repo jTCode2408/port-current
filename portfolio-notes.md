@@ -49,4 +49,12 @@
 
   CONTACT ICONS:
 
-  
+   <Dropdown upward >
+        <Dropdown.Menu>
+<Dropdown.Item text='Desktop' as={Link} to='/'/>
+<Dropdown.Item text='Documents'  as={Link} to='/projects'/>
+<Dropdown.Item text='Specs'  as={Link} to='/specs'/>
+<Dropdown.Item text='History'  as={Link} to='/history'/>
+<Dropdown.Item text='Contact'  as={Link} to='/contact'/>
+        </Dropdown.Menu>
+            </Dropdown>

@@ -1,6 +1,8 @@
 
 span{
   color:white;
+  margin-left:5px;
+  
 }
 
 a{
@@ -48,6 +50,7 @@ li{
 }
 
 ul{
+  
 }
 
 img:hover{
@@ -60,7 +63,6 @@ a:hover p{
   display:flex;
   color:red;
 }
-
 
 
 .postit {

@@ -22,7 +22,7 @@ const Pieces = () => {
   return (
 <>
 
-    <ExitBar> <span> Browser  </span>
+    <ExitBar> <span> Documents  </span>
       <IconsBar>
       
         <FontAwesomeIcon icon={faWindowMinimize} />
@@ -34,7 +34,7 @@ const Pieces = () => {
       <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
     
      
-      <h2>BROWSE PROJECTS</h2>
+      <h2> PROJECTS</h2>
         </BrowserHead>
       
       <PiecesCont>

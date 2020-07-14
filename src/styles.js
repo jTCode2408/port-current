@@ -44,11 +44,34 @@ align-items:center;
 width:100%;
  
  `;
+export const NavMenu =styled.nav`
+border:2px solid red;
+bottom:33%;
+background-color:grey;
+position:fixed;
+z-index: 9999999;
 
+
+
+`
+
+export const NavList =styled.ul`
+list-style-type: none;
+height:200px;
+width:20%;
+position:fixed;
+z-index: 9999999;
+border:2px solid blue;
+background-color:grey;
+
+`
 /////// MAIN PAGE STYLES /////
 
 export const StyledMain = styled.div`
 background-color: rgb(1, 109, 109);
+
+
+
 `;
 
 export const Computer = styled.div`
@@ -94,6 +117,7 @@ export const ExitBar = styled.div`
   display: flex;
   background-color: darkblue;
   justify-content:space-between;
+  height:25px;
 `;
 
 export const Footer =styled.div`
@@ -106,7 +130,12 @@ height:30px
 
 export const IconsBar = styled.div`
  color:grey;
-
+ 
+ display:flex;
+ justify-content:space-around;
+ margin-top:4px;
+margin-right:5px;
+width:7%;
 `;
 
 export const IconsDiv = styled.div`
@@ -114,32 +143,37 @@ export const IconsDiv = styled.div`
   flex-direction:column;
   justify-content: space-around;
   align-items:center;
+  width:40%;
  
 `;
 
 export const BrowseIcon = styled.div`
 color: rgba(235, 235, 235, 0.774);
 width:50%;
-font-size: 1.2rem;
+font-size: 1.7rem;
+font-family: 'VT323', monospace;
 `
 
 export const SkillsIcon = styled.div`
 color: rgba(235, 235, 235, 0.774);
 width:50%;
-font-size: 1.2rem;
+font-size: 1.7rem;
+font-family: 'VT323', monospace;
 `
 
 export const ResumeIcon = styled.div`
 color: rgba(235, 235, 235, 0.774);
 width:50%;
-font-size: 1.2rem;
+font-size: 1.7rem;
+font-family: 'VT323', monospace;
 
 `
 
 export const ContactIcon = styled.div`
 color: rgba(235, 235, 235, 0.774);
 width:50%;
-font-size: 1.2rem;
+font-size: 1.7rem;
+font-family: 'VT323', monospace;
 
 `
 
@@ -149,6 +183,7 @@ export const Button= styled.button`
     color:black;
     font-weight:bold;
     background-color:gray
+    
   `
   
 
@@ -290,10 +325,11 @@ font-family: 'Special Elite', cursive;
 export const TechUsed = styled.div`
 font-family: 'VT323', monospace;
 font-size:1.3rem;
-width:100%;
+width:68%;
 align-content:center;
 display:flex;
 justify-content:center;
+background-color:grey;
 `
 
 
@@ -380,8 +416,9 @@ font-family: 'Special Elite', cursive;
 export const ContactButton=styled.button`
 background-color:rgba(0,0,0,.15);
 color:white;
-font-size:1rem;
+font-size:1.3rem;
 font-family: 'VT323', monospace;
+align-content:center
 `
 
 ///////RESUME STYLES//////////

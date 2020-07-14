@@ -1,25 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Route, Link, Switch} from 'react-router-dom';
-import {Footer, Button} from '../styles'
+import {Footer, Button, NavMenu, NavList} from '../styles'
+import { Dropdown } from 'semantic-ui-react'
 
 const Navigation = ()=>{
+const [open, setOpen] = useState(false);
+
+
 return(
     <div className = "nav-cont">
 
-         <Footer>  
-             <Button> Start
-        <div className="nav">
-            <div> <Link to="/"> Desktop </Link> </div>
-            <div> <Link to ="/projects"> Browser </Link> </div>
-            <div>  <Link to ="/specs"> Specs </Link></div>
-            <div> <Link to="/history"> History </Link> </div>
-            <div> <Link to="/contact"> Contact </Link> </div>
-        </div>
-        </Button>
- </Footer>
+             {open &&
+      <NavMenu>
+
+       <NavList>
+           <li><Link to="/"> Desktop </Link> </li>
+           <li><Link to="/projects"> Documents </Link> </li>
+           <li><Link to="/specs"> Specs </Link> </li>
+           <li><Link to="/history"> History </Link> </li>
+           <li><Link to="/contact"> Contact </Link> </li>
+       </NavList>
+
+        </NavMenu>
+}
+
+<Footer>  
+             <Button onClick={()=>{setOpen(!open)}}> Start </Button>
+             </Footer>
 
 
     </div>
+
+
+   
+    
     
 
 )}
