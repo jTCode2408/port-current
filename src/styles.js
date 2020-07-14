@@ -26,11 +26,16 @@ export const StyledSocial = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.5px;
   background-color: grey;
-  
+ 
 `;
 
 export const SocialLinks = styled.a`
 
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+
+height:50px;
   &:hover{
     color: white;
 }
@@ -41,7 +46,7 @@ export const SocialList = styled.div`
 display:flex;
 justify-content:space-evenly;
 align-items:center;
-width:100%;
+
  
  `;
 
@@ -55,31 +60,34 @@ width:100%;
   background-color:navy;
   width:8%;
  z-index: 9999999;
- 
+ writing-mode: vertical-lr;
+text-orientation: upright;
+
 
  `
  export const NavSide=styled.div`
+
  background-color:navy;
  height:450px;
 z-index: 9999999;
 color:white;
 display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: stretch;
-  align-content: stretch;
+justify-content:center;
+align-content:center;
   bottom:4%;
-  width:8%;
+
+  writing-mode: vertical-lr;
+text-orientation: upright;
  `
 export const NavMenu =styled.nav`
-
+border:2px solid grey;
 background-color:grey;
 position:fixed;
 z-index: 9999999;
 bottom:4%;
 height:450px;
 width:21%;
+
 `
 
 export const NavList =styled.ul`
@@ -87,7 +95,6 @@ list-style-type: none;
 width:18%;
 position:fixed;
 z-index: 9999999;
-border:2px solid blue;
 display:flex;
 flex-direction:column;
 height:400px;
