@@ -4,6 +4,7 @@ import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList, SkillsBottom, BrowserHead } from '../styles'
+import Navigation from './nav';
 
 const Skills = () => {
   return (
@@ -92,9 +93,7 @@ const Skills = () => {
 </SkillsBottom>
       </SkillsCont>
       
-      <Footer>  <Button> Start </Button>
- 
- </Footer>
+      <Navigation/>
       </SkillsPage>
   );
 };

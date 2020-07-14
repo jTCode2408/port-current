@@ -44,27 +44,68 @@ align-items:center;
 width:100%;
  
  `;
+
+ export const NavSideCont=styled.div`
+ display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  align-content: stretch;
+  background-color:navy;
+  width:8%;
+ z-index: 9999999;
+ 
+
+ `
+ export const NavSide=styled.div`
+ background-color:navy;
+ height:450px;
+z-index: 9999999;
+color:white;
+display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: stretch;
+  align-content: stretch;
+  bottom:4%;
+  width:8%;
+ `
 export const NavMenu =styled.nav`
-border:2px solid red;
-bottom:33%;
+
 background-color:grey;
 position:fixed;
 z-index: 9999999;
-
-
-
+bottom:4%;
+height:450px;
+width:21%;
 `
 
 export const NavList =styled.ul`
 list-style-type: none;
-height:200px;
-width:20%;
+width:18%;
 position:fixed;
 z-index: 9999999;
 border:2px solid blue;
-background-color:grey;
+display:flex;
+flex-direction:column;
+height:400px;
+bottom:2%;
+justify-content:space-around;
+align-content:center;
+`
+
+export const NavItem =styled.li`
+
+display:flex;
+margin:5%;
+justify-content:space-around;
+align-content:center;
 
 `
+
+
 /////// MAIN PAGE STYLES /////
 
 export const StyledMain = styled.div`

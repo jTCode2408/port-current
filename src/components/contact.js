@@ -4,7 +4,7 @@ import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faEnvelopeOpen
 import {faTwitter, faLinkedin, faGithub, faGit} from  '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ComputerHead, IconsBar, ExitBar, Footer, Button, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactTitle } from '../styles'
-
+import Navigation from './nav';
 
 const Contact =()=>{
 
@@ -46,7 +46,7 @@ const Contact =()=>{
          
           <div className = "email-front"> 
           <div className="front-text">
-<span className="email-front-text"> Email</span>
+<div className="email-front-text"> Email</div>
 </div>
           
            </div>
@@ -186,8 +186,7 @@ const Contact =()=>{
         </CardHolder>
       </CardsCont>{/*contact cont div end */}
 
-      <Footer>  <Button> Start </Button>
- </Footer>
+      <Navigation/>
         </div>
     )
 }

@@ -60,11 +60,7 @@ const Main=()=> {
     <Navigation/>
 
 
-   {/*
-        <Footer>  <Button> Start </Button>  {/*TODO: ADD HAMBURGER MENU FOR OTHER PAGES */}
- {/*}
-         </Footer> */}
-        
+ 
 </StyledMain>
     
   )};

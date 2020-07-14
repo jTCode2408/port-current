@@ -131,7 +131,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 	/* flip the pane when hovered */
 	.email-flip-cont:hover .email-flipper, .email-flip-cont.hover .email-flipper {
     transform: rotateY(180deg);
-    
     width: 320px;
     height: 480px;
     border-radius:5px;
@@ -168,17 +167,16 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   background-repeat: no-repeat;
   background-size: contain;
   
-
 }
 
 .email-front-text{
   color: black;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0 1px 0 black;
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
- font-size: 2rem;
+ font-size: 2.5rem;
  width:100%;
  margin: 0;
  justify-content: center;
@@ -186,7 +184,10 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   z-index: 1;
   position:absolute;
   font-family: 'VT323', monospace;
+  height:auto;
+
 }
+
 
 /* back, initially hidden pane */
 .email-back {
@@ -243,12 +244,12 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 
 .linked-front-text{
   color: black;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0 1px 0 black;
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
- font-size: 2rem;
+ font-size: 2.5rem;
  width:100%;
  margin: 0;
  justify-content: center;
@@ -256,6 +257,7 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   z-index: 1;
   position:absolute;
   font-family: 'VT323', monospace;
+  height:auto;
 }
 
 /* back, initially hidden pane */
@@ -313,12 +315,12 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 }
 .gh-front-text{
   color: black;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0 1px 0 black;
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
- font-size: 2rem;
+ font-size: 2.5rem;
  width:100%;
  margin: 0;
  justify-content: center;
@@ -326,6 +328,7 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   z-index: 1;
   position:absolute;
   font-family: 'VT323', monospace;
+  height:auto;
 }
 
 /* back, initially hidden pane */
@@ -386,34 +389,37 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   position: absolute;
   left: 0;
   right: 0;
-  background: rgba(241, 241, 241, 0.4);
-  width: 100%;
+  background: rgba(241, 241, 241, 0.87);
+  width: 95%;
+margin-left:2.5%;
+margin-right: 2.5%;
+margin-top:2%;
   height: 10%;
   -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(15px);
   
   
 }
 
 .twitter-front-text{
   color: black;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0 1px 0 black;
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
  display:flex;
- font-size: 2rem;
+ font-size: 2.5rem;
  width:100%;
  margin: 0;
  justify-content: center;
  align-content: center;
   z-index: 1;
   position:absolute;
-color:rgba(2, 44, 2, 0.507);
-font-family: 'VT323', monospace;
+  font-family: 'VT323', monospace;
+  height:auto;
   
 }
 

@@ -14,6 +14,7 @@ import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
 import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
 import Popup from 'reactjs-popup';
+import Navigation from './nav';
 
 const Pieces = () => {
 
@@ -285,7 +286,7 @@ const Pieces = () => {
       {/* pieces div holder end --- pieces cont end below*/}
       
       </PiecesCont> 
-      <Footer> <Button> Start </Button> </Footer>
+   <Navigation/>
   
     </> //placement fragment end
   );

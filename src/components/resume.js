@@ -6,6 +6,7 @@ import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faNetworkWired
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {ResumeDiv, Computer, ComputerHead, IconsBar, ExitBar, Footer, Button } from '../styles'
 import resumeSS from '../images/resumeSS.png';
+import Navigation from './nav';
 
 const Resume = () => {
 
@@ -33,8 +34,7 @@ const Resume = () => {
 
         </ResumeDiv>
     
-        <Footer>  <Button> Start </Button>
- </Footer>
+        <Navigation/>
         </>
             
     )
