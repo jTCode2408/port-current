@@ -61,7 +61,7 @@ img:hover{
 }
 @media (max-width:1085px) {
   img{
-    border:2px solid red;
+  
     max-width: 100%;
   }
    

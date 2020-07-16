@@ -94,7 +94,6 @@ width:40%;
 }
 
 @media ${breakpoints.kindle} { 
-  border:2px solid red;
   max-width:100%;
   align-content:center;
 width:40%;
@@ -297,7 +296,7 @@ export const SkillsCont = styled.div`
   }
 
   @media ${breakpoints.kindle} { 
-    border:2px solid blue;
+  
     max-width:100%;
     align-content:center;
     margin-top:10%;
@@ -330,13 +329,13 @@ export const SkillsDiv = styled.div`
   list-style-type: none;
 
   @media ${breakpoints.ipadPro} { 
-    border:2px solid red;
+  
     max-width:100%;
     align-content:center;
 
   }
   @media ${breakpoints.kindle} { 
-    border:2px solid red;
+  
     max-width:100%;
     align-content:center;
     padding:none;
@@ -388,7 +387,6 @@ flex-wrap:wrap;
 border 15px solid grey;
 background-color:white;
 margin-bottom:0;
-border:4px solid blue;
 @media ${breakpoints.ipadPro} { 
   max-width: 100%;
   flex-direction:column;
@@ -414,7 +412,6 @@ margin-right:2%;
 margin-bottom:5%;
 height:0px;
 font-size:3rem;
-border:2px solid green;
 max-width:100%;
 
 
@@ -427,18 +424,17 @@ background-color:white;
 width:45%;
 margin:2%;
 align-items:center
-border:2px solid purple;
+
 
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
-  border:2px solid black;
   margin:0;
   width:100%;
 }
 
 @media ${breakpoints.ipadPro} { 
   max-width: 100%;
-  border:2px solid red;
+
   flex-direction:column;
  width:100%;
   margin:0;
@@ -464,10 +460,9 @@ display:flex;
 justify-content:center;
 font-family: 'Press Start 2P', cursive;
 text-transform:uppercase;
-border:2px solid red;
+
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
-  border:2px solid black;
   margin:0;
 }
 `
@@ -480,10 +475,10 @@ color:black;
 width:100%;
 font-family: 'Special Elite', cursive;
 margin-bottom:0;
-border:2px solid blue;
+
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
-  border:2px solid black;
+
   margin:0;
 }
 
@@ -500,7 +495,6 @@ background-color:grey;
 text-transform:uppercase;
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
-  border:2px solid black;
   margin:0;
 }
 
