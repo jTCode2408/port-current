@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, GHOverlay } from '../styles';
+import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, ProjectsPage } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
 import spotify from '../images/spotify.jpg';
 import refugees_opt from '../images/refugees_opt.png';
@@ -22,7 +22,7 @@ const Pieces = () => {
 
   return (
 <>
-
+<ProjectsPage>
     <ExitBar> <span> Documents  </span>
       <IconsBar>
       
@@ -32,7 +32,7 @@ const Pieces = () => {
         </IconsBar> 
         </ExitBar>
         <BrowserHead>
-      <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+      <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
     
      
       <h2> PROJECTS</h2>
@@ -286,6 +286,7 @@ const Pieces = () => {
       {/* pieces div holder end --- pieces cont end below*/}
       
       </PiecesCont> 
+      </ProjectsPage>
    <Navigation/>
   
     </> //placement fragment end

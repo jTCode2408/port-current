@@ -20,7 +20,7 @@ const Skills = () => {
          </ExitBar>
    
         <BrowserHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
           <h2> Specs </h2>  
             </BrowserHead>
 

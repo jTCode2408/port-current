@@ -17,7 +17,7 @@ a, a:link{
 
 h1{
   font-size: 3rem;
-  color:rgb(1, 109, 109);
+  color:#05668d;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -29,6 +29,7 @@ h2{
 h3{
   font-size: 2rem;
   font-family: 'VT323', monospace;
+
 
 }
 
@@ -55,8 +56,16 @@ ul{
 
 img:hover{
   opacity: 0.3;
-}
 
+ 
+}
+@media (max-width:1085px) {
+  img{
+    border:2px solid red;
+    max-width: 100%;
+  }
+   
+}
  
 
 a:hover p{
@@ -95,6 +104,29 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   list-style-type: none;
    
 }
+
+@media (max-width:1085px) {
+  .postit{
+
+    max-width: 100%;
+   align-items: center;
+  }
+   
+}
+
+@media (max-width:800px) {
+  .postit{
+    max-width: 100%;
+  background:none;
+   align-items: center;
+   width:40%;
+   border:none;
+   font-weight: bolder;
+
+  }
+   
+}
+ 
 
 .hole {
   height: 20px;

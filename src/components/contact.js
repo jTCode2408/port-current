@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons';
 import {faTwitter, faLinkedin, faGithub, faGit} from  '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactTitle } from '../styles'
+import { ComputerHead, IconsBar, ExitBar, Footer, Button, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactTitle, ContactCont } from '../styles'
 import Navigation from './nav';
 
 const Contact =()=>{
 
 
     return(
-        <div className='contact-cont'>
+        <>
     
         <ExitBar> <span> Contact </span>
         <IconsBar>
@@ -22,11 +22,14 @@ const Contact =()=>{
         
          </ExitBar>
         
+
+       <ContactCont> 
         <ComputerHead>
-          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> My Computer </h2> </Link>
+          <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
         
             </ComputerHead>
        
+
             <CardsCont>
             <ContactHead>
             
@@ -142,7 +145,6 @@ const Contact =()=>{
 </div>
 
 
-
             </div>
 
             </div>{/*flipper cont div end */}
@@ -185,9 +187,10 @@ const Contact =()=>{
           
         </CardHolder>
       </CardsCont>{/*contact cont div end */}
-
+      </ContactCont>
       <Navigation/>
-        </div>
+      
+        </>
     )
 }
 

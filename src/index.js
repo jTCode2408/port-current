@@ -11,7 +11,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 
 ReactDOM.render(
-  
   <Router>
     <App />
   </Router>,

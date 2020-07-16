@@ -9,19 +9,18 @@ import Resume from './components/resume';
 import {AppHeader, StyledSocial, SocialList, SocialLinks} from './styles';
 import {useClippy} from 'use-clippy-now'
 import Socials from './components/socials';
-
+import Header from './components/header';
 
 function App() {
   const withClippy = useClippy('Clippy') 
-  
+
+
   return (
     <Switch>
     <div className="App">
       <AppHeader>
-        <h1>Jasmine Terry</h1>
-        <h1>Full Stack Developer</h1>
-       
-
+      
+<Header/>
       </AppHeader>
       <Socials/>
 

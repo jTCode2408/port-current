@@ -67,9 +67,41 @@ export const GHCardsInfo= <ul>
 
 
 
+////////MEDIA QUERY SIZES//////
+//Breakpoint mobile 470px
+//Kindle-800px
+//xs max-414
+//x/xs-375
+//ipad pro-834
+//ipad-768
+//galaxy S-360
+
+const sizes = {
+galaxy: '360px',
+xs:'375px',
+xsMax: '414px',
+mobile: '470px',
+medium:'520px',
+ipadPro: '834px',
+kindle: '800px',
+ipad:'768px',
+mainBreak:`1000px`
+
+}
 
 
 
+export const breakpoints ={
+galaxy: `(min-width: ${sizes.galaxy})`,
+xs: `(min-width: ${sizes.xs})`,
+xsMax: `(min-width: ${sizes.xsMax})`,
+mobile: `(min-width: ${sizes.mobile})`,
+medium:`(min-width: ${sizes.medium})`,
+ipad: `(min-width: ${sizes.ipad})`,
+ipadPro: `(min-width: ${sizes.ipadPro})`,
+kindle:`(min-width: ${sizes.kindle})`,
+mainBreak:`(min-width:${sizes.mainBreak})`
+}
 
 
 
