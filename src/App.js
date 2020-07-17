@@ -10,9 +10,26 @@ import {AppHeader, StyledSocial, SocialList, SocialLinks} from './styles';
 import {useClippy} from 'use-clippy-now'
 import Socials from './components/socials';
 import Header from './components/header';
+import TouchContact from './components/touchContact';
 
 function App() {
   const withClippy = useClippy('Clippy') 
+  function touch_screen() { 
+    return ( 'ontouchstart' in window ) ||  
+           ( navigator.maxTouchPoints > 0 ) || 
+           ( navigator.msMaxTouchPoints > 0 ); 
+} 
+
+const detect_touch=()=>{
+  if (touch_screen()){
+  return <Contact/>
+    
+  } else {
+    return <TouchContact/>
+  }
+
+}
+
 
 
   return (
@@ -38,8 +55,9 @@ function App() {
       <Route path ='/history'>
       <Resume/>
       </Route>
+
       <Route path ='/contact'>
-      <Contact/>
+    {detect_touch()}
       </Route>
 
 
