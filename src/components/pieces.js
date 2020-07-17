@@ -79,7 +79,7 @@ const Pieces = () => {
           <TechUsed> ReactJS/Styled Components </TechUsed>
        
         <a href = 'https://github.com/jTCode2408/game-of-life' title="github repo" >
-      <img src ={GOL_opt} alt='game of life screenshot'></img> </a>
+      <img src ={GOL_opt} alt='game of life screenshot' className ="images"></img> </a>
 
 
         <ProjectInfo>
@@ -109,7 +109,7 @@ const Pieces = () => {
           <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
         
         <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS" title="github repo">
-         <img src={spotify} alt='spotify song suggestory screenshot'></img>
+         <img src={spotify} alt='spotify song suggestory screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -140,7 +140,7 @@ const Pieces = () => {
         <a href="https://github.com/Buid-Week-Refugee-Stories/Marketing-page" title="github repo">
        
         
-        <img src={refugees_opt} alt='refugee stories website screenshot'></img>
+        <img src={refugees_opt} alt='refugee stories website screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -168,7 +168,7 @@ const Pieces = () => {
           <TechUsed> ReactJS/Redux/CSS </TechUsed>
     
         <a href="https://github.com/jTCode2408/reducer-todo" title="github repo">
-          <img src={todo} alt='todo app screenshot'></img>
+          <img src={todo} alt='todo app screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -196,7 +196,7 @@ const Pieces = () => {
           <TechUsed> Python </TechUsed>
       
         <a href="https://github.com/jTCode2408/Intro-Python-II" title="github repo">
-         <img src={advGame_opt} alt='adventure game terminal screenshot'></img>
+         <img src={advGame_opt} alt='adventure game terminal screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -222,14 +222,14 @@ const Pieces = () => {
         <a href="https://jt-news.netlify.app/"
           class="project-link" 
           title="visit project">
-         <ProjectTitle>Newfeed</ProjectTitle>
+         <ProjectTitle>Newsfeed</ProjectTitle>
         
         </a>
           <TechUsed> JS/CSS/LESS </TechUsed>
         
         <a href="https://github.com/jTCode2408/Newsfeed-Components"
           class="github-link" title="github repo" >
-          <img src={news_opt} alt='newsfeed site screenshot'></img>
+          <img src={news_opt} alt='newsfeed site screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -256,7 +256,7 @@ const Pieces = () => {
           <TechUsed> ReatJS/CSS </TechUsed>
         
         <a href="https://github.com/jTCode2408/React-Github-User-Card" title="github repo">
-           <img src={GHCards} alt='newsfeed site screenshot'></img>
+           <img src={GHCards} alt='newsfeed site screenshot' className ="images"></img>
         </a>
         <ProjectInfo>
         <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">

@@ -3,7 +3,7 @@ import { breakpoints } from './components/helpers';
 /////APP styles////
 //Breakpoint mobile 470px
 //Kindle-800px
-//xs max-414
+//xs max-419
 //x/xs-375
 //ipad pro-834
 //ipad-768
@@ -16,7 +16,14 @@ export const AppHeader= styled.header`
   align-items:center;
   justify-content: center;
 color:#05668d;
-  height:33vh
+  height:33vh;
+
+  @media ${breakpoints.medium}{
+ 
+    max-width:100%;
+
+  }
+
 `
 
 //////// SOCIAL STYLES /////
@@ -64,6 +71,7 @@ align-items:center;
 text-orientation: upright;
 
 
+
  `
  export const NavSide=styled.div`
  font-family: 'Merienda One', cursive;
@@ -74,10 +82,10 @@ color:white;
 display: flex;
 justify-content:center;
 align-content:center;
-  bottom:4%;
-
-  writing-mode: vertical-lr;
+bottom:4%;
+writing-mode: vertical-lr;
 text-orientation: upright;
+
  `
 export const NavMenu =styled.nav`
 border:2px solid grey;
@@ -87,16 +95,25 @@ z-index: 9999999;
 bottom:4%;
 height:450px;
 width:21%;
+
 @media ${breakpoints.ipadPro} { 
   max-width:100%;
   align-content:center;
-width:40%;
+
 }
 
 @media ${breakpoints.kindle} { 
   max-width:100%;
   align-content:center;
+  width:30%;
+}
+
+@media ${breakpoints.medium}{
 width:40%;
+}
+
+@media ${breakpoints.xsMax}{
+  width:50%;
 }
 `
 
@@ -111,6 +128,15 @@ height:400px;
 bottom:2%;
 justify-content:space-around;
 align-content:center;
+
+@media ${breakpoints.kindle} { 
+  max-width:100%;
+  align-content:center;
+  width:30%;
+  
+}
+
+
 `
 
 export const NavItem =styled.li`
@@ -149,6 +175,13 @@ flex-direction:column;
 font-size:2.5rem;
 font-family: 'VT323', monospace;
 
+@media ${breakpoints.medium}{
+  max-width:100%;
+  margin:0;
+  width:80%;
+  margin:10%;
+}
+
 `
 
 export const AboutInfo = styled.div`
@@ -167,12 +200,29 @@ font-size:1.2rem;
 
 export const Me = styled.img`
   border-radius:15%;
+
+  @media ${breakpoints.medium}{
+    border-radius:50%;
+    height:auto;
+  }
+
+  @media ${breakpoints.mobile}{
+    max-width:100%;
+
+  }
   `
 
 export const ComputerHead = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-left:1%
+  margin-left:1%;
+
+  @media ${breakpoints.xs}{
+
+    justify-content:space-evenly;
+   margin:0;
+    border:2px solid green;
+  }
 `;
 
 export const ExitBar = styled.div`
@@ -180,13 +230,30 @@ export const ExitBar = styled.div`
   background-color: darkblue;
   justify-content:space-between;
   height:25px;
+
+  @media ${breakpoints.medium}{
+    max-width:100%;
+    width:99.5%;
+  }
+
+  
+
 `;
 
 export const Footer =styled.div`
 display: flex;
 background-color: darkgray;
 justify-content:space-between;
-height:30px
+height:30px;
+
+@media ${breakpoints.xs}{
+  border:2px solid blue;
+max-width:100%;
+width:90%;
+margin:0;
+}
+
+
 
 `
 export const Time=styled.div`
@@ -198,6 +265,14 @@ display:flex;
 justify-content:center;
 align-content:center;
 
+@media ${breakpoints.medium}{
+  max-width:100%;
+  width:15%;
+}
+
+@media ${breakpoints.xsMax}{
+ display:none;
+}
 `
 
 export const IconsBar = styled.div`
@@ -208,6 +283,21 @@ export const IconsBar = styled.div`
  margin-top:4px;
 margin-right:5px;
 width:7%;
+
+@media ${breakpoints.xsMax}{
+  
+  justify-content:space-evenly;
+  width:10%;
+
+ }
+
+ @media ${breakpoints.xs}{
+  justify-content:space-evenly;
+  width:10%;
+
+  margin-right:10px;
+
+ }
 `;
 
 export const IconsDiv = styled.div`
@@ -216,7 +306,13 @@ export const IconsDiv = styled.div`
   justify-content: space-around;
   align-items:center;
   width:40%;
- 
+
+  @media ${breakpoints.mobile}{
+    max-width:100%;
+    width:60%;
+    justify-content: space-around;
+    
+  }
 `;
 
 export const BrowseIcon = styled.div`
@@ -231,8 +327,6 @@ color: rgba(235, 235, 235, 0.774);
 width:55%;
 font-size: 1.7rem;
 font-family: 'VT323', monospace;
-
-
 
 `
 
@@ -265,12 +359,29 @@ export const Button= styled.button`
     @media ${breakpoints.kindle} { 
       width:10%;
     }
+
+    @media ${breakpoints.xsMax}{
+      width:15%;
+     
+    }
   `
   
 
 ///////SKILLS PAGE STYLES////  
 export const SkillsPage = styled.div`
 background-color:#05668d;
+
+@media ${breakpoints.medium}{
+  max-width:100%;
+width:99%;
+margin:0;
+}
+
+@media ${breakpoints.xs}{
+  
+max-width:100%;
+}
+
 `
 export const SkillsCont = styled.div`
   display: flex;
@@ -300,7 +411,26 @@ export const SkillsCont = styled.div`
     max-width:100%;
     align-content:center;
     margin-top:10%;
+    height:auto;
 
+  }
+
+  @media ${breakpoints.medium}{
+    max-width:100%;
+height:auto;
+   display: block;
+   margin:0;
+   margin-top:10%;
+  }
+
+  @media ${breakpoints.xsMax}{
+    margin-top:15%;
+  }
+  @media ${breakpoints.xs}{
+   
+  max-width:100%;
+  margin:0;
+  margin-top:15%;
   }
 
 
@@ -320,6 +450,8 @@ justify-content:center;
 align-content:center;
 margin:0 auto;
 font-family: 'VT323', monospace;
+
+
 `
 export const SkillsDiv = styled.div`
   display: flex;
@@ -329,20 +461,25 @@ export const SkillsDiv = styled.div`
   list-style-type: none;
 
   @media ${breakpoints.ipadPro} { 
-  
     max-width:100%;
     align-content:center;
 
   }
   @media ${breakpoints.kindle} { 
-  
     max-width:100%;
     align-content:center;
     padding:none;
     margin:none;
 
   }
-
+@media ${breakpoints.medium}{
+  display:block;
+margin:0;
+}
+@media ${breakpoints.xs}{
+border:2px solid red;
+margin:0;
+  }
 `;
 
 export const SkillsBottom=styled.div`
@@ -375,7 +512,6 @@ text-decoration:underline;
 
 export const ProjectsPage=styled.div`
 background-color:#05668d;
-border:2px solid red;
 max-width:100%;
 
 
@@ -384,15 +520,24 @@ export const PiecesCont = styled.div`
 margin:3%;
 display:flex;
 flex-wrap:wrap;
-border 15px solid grey;
+border: 15px solid grey;
 background-color:white;
 margin-bottom:0;
+
+
+@media ${breakpoints.mainBreak} { 
+  max-width: 100%;
+  margin:0;
+  max-width:100%;
+  align-content:center;
+}
+
 @media ${breakpoints.ipadPro} { 
   max-width: 100%;
   flex-direction:column;
   align-content:center;
- 
   margin:0;
+  
 }
 
 @media ${breakpoints.kindle} { 
@@ -400,7 +545,17 @@ margin-bottom:0;
   flex-direction:column;
   align-content:center;
   margin-top:10%;
+  
 }
+
+@media ${breakpoints.medium}{
+  border: 10px solid grey;
+  max-width:100%;
+}
+@media ${breakpoints.xsMax}{
+  margin-top:15%;
+}
+
 `
 
 
@@ -423,13 +578,15 @@ flex-direction:column;
 background-color:white;
 width:45%;
 margin:2%;
-align-items:center
-
+align-items:center;
+justify-content:center;
 
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
   margin:0;
   width:100%;
+  align-items:center;
+
 }
 
 @media ${breakpoints.ipadPro} { 
@@ -448,6 +605,12 @@ align-items:center
 
   align-items:center
 }
+
+@media ${breakpoints.medium}{
+  
+  max-width:100%;
+  width:100%;
+}
 `
 
 export const ProjectTitle = styled.div`
@@ -464,6 +627,7 @@ text-transform:uppercase;
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
   margin:0;
+ 
 }
 `
 
@@ -478,7 +642,6 @@ margin-bottom:0;
 
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
-
   margin:0;
 }
 

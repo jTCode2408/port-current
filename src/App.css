@@ -52,16 +52,22 @@ li{
 
 ul{
   
+
+}
+@media (max-width: 520px){
+  .images{
+ border-radius: 50%;
+  }
 }
 
 img:hover{
   opacity: 0.3;
-
+align-items: center;
  
 }
 @media (max-width:1085px) {
   img{
-  
+    align-items: center;
     max-width: 100%;
   }
    
@@ -125,6 +131,24 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 
   }
    
+}
+
+@media (max-width: 520px){
+  .postit{
+    max-width: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+
+  }
+  .postit ul{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin:0;
+    font-size: 1.5rem;
+    padding:0;
+   
+  }
 }
  
 
