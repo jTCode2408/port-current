@@ -19,10 +19,35 @@ color:#05668d;
   height:33vh;
 
   @media ${breakpoints.medium}{
- 
     max-width:100%;
+    height:auto;
+  }
+
+  @media ${breakpoints.xsMax}{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    height:auto;
 
   }
+
+  @media ${breakpoints.small}{
+    margin:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+`
+
+export const Typing = styled.div`
+max-width:100%;
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: center;
+margin:0;
+
 
 `
 
@@ -133,10 +158,7 @@ align-content:center;
   max-width:100%;
   align-content:center;
   width:30%;
-  
 }
-
-
 `
 
 export const NavItem =styled.li`
@@ -218,10 +240,9 @@ export const ComputerHead = styled.div`
   margin-left:1%;
 
   @media ${breakpoints.xs}{
-
     justify-content:space-evenly;
    margin:0;
-    border:2px solid green;
+   
   }
 `;
 
@@ -237,7 +258,6 @@ export const ExitBar = styled.div`
   }
 
   
-
 `;
 
 export const Footer =styled.div`
@@ -247,13 +267,9 @@ justify-content:space-between;
 height:30px;
 
 @media ${breakpoints.xs}{
-  border:2px solid blue;
 max-width:100%;
-width:90%;
 margin:0;
 }
-
-
 
 `
 export const Time=styled.div`
@@ -294,7 +310,6 @@ width:7%;
  @media ${breakpoints.xs}{
   justify-content:space-evenly;
   width:10%;
-
   margin-right:10px;
 
  }
@@ -378,7 +393,6 @@ margin:0;
 }
 
 @media ${breakpoints.xs}{
-  
 max-width:100%;
 }
 
@@ -407,7 +421,6 @@ export const SkillsCont = styled.div`
   }
 
   @media ${breakpoints.kindle} { 
-  
     max-width:100%;
     align-content:center;
     margin-top:10%;
@@ -427,7 +440,6 @@ height:auto;
     margin-top:15%;
   }
   @media ${breakpoints.xs}{
-   
   max-width:100%;
   margin:0;
   margin-top:15%;
@@ -477,13 +489,11 @@ export const SkillsDiv = styled.div`
 margin:0;
 }
 @media ${breakpoints.xs}{
-border:2px solid red;
 margin:0;
   }
 `;
 
 export const SkillsBottom=styled.div`
-
 display:flex;
 font-size:4rem;
 margin:5%;
@@ -513,7 +523,6 @@ text-decoration:underline;
 export const ProjectsPage=styled.div`
 background-color:#05668d;
 max-width:100%;
-
 
 `
 export const PiecesCont = styled.div`
@@ -549,7 +558,7 @@ margin-bottom:0;
 }
 
 @media ${breakpoints.medium}{
-  border: 10px solid grey;
+border:5px solid grey;
   max-width:100%;
 }
 @media ${breakpoints.xsMax}{
@@ -591,7 +600,6 @@ justify-content:center;
 
 @media ${breakpoints.ipadPro} { 
   max-width: 100%;
-
   flex-direction:column;
  width:100%;
   margin:0;
@@ -602,19 +610,20 @@ justify-content:center;
   max-width: 100%;
   flex-direction:column;
  width:100%;
-
   align-items:center
 }
 
 @media ${breakpoints.medium}{
-  
+  margin:0;
   max-width:100%;
   width:100%;
 }
+
 `
 
 export const ProjectTitle = styled.div`
 margin-bottom:5%;
+margin-top:5%;
 font-size:2rem;
 text-decoration: underline;
 width:100%;
@@ -627,8 +636,15 @@ text-transform:uppercase;
 @media ${breakpoints.mainBreak} { 
   max-width: 100%;
   margin:0;
- 
+  margin-top:5%;
 }
+
+@media ${breakpoints.medium}{
+  margin-top:5%;
+  max-width: 100%;
+}
+
+
 `
 
 export const ProjectInfo = styled.div`
