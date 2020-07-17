@@ -78,8 +78,8 @@ export const GHCardsInfo= <ul>
 
 const sizes = {
 galaxy: '360px',
-xs:'375px',
-xsMax: '414px',
+xs:'376px',
+xsMax: '420px',
 mobile: '470px',
 medium:'520px',
 ipadPro: '834px',
@@ -92,15 +92,15 @@ mainBreak:`1000px`
 
 
 export const breakpoints ={
-galaxy: `(min-width: ${sizes.galaxy})`,
-xs: `(min-width: ${sizes.xs})`,
-xsMax: `(min-width: ${sizes.xsMax})`,
-mobile: `(min-width: ${sizes.mobile})`,
-medium:`(min-width: ${sizes.medium})`,
-ipad: `(min-width: ${sizes.ipad})`,
-ipadPro: `(min-width: ${sizes.ipadPro})`,
-kindle:`(min-width: ${sizes.kindle})`,
-mainBreak:`(min-width:${sizes.mainBreak})`
+galaxy: `(max-width: ${sizes.galaxy})`,
+xs: `(max-width: ${sizes.xs})`,
+xsMax: `(max-width: ${sizes.xsMax})`,
+mobile: `(max-width: ${sizes.mobile})`,
+medium:`(max-width: ${sizes.medium})`,
+ipad: `(max-width: ${sizes.ipad})`,
+ipadPro: `(max-width: ${sizes.ipadPro})`,
+kindle:`(max-width: ${sizes.kindle})`,
+mainBreak:`(max-width:${sizes.mainBreak} )`
 }
 
 
