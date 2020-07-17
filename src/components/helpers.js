@@ -79,6 +79,7 @@ export const GHCardsInfo= <ul>
 const sizes = {
 galaxy: '360px',
 xs:'376px',
+small:'390px',
 xsMax: '420px',
 mobile: '470px',
 medium:'520px',
@@ -94,6 +95,7 @@ mainBreak:`1000px`
 export const breakpoints ={
 galaxy: `(max-width: ${sizes.galaxy})`,
 xs: `(max-width: ${sizes.xs})`,
+small: `(max-width: ${sizes.small})`,
 xsMax: `(max-width: ${sizes.xsMax})`,
 mobile: `(max-width: ${sizes.mobile})`,
 medium:`(max-width: ${sizes.medium})`,
