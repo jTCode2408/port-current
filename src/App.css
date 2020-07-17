@@ -177,6 +177,16 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   bottom: 30px;
  }
 
+ @media (hover:none), (hover:on-demand) {
+  nav a:hover{ /* suppress hover effect on devices that don't support hover fully*/
+      
+  }
+  .email-flip-cont, .email-flipper, .email-front, .front-text, .email-front-text{
+    display:none;
+  }
+}
+
+
 
 /* entire container, keeps perspective */
 .email-flip-cont {
