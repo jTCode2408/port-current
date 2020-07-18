@@ -19,6 +19,7 @@
     "nodemailer-mailgun-transport": "^2.0.0",
     "react": "^16.13.1",
     "react-custom-scroller": "^1.0.0",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-moment": "^0.9.7",
     "react-pdf": "^4.1.0",
