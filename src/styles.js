@@ -1,14 +1,6 @@
 import styled from "styled-components";
 import { breakpoints } from './components/helpers';
 /////APP styles////
-//Breakpoint mobile 470px
-//Kindle-800px
-//xs max-419
-//x/xs-375
-//ipad pro-834
-//ipad-768
-//galaxy S-360
-
 export const AppHeader= styled.header` 
   background-color: black;
   display: flex;
@@ -94,8 +86,6 @@ align-items:center;
  z-index: 9999999;
  writing-mode: vertical-lr;
 text-orientation: upright;
-
-
 
  `
  export const NavSide=styled.div`
@@ -256,8 +246,6 @@ export const ExitBar = styled.div`
     max-width:100%;
     width:99.5%;
   }
-
-  
 `;
 
 export const Footer =styled.div`
@@ -293,7 +281,6 @@ align-content:center;
 
 export const IconsBar = styled.div`
  color:grey;
- 
  display:flex;
  justify-content:space-around;
  margin-top:4px;
@@ -429,8 +416,8 @@ export const SkillsCont = styled.div`
   }
 
   @media ${breakpoints.medium}{
-    max-width:100%;
-height:auto;
+   max-width:100%;
+   height:auto;
    display: block;
    margin:0;
    margin-top:10%;
@@ -568,7 +555,6 @@ border:5px solid grey;
 
 `
 
-
 export const BrowserHead =styled.div`
 display:flex;
 justify-content: space-between;
@@ -646,8 +632,6 @@ text-transform:uppercase;
   margin-top:5%;
   max-width: 100%;
 }
-
-
 `
 
 export const ProjectInfo = styled.div`
@@ -682,7 +666,6 @@ text-transform:uppercase;
 
 `
 
-
 export const Modal = styled.div`
 width:100%;
 &:hover{
@@ -690,7 +673,6 @@ width:100%;
 }
 `
 export const ButtonDiv = styled.div`
-
 display:flex;
 align-items:center;
 justify-content:center;
@@ -739,7 +721,6 @@ margin-bottom:0;
 `
 
 export const CardHolder=styled.div`
-
 display:flex;
 flex-wrap:wrap;
 align-items:center;
@@ -771,7 +752,7 @@ background-color:rgba(0,0,0,.15);
 color:white;
 font-size:1.3rem;
 font-family: 'VT323', monospace;
-align-content:center
+align-content:center;
 `
 
 ///////RESUME STYLES//////////

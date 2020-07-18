@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons';
-import {faTwitter, faLinkedin, faGithub, faGit} from  '@fortawesome/free-brands-svg-icons';
+import {faTwitter, faLinkedin, faGithub} from  '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactTitle, ContactCont } from '../styles'
+import { ComputerHead, IconsBar, ExitBar, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactCont } from '../styles'
 import Navigation from './nav';
 
 const Contact =()=>{
-
 
     return(
         <>
@@ -19,20 +18,17 @@ const Contact =()=>{
             <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
-        
+
          </ExitBar>
         
-
        <ContactCont> 
         <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
         
             </ComputerHead>
        
-
             <CardsCont>
             <ContactHead>
-            
             <ContactText>
           
             Have an idea or a concept that really excites you? Let's chat!
@@ -140,17 +136,12 @@ const Contact =()=>{
     <span class="bottom-suit">&hearts;</span>
     <span class="bottom-rank">A</span>
     </div>
-
-
 </div>
 
-
             </div>
-
             </div>{/*flipper cont div end */}
             </div>{/*gh flip cont div end */}
             <div className="empty-card"></div>
-            
             
             {/*TWITTER CARD START  */}
             <div className="twitter-flip-cont">
