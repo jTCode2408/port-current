@@ -48,7 +48,7 @@ const TouchContact =()=>{
 
 
           
-                <div className = "email-back">
+                <div className = "touch-email">
                    
   <div className="back-text">
  <div className = "back-top">
@@ -71,7 +71,7 @@ const TouchContact =()=>{
             
           {/*LINKED CARD START*/}
                  
-                <div className="linked-back">
+                <div className="touch-linked">
 
                    
   <div className="back-text">
@@ -97,9 +97,7 @@ const TouchContact =()=>{
          
           {/*GH CARD START */}
      
-
-
-<div className="gh-back">
+<div className="touch-gh">
    
 <div className="back-text">
  <div className = "back-top">
@@ -128,7 +126,7 @@ const TouchContact =()=>{
 
 
 
-<div className="twitter-back">
+<div className="touch-twitter">
 
   
   <div className="back-text">
