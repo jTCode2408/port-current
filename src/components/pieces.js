@@ -57,10 +57,8 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {SSInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
   </CloseButton>
 </Modal>
 
@@ -87,10 +85,8 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {GOLInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
   </CloseButton>
 </Modal>
 
@@ -116,10 +112,8 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {SpotifyInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
   </CloseButton>
 </Modal>
 
@@ -147,10 +141,9 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {RefugeeInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
+
   </CloseButton>
 </Modal>
 
@@ -175,10 +168,9 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {TodoInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
+
   </CloseButton>
 </Modal>
 
@@ -203,10 +195,8 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {AdvInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
   </CloseButton>
 </Modal>
 
@@ -236,10 +226,9 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {NewsInfo}
-<CloseButton>
-  <a onClick={close}>
+<CloseButton onClick={close}>
     &times;
-  </a>
+
   </CloseButton>
 </Modal>
 
@@ -263,15 +252,8 @@ const Pieces = () => {
 {close=>(
 <Modal>
  {GHCardsInfo}
- <CloseButton
- onClick={() => {
-
-   close();
- }}
->
-<a onClick={close}>
+ <CloseButton onClick={close}>
     &times;
-  </a>
 </CloseButton>
  
 </Modal>
