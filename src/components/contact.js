@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons';
-import {faTwitter, faLinkedin, faGithub, faGit} from  '@fortawesome/free-brands-svg-icons';
+import {faTwitter, faLinkedin, faGithub} from  '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactTitle, ContactCont } from '../styles'
+import { ComputerHead, IconsBar, ExitBar, CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactCont } from '../styles'
 import Navigation from './nav';
 
 const Contact =()=>{
-
 
     return(
         <>
@@ -19,27 +18,25 @@ const Contact =()=>{
             <FontAwesomeIcon icon={faWindowRestore} />
             <FontAwesomeIcon icon={faWindowClose} />
             </IconsBar>
-        
+
          </ExitBar>
         
-
        <ContactCont> 
         <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
-        
+          <h2> CONTACT </h2>  
             </ComputerHead>
        
-
             <CardsCont>
             <ContactHead>
-            
             <ContactText>
           
             Have an idea or a concept that really excites you? Let's chat!
-            
-           <ContactButton> <a href= "mailto:jasmine.terry91@gmail.com"> Contact Me </a></ContactButton>
+            {/* email encrypted for spam block help */}
+           <ContactButton> <a href= "mailto: &#106;&#97;&#115;&#109;&#105;&#110;&#101;&#46;&#116;&#101;&#114;&#114;&#121;&#57;&#49;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"> Contact Me </a></ContactButton>
            </ContactText>
            </ContactHead>
+          
 
         <CardHolder>
 
@@ -61,7 +58,7 @@ const Contact =()=>{
     <span class="top-rank">A</span>
     <span class="top-suit">&hearts;</span>
     </div>
-          <a className="mid-suit" href="mailto:jasmine.terry91@gmail.com" > <FontAwesomeIcon icon={faEnvelopeOpenText} size="6x" color="red" />
+          <a className="mid-suit" href="mailto: &#106;&#97;&#115;&#109;&#105;&#110;&#101;&#46;&#116;&#101;&#114;&#114;&#121;&#57;&#49;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" title="email" > <FontAwesomeIcon icon={faEnvelopeOpenText} size="6x" color="red" />
             </a>
          
 
@@ -96,7 +93,7 @@ const Contact =()=>{
     </div>
             <a
               href="https://www.linkedin.com/in/jasmineterry92"
-              className = "mid-suit"> <FontAwesomeIcon icon={faLinkedin} size="6x" color="red" /> </a>
+              className = "mid-suit" title="linkedin"> <FontAwesomeIcon icon={faLinkedin} size="6x" color="red" /> </a>
 
 
                <div className="back-bottom">
@@ -132,7 +129,7 @@ const Contact =()=>{
     <span class="top-suit">&hearts;</span>
     </div>
 
-          <a className = "mid-suit" href="https://Github.com/jTCode2408"> <FontAwesomeIcon icon={faGithub} size="6x" color="red"/>
+          <a className = "mid-suit" href="https://Github.com/jTCode2408" title="github"> <FontAwesomeIcon icon={faGithub} size="6x" color="red"/>
             </a>
 
 
@@ -140,17 +137,12 @@ const Contact =()=>{
     <span class="bottom-suit">&hearts;</span>
     <span class="bottom-rank">A</span>
     </div>
-
-
 </div>
 
-
             </div>
-
             </div>{/*flipper cont div end */}
             </div>{/*gh flip cont div end */}
             <div className="empty-card"></div>
-            
             
             {/*TWITTER CARD START  */}
             <div className="twitter-flip-cont">
@@ -173,7 +165,7 @@ const Contact =()=>{
     <span class="top-suit">&hearts;</span>
     </div>
    
-            <a class="mid-suit" href="https://twitter.com/jTCode2408"> <FontAwesomeIcon icon={faTwitter} size="6x" color="red" /> </a>
+            <a class="mid-suit" href="https://twitter.com/jTCode2408" title="twitter"> <FontAwesomeIcon icon={faTwitter} size="6x" color="red" /> </a>
     
     <div className="back-bottom">
     <span class="bottom-suit">&hearts;</span>

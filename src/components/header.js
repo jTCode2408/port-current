@@ -11,8 +11,8 @@ return (
         <Typing>
 <Typical steps={['Web Dev', 1000, 
 'Tech Writer', 1000,
-'Dog mom', 1000,
-'Music lover',1000,
+'Dog Mom', 1000,
+'Music Lover',1000,
 'Full Stack Dev', 1000,]}
 loop={1}
 wrapper="H1"
