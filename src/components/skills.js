@@ -3,7 +3,7 @@ import React from "react";
 import { Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  SkillsHead,SkillsDiv, SkillsNames, SkillsMain, SkillsTitle , SkillsCont, ComputerHead, IconsBar, ExitBar, SkillsPage, Footer, Button, StyledSocial, SocialList, SkillsBottom, BrowserHead } from '../styles'
+import {  ComputerHead, SkillsDiv, SkillsMain, SkillsTitle , SkillsCont,  IconsBar, ExitBar, SkillsPage, SkillsBottom } from '../styles'
 import Navigation from './nav';
 
 const Skills = () => {
@@ -19,13 +19,13 @@ const Skills = () => {
             </IconsBar>
          </ExitBar>
    
-        <BrowserHead>
+        <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
-          <h2> Specs </h2>  
-            </BrowserHead>
+          <h2> SPECS </h2>  
+            </ComputerHead>
 
         <SkillsCont>
-    <SkillsMain>Skills</SkillsMain>
+    <SkillsMain> Skills</SkillsMain>
 
       <SkillsDiv>
       <div class="hole first-hole"></div>
@@ -39,11 +39,11 @@ const Skills = () => {
             <li> CSS </li>
             <li> Styled Components </li>
             <li> ReactJS </li>
-            <li> Javascript </li>
+            <li> JavaScript </li>
             <li> Reactstrap </li>
             <li> Material UI </li>
             <li> Redux </li>  
-            <li> Typescript </li>
+            <li> TypeScript </li>
        
           
           </ul>

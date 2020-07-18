@@ -58,7 +58,7 @@ export const NewsInfo = <ul>
 
 export const GHCardsInfo= <ul> 
     <li> Github Cards is a single page application to display current Github followers.  </li>
-    <li> Solely responsible for implementation by calling and displaying data from github API.</li>
+    <li> Solely responsible for implementation by calling and displaying data from Github's API.</li>
 
 </ul>
 
@@ -72,6 +72,7 @@ galaxy: '360px',
 xs:'376px',
 small:'390px',
 xsMax: '420px',
+midBreak: '458px',
 mobile: '470px',
 medium:'520px',
 ipadPro: '834px',
@@ -88,6 +89,7 @@ galaxy: `(max-width: ${sizes.galaxy})`,
 xs: `(max-width: ${sizes.xs})`,
 small: `(max-width: ${sizes.small})`,
 xsMax: `(max-width: ${sizes.xsMax})`,
+midBreak: `(max-width: ${sizes.midBreak})`,
 mobile: `(max-width: ${sizes.mobile})`,
 medium:`(max-width: ${sizes.medium})`,
 ipad: `(max-width: ${sizes.ipad})`,

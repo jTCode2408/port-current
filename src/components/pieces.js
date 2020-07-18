@@ -1,9 +1,9 @@
 //'browser' projects page
-import React, {useState} from "react";
+import React from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar, Footer, Button, PiecesCont, PiecesHead, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, ProjectsPage } from '../styles';
+import {ComputerHead, IconsBar, ExitBar, PiecesCont, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, ProjectsPage } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
 import spotify from '../images/spotify.jpg';
 import refugees_opt from '../images/refugees_opt.png';
@@ -18,8 +18,6 @@ import Navigation from './nav';
 
 const Pieces = () => {
 
- 
-
   return (
 <>
 <ProjectsPage>
@@ -31,12 +29,11 @@ const Pieces = () => {
         <FontAwesomeIcon icon={faWindowClose} />
         </IconsBar> 
         </ExitBar>
-        <BrowserHead>
+        
+        <ComputerHead>
       <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
-    
-     
       <h2> PROJECTS</h2>
-        </BrowserHead>
+        </ComputerHead>
       
       <PiecesCont>
      
@@ -53,7 +50,7 @@ const Pieces = () => {
         </a>
      
         <ProjectInfo>
-       <Popup trigger = {<ButtonDiv><AboutButton   > What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+       <Popup trigger = {<ButtonDiv><AboutButton > What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {SSInfo}
@@ -99,7 +96,7 @@ const Pieces = () => {
 
         <ProjectCont>
         <a href="https://front-end-sss.now.sh/login" title="visit project">
-   <ProjectTitle>Symphinity</ProjectTitle>
+   <ProjectTitle> Symphinity </ProjectTitle>
    
         </a>
           <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
@@ -155,7 +152,7 @@ const Pieces = () => {
         <ProjectCont>
         <a href="https://reducer-todo-alpha.vercel.app/"
         title="visit project">
-         <ProjectTitle>ToDo App</ProjectTitle>
+         <ProjectTitle> To-Do App</ProjectTitle>
   
         </a>
           <TechUsed> ReactJS/Redux/CSS </TechUsed>
@@ -183,7 +180,7 @@ const Pieces = () => {
         <ProjectCont>
         <a href="https://github.com/jTCode2408/Intro-Python-II"
         title="visit project">
-         <ProjectTitle>Adventure Game</ProjectTitle>
+         <ProjectTitle> Adventure Game</ProjectTitle>
         </a>
           <TechUsed> Python </TechUsed>
       
@@ -240,7 +237,7 @@ const Pieces = () => {
         <ProjectCont>
         <a href="https://react-github-user-card.jasmineterry.vercel.app/" 
         title="visit project">
-         <ProjectTitle>Github Usercards</ProjectTitle>
+         <ProjectTitle>Github Cards</ProjectTitle>
         </a>
           <TechUsed> ReatJS/CSS </TechUsed>
         

@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
-import {Route, Link, Switch} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {Footer, Button, NavMenu, NavList, NavItem, NavSide, NavSideCont, Time} from '../styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faArchive, faFolder,  faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faHdd, faArchive, faFolder,  faToolbox, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = ()=>{
 const [open, setOpen] = useState(false);
 
 
 return(
-    <div className = "nav-cont">
-
+    <>
              {open &&
 
       <NavMenu>
@@ -34,7 +33,7 @@ return(
              <Time> {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </Time>
              </Footer>
 
-    </div>
+    </>
 
     
 

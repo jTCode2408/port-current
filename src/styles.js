@@ -225,9 +225,14 @@ export const Me = styled.img`
   `
 
 export const ComputerHead = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-left:1%;
+display:flex;
+justify-content: space-between;
+margin-left:2%;
+margin-right:2%;
+margin-bottom:5%;
+height:0px;
+font-size:3rem;
+max-width:100%;
 
   @media ${breakpoints.xs}{
     justify-content:space-evenly;
@@ -245,6 +250,11 @@ export const ExitBar = styled.div`
   @media ${breakpoints.medium}{
     max-width:100%;
     width:99.5%;
+  }
+
+  @media ${breakpoints.midBreak}{
+  
+    width:99%;
   }
 `;
 
@@ -300,6 +310,7 @@ width:7%;
   margin-right:10px;
 
  }
+
 `;
 
 export const IconsDiv = styled.div`
@@ -315,6 +326,8 @@ export const IconsDiv = styled.div`
     justify-content: space-around;
     
   }
+
+ 
 `;
 
 export const BrowseIcon = styled.div`
@@ -549,8 +562,15 @@ border:5px solid grey;
   max-width:100%;
 }
 @media ${breakpoints.xsMax}{
+ 
+  
   margin-top:15%;
   border:none;
+}
+@media ${breakpoints.midBreak}{
+  
+  
+  max-width:100%;
 }
 
 `
@@ -607,6 +627,17 @@ justify-content:center;
   width:100%;
 }
 
+@media ${breakpoints.midBreak}{
+  border: 2px solid grey;
+  margin:0;
+  width:99%;
+}
+
+@media ${breakpoints.xsMax}{
+  margin:0;
+  max-width:100%;
+  width:99%;
+}
 `
 
 export const ProjectTitle = styled.div`
