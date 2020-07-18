@@ -258,15 +258,11 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 }
 
 .touch-email, .touch-gh, .touch-twitter, .touch-linked{
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-	top: 0;
-  left: 0;
   width: 320px;
-  height: 480px;
+  height: 450px;
   background-color: white;
   border-radius:5px;
+ 
 }
 
 /* LINKEDIN ------- entire container, keeps perspective */
@@ -333,7 +329,6 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
 /* back, initially hidden pane */
 .linked-back {
   transform: rotateY(180deg);
- 
   background-repeat: no-repeat;
   background-size: contain;
 }

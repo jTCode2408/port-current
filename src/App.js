@@ -54,7 +54,8 @@ const detect_touch=()=>{
       </Route>
 
       <Route path ='/contact'>
-    {detect_touch()}
+    {detect_touch()} 
+    
       </Route>
 
 
