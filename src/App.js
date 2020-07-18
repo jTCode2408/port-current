@@ -13,7 +13,7 @@ import Header from './components/header';
 import TouchContact from './components/touchContact';
 
 function App() {
-  const withClippy = useClippy('Clippy') 
+  const withClippy = useClippy('Clippy'); 
   function touch_screen() { 
     return ( 'ontouchstart' in window ) ||  
            ( navigator.maxTouchPoints > 0 ) || 
