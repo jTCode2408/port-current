@@ -45,7 +45,7 @@ const TouchContact =()=>{
 
           {/*EMAIL CARD START*/}
          
-<div className="email-front-text"> Email</div>
+
 
           
                 <div className = "email-back">
@@ -70,10 +70,6 @@ const TouchContact =()=>{
             <div className="empty-card"></div>
             
           {/*LINKED CARD START*/}
-            
-            
-<span className="linked-front-text"> LinkedIn</span>
-      
                  
                 <div className="linked-back">
 
@@ -101,7 +97,7 @@ const TouchContact =()=>{
          
           {/*GH CARD START */}
      
-<span className="gh-front-text"> Github</span>
+
 
 <div className="gh-back">
    
@@ -129,16 +125,8 @@ const TouchContact =()=>{
             
 
             {/*TWITTER CARD START  */}
-            <div className="twitter-flip-cont">
-              
-              <div className="twitter-flipper">
-                
-<div className="twitter-front"> 
 
-<div className="front-text">
-<span className="twitter-front-text"> Twitter</span>
-</div>
-</div>
+
 
 <div className="twitter-back">
 
@@ -157,8 +145,7 @@ const TouchContact =()=>{
     </div>
             </div>
             </div>
-            </div>{/* flipper cont div end */}
-            </div>{/*twitter flip cont div end */}
+            {/*twitter flip cont div end */}
  
           
         </CardHolder>
