@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from './components/main';
 import {Route, Switch} from 'react-router-dom';
+import {isMobile} from 'react-device-detect';
 import Skills from './components/skills';
 import Pieces from './components/pieces';
 import Contact from './components/contact';
@@ -14,18 +15,14 @@ import TouchContact from './components/touchContact';
 
 function App() {
   const withClippy = useClippy('Clippy'); 
-  function touch_screen() { 
-    return ( 'ontouchstart' in window ) ||  
-           ( navigator.maxTouchPoints > 0 ) || 
-           ( navigator.msMaxTouchPoints > 0 ); 
-} 
+  
 
 const detect_touch=()=>{
-  if (touch_screen()){
-  return <Contact/>
+  if (isMobile){
+  return <TouchContact/>
     
   } else {
-    return <TouchContact/>
+    return <Contact/>
   }
 
 }

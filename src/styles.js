@@ -563,6 +563,7 @@ border:5px solid grey;
 }
 @media ${breakpoints.xsMax}{
   margin-top:15%;
+  border:none;
 }
 
 `
@@ -603,14 +604,15 @@ justify-content:center;
   flex-direction:column;
  width:100%;
   margin:0;
-  align-items:center
+  align-items:center;
 }
 
 @media ${breakpoints.kindle} { 
   max-width: 100%;
   flex-direction:column;
  width:100%;
-  align-items:center
+  align-items:center;
+  margin:0;
 }
 
 @media ${breakpoints.medium}{
@@ -640,6 +642,7 @@ text-transform:uppercase;
 }
 
 @media ${breakpoints.medium}{
+  margin:0;
   margin-top:5%;
   max-width: 100%;
 }

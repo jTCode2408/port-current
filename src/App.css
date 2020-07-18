@@ -265,7 +265,7 @@ background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 
   left: 0;
   width: 320px;
   height: 480px;
-  backface-visibility: hidden;
+  background-color: white;
   border-radius:5px;
 }
 

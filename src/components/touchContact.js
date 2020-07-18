@@ -44,9 +44,6 @@ const TouchContact =()=>{
         <CardHolder>
 
           {/*EMAIL CARD START*/}
-         
-
-
           
                 <div className = "touch-email">
                    
