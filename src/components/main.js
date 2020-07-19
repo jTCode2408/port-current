@@ -23,7 +23,7 @@ const Main=()=> {
       </BrowseIcon> {/*browser div end */}
       <SkillsIcon>
           <Link to = '/specs'>  <FontAwesomeIcon size="2x" icon={faToolbox} /> 
-            Sepcs  </Link>
+            Specs  </Link>
             
       </SkillsIcon> {/*skills div end */}
       <ResumeIcon>
