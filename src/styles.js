@@ -747,8 +747,9 @@ background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')
 display:flex;
 flex-wrap:wrap;
 margin:5%;
-margin-top:0;
+margin-top:8%;
 margin-bottom:0;
+
 `
 
 export const CardHolder=styled.div`
