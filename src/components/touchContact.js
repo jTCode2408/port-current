@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faEnvelopeOpenText,} from '@fortawesome/free-solid-svg-icons';
 import {faTwitter, faLinkedin, faGithub} from  '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ComputerHead, IconsBar, ExitBar,  CardsCont,CardHolder, ContactButton, ContactHead, ContactText, ContactCont } from '../styles'
+import { ComputerHead, IconsBar, ExitBar,  TouchCont,CardHolder, ContactButton, ContactHead, ContactText, ContactCont } from '../styles'
 import Navigation from './nav';
 
 const TouchContact =()=>{
@@ -26,11 +26,11 @@ const TouchContact =()=>{
        <ContactCont> 
         <ComputerHead>
           <Link to= '/'><h2> <FontAwesomeIcon icon={faHdd}/> Desktop </h2> </Link>
-        
+          <h2> CONTACT </h2> 
             </ComputerHead>
        
 
-            <CardsCont>
+            <TouchCont>
             <ContactHead>
             
             <ContactText>
@@ -145,7 +145,7 @@ const TouchContact =()=>{
  
           
         </CardHolder>
-      </CardsCont>{/*contact cont div end */}
+      </TouchCont>{/*contact cont div end */}
       </ContactCont>
       <Navigation/>
       
