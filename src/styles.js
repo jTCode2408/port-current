@@ -789,12 +789,14 @@ align-content:center;
 ///////RESUME STYLES//////////
 export const ResumeCont =styled.div`
 background-color:#05668d;
+border:none;
 `
 
 export const ResumeDiv = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
+background-color:#05668d;
 margin:0 auto;
-
+margin-bottom:2px;
 `
