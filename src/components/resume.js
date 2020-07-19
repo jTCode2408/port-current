@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont } from '../styles'
-import resumeSS from '../images/resumeSS.png';
+import resumeSS2 from '../images/resumeSS2.png';
 import Navigation from './nav';
 
 const Resume = () => {
@@ -30,7 +30,7 @@ const Resume = () => {
 
              <ResumeDiv>
                {/*TODO: replace with PDF*/}
-               <img src={resumeSS} alt="jasmine terry resume"></img>
+               <img src={resumeSS2} alt="jasmine terry resume"></img>
            
 
         </ResumeDiv>
