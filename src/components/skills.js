@@ -70,7 +70,8 @@ const Skills = () => {
         <div className = 'postit'>
           <SkillsTitle> General: </SkillsTitle>
           <ul>
-            <li> Git </li>
+            <li> Github </li>
+            <li> Gitbash </li>
             <li> REST APIs </li>
             <li> Slack </li>
             <li> Code review </li>
