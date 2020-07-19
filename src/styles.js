@@ -759,7 +759,7 @@ background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')
 display:flex;
 flex-wrap:wrap;
 margin:5%;
-margin-top:10%;
+margin-top:15%;
 margin-bottom:0;
 
 `
