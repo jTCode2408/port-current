@@ -700,7 +700,7 @@ text-transform:uppercase;
 export const Modal = styled.div`
 width:100%;
 &:hover{
-  color:rgb(1, 109, 109);
+  color:#05668d;
 }
 `
 export const ButtonDiv = styled.div`
@@ -747,7 +747,7 @@ background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg')
 display:flex;
 flex-wrap:wrap;
 margin:5%;
-margin-top:8%;
+margin-top:5%;
 margin-bottom:0;
 
 `
