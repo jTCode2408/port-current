@@ -253,8 +253,8 @@ export const ExitBar = styled.div`
   }
 
   @media ${breakpoints.midBreak}{
-  
-    width:99%;
+    max-width:100%;
+    width:99.5%;
   }
 `;
 
@@ -748,6 +748,18 @@ display:flex;
 flex-wrap:wrap;
 margin:5%;
 margin-top:8%;
+margin-bottom:0;
+
+`
+
+export const TouchCont=styled.div`
+background: #0e8b44 url('https://bfa.github.io/solitaire-js/img/green_felt.jpg');
+   background-size: cover;
+   background-position: center;
+display:flex;
+flex-wrap:wrap;
+margin:5%;
+margin-top:10%;
 margin-bottom:0;
 
 `
