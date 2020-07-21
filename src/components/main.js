@@ -44,8 +44,8 @@ const Main=()=> {
              <AboutInfo>
                <Background>
                <h3> About Me: </h3>
-               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Insititute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning, then attended a coding bootcamp to learn Full-Stack development techniques.
-                 When not fixing (or creating, I can be honset) a bug in code; I'm with my dog at the park or hiking, watching basketball or The Office, listening to music, or eating. </p>
+               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Institute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning, then attended a coding bootcamp to learn Full-Stack development techniques.
+                 When not fixing (or creating, I can be honest) a bug in code; I'm with my dog at the park or hiking, watching basketball or The Office, listening to music, or eating. </p>
                </Background>
                <Services>
         <h3>Services: </h3>
