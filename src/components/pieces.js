@@ -3,7 +3,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {ComputerHead, IconsBar, ExitBar, PiecesCont, ProjectInfo, ProjectTitle, TechUsed, ProjectCont, BrowserHead, Modal, CloseButton, AboutButton,ButtonDiv, ProjectsPage } from '../styles';
+import {ComputerHead, IconsBar, ExitBar, PiecesCont, ProjectInfo, ProjectTitle, TechUsed, ProjectCont,  Modal, CloseButton, AboutButton,ButtonDiv, ProjectsPage } from '../styles';
 import GOL_opt from '../images/GOL_opt.png';
 import spotify from '../images/spotify.jpg';
 import refugees_opt from '../images/refugees_opt.png';
@@ -268,7 +268,7 @@ const Pieces = () => {
       </ProjectsPage>
    <Navigation/>
   
-    </> //placement fragment end
+    </> 
   );
 };
 

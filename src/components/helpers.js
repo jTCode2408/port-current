@@ -22,7 +22,7 @@ export const GOLInfo = <ul>
 export const SpotifyInfo = <ul> 
     <li> Symphinity is an application to mimic a Spotify song suggester feature.
     </li>
-    <li> Allows users to visualize song features, add songs to favorites list and receive a list of recommendations, based on their favorites. </li>
+    <li> Allows users to visualize song features, add songs to favorites list and receive a list of recommendations. </li>
     <li> Contributed to cross functional team of front-end, back-end, data science, and machine learning engineers. 
      </li>
      <li> Solely responsible for user registration, dashboard, and recommeneded songs list components by pulling data from an API created by back end team member. 
