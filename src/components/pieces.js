@@ -234,7 +234,7 @@ const Pieces = () => {
         </ProjectInfo>
         </ProjectCont>{/*NEWSFEED project end */}
 
-        <ProjectCont>
+        <ProjectCont> {/*TODO: REPLACE GH CARDS WITH PORTFOLIO */}
         <a href="https://react-github-user-card.jasmineterry.vercel.app/" 
         title="visit project">
          <ProjectTitle>Github Cards</ProjectTitle>
