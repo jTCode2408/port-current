@@ -28,5 +28,7 @@ https://jasmineterry92.com
 
 
 # Living project, always changing and updating!
+
 **Todo: code cleanup, add scroll in window for projects display, polish styling more!
-**Tecnical hWriting page coming soon!
+
+**Technical Writing page coming soon!
