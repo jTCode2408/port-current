@@ -29,8 +29,6 @@ const detect_touch=()=>{
 
 }
 
-
-
   return (
     <Switch>
     <div className="App">

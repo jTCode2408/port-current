@@ -56,9 +56,9 @@ export const NewsInfo = <ul>
      </li>
 </ul> 
 
-export const GHCardsInfo= <ul> 
-    <li> Github Cards is a single page application to display current Github followers.  </li>
-    <li> Solely responsible for implementation by calling and displaying data from Github's API.</li>
+export const PortInfo = <ul> 
+    <li> My portfolio built from scratch!  </li>
+    <li> Solely responsible for creation of all pages, planning, functionality, styling, and deployment. </li>
 
 </ul>
 
