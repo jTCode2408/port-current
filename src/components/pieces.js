@@ -10,9 +10,9 @@ import refugees_opt from '../images/refugees_opt.png';
 import news_opt from '../images/news_opt.jpg';
 import todo from '../images/todo.png';
 import SSDash from '../images/SSDash.png';
-import GHCards from '../images/GHCards.jpg';
 import advGame_opt from '../images/advGame_opt.jpg';
-import {SSInfo, GOLInfo, AdvInfo, GHCardsInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
+import portSS from '../images/portSS.jpg';
+import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
 import Popup from 'reactjs-popup';
 import Navigation from './nav';
 
@@ -202,6 +202,33 @@ const Pieces = () => {
           
         </ProjectInfo>
         </ProjectCont>{/*Adv game project end */}
+        
+        <ProjectCont> {/*TODO: REPLACE GH CARDS WITH PORTFOLIO */}
+        <a href="https://jasmineterry92.com" 
+        title="visit project">
+         <ProjectTitle> Portfolio </ProjectTitle>
+        </a>
+          <TechUsed> ReactJS/Styled Components </TechUsed>
+        
+        <a href="https://github.com/jTCode2408/port-current" title="github repo">
+           <img src={portSS} alt='newsfeed site screenshot' className ="images"></img>
+        </a>
+        <ProjectInfo>
+        <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {PortInfo}
+ <CloseButton onClick={close}>
+    &times;
+</CloseButton>
+ 
+</Modal>
+
+)}
+       </Popup>
+        </ProjectInfo>
+        </ProjectCont> {/*portfolio project end */}
+      
 
 {/*TODO IDEA: add slider/carosel/next page to view more project */}
 
@@ -234,34 +261,6 @@ const Pieces = () => {
         </ProjectInfo>
         </ProjectCont>{/*NEWSFEED project end */}
 
-        <ProjectCont>
-        <a href="https://react-github-user-card.jasmineterry.vercel.app/" 
-        title="visit project">
-         <ProjectTitle>Github Cards</ProjectTitle>
-        </a>
-          <TechUsed> ReatJS/CSS </TechUsed>
-        
-        <a href="https://github.com/jTCode2408/React-Github-User-Card" title="github repo">
-           <img src={GHCards} alt='newsfeed site screenshot' className ="images"></img>
-        </a>
-        <ProjectInfo>
-        <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
-{close=>(
-<Modal>
- {GHCardsInfo}
- <CloseButton onClick={close}>
-    &times;
-</CloseButton>
- 
-</Modal>
-
-)}
- 
-       </Popup>
-      
-        </ProjectInfo>
-        </ProjectCont> {/*GH CARDS project end */}
-      
       {/* pieces div holder end --- pieces cont end below*/}
       
       </PiecesCont> 
