@@ -20,9 +20,7 @@ export const GOLInfo = <ul>
     </ul>
 
 export const SpotifyInfo = <ul> 
-    <li> Symphinity is an application to mimic a Spotify song suggester feature.
-    </li>
-    <li> Allows users to visualize song features, add songs to favorites list and receive a list of recommendations. </li>
+    <li> Symphinity allows users to visualize song features, add songs to favorites list and receive a list of recommendations. </li>
     <li> Contributed to cross functional team of front-end, back-end, data science, and machine learning engineers. 
      </li>
      <li> Solely responsible for user registration, dashboard, and recommeneded songs list components by pulling data from an API created by back end team member. 
@@ -57,12 +55,22 @@ export const NewsInfo = <ul>
 </ul> 
 
 export const PortInfo = <ul> 
-    <li> My portfolio built from scratch!  </li>
+    <li> My portfolio built from scratch.  </li>
     <li> Solely responsible for creation of all pages, planning, functionality, styling, and deployment. </li>
 
 </ul>
 
+export const QuizInfo= <ul>
+<li> 'Guess the quotes' quiz for The Office fans.</li>
+<li> Solely responsible for implementation of quiz, creating questions, styling, and deployment </li>
 
+</ul>
+
+export const audioPlayerInfo= <ul>
+<li> Throwback audio player to play songs and visualization.</li>
+<li> Responsible for implementation of music player, styling, and deployment </li>
+
+</ul>
 
 
 ////////MEDIA QUERY SIZES//////
