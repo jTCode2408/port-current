@@ -12,7 +12,9 @@ import todo from '../images/todo.png';
 import SSDash from '../images/SSDash.png';
 import advGame_opt from '../images/advGame_opt.jpg';
 import portSS from '../images/portSS.jpg';
-import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo} from './helpers'
+import dmQuiz from '../images/dmQuiz.jpg';
+import audioPlayer from '../images/js-audio.jpg';
+import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo, QuizInfo, audioPlayerInfo} from './helpers'
 import Popup from 'reactjs-popup';
 import Navigation from './nav';
 
@@ -203,7 +205,61 @@ const Pieces = () => {
         </ProjectInfo>
         </ProjectCont>{/*Adv game project end */}
         
-        <ProjectCont> {/*TODO: REPLACE GH CARDS WITH PORTFOLIO */}
+        <ProjectCont> 
+        <a href="https://dunder-mifflin-quiz.vercel.app" 
+        title="visit project">
+         <ProjectTitle> 'The Office' Quiz </ProjectTitle>
+        </a>
+          <TechUsed> ReactJS/Styled Components </TechUsed>
+        
+        <a href="https://github.com/jTCode2408/dunder-mifflinQuiz" title="github repo">
+           <img src={dmQuiz} alt='quiz app screenshot' className ="images"></img>
+        </a>
+        <ProjectInfo>
+        <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {QuizInfo}
+ <CloseButton onClick={close}>
+    &times;
+</CloseButton>
+ 
+</Modal>
+
+)}
+       </Popup>
+        </ProjectInfo>
+        </ProjectCont> {/*Quiz project end */}
+
+        <ProjectCont> 
+        <a href="https://js-music-app.netlify.app" 
+        title="visit project">
+         <ProjectTitle> Audio Player </ProjectTitle>
+        </a>
+          <TechUsed> JavaScript/CSS </TechUsed>
+        
+        <a href="https://github.com/jTCode2408/port-current" title="github repo">
+           <img src={audioPlayer} alt='newsfeed site screenshot' className ="images"></img>
+        </a>
+        <ProjectInfo>
+        <Popup trigger = {<ButtonDiv><AboutButton> What's This? </AboutButton></ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {audioPlayerInfo}
+ <CloseButton onClick={close}>
+    &times;
+</CloseButton>
+ 
+</Modal>
+
+)}
+       </Popup>
+        </ProjectInfo>
+        </ProjectCont> {/*audio player project end */}
+      
+      
+
+        <ProjectCont> 
         <a href="https://jasmineterry92.com" 
         title="visit project">
          <ProjectTitle> Portfolio </ProjectTitle>
