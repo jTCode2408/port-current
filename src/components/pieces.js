@@ -256,8 +256,6 @@ const Pieces = () => {
        </Popup>
         </ProjectInfo>
         </ProjectCont> {/*audio player project end */}
-      
-      
 
         <ProjectCont> 
         <a href="https://jasmineterry92.com" 
@@ -285,7 +283,6 @@ const Pieces = () => {
         </ProjectInfo>
         </ProjectCont> {/*portfolio project end */}
       
-
 {/*TODO IDEA: add slider/carosel/next page to view more project */}
 
         <ProjectCont>

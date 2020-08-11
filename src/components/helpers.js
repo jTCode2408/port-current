@@ -62,7 +62,7 @@ export const PortInfo = <ul>
 
 export const QuizInfo= <ul>
 <li> 'Guess the quotes' quiz for The Office fans.</li>
-<li> Solely responsible for implementation of quiz, creating questions, styling, and deployment </li>
+<li> Solely responsible for implementation of quiz, creating quotes, styling, and deployment </li>
 
 </ul>
 
@@ -71,7 +71,6 @@ export const audioPlayerInfo= <ul>
 <li> Responsible for implementation of music player, styling, and deployment </li>
 
 </ul>
-
 
 ////////MEDIA QUERY SIZES//////
 
