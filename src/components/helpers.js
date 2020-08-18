@@ -15,7 +15,7 @@ export const GOLInfo = <ul>
     <li> Adaptation of John Conway's 'Game Of Life'. </li>
      <li> Solely responsible for adopting rules based on Conway's original Game Of Life, application styling, and deployment.
      </li>
-    <li> Utilized React hooks and Immer dependency for state changes of cells, CSS to implement grid feature, and Styled Components for main styling. 
+    <li> Utilized React hooks for state changes of cells, implementing grid feature, and all styling. 
     </li>
     </ul>
 
@@ -32,6 +32,12 @@ export const RefugeeInfo = <ul>
     <li> Refugees Stories is a web application to help bring awareness to the ongoing refugee crisis. </li>
     <li> Contributed to team of 4 cross-functional full-stack and data science developers.</li>
      <li> Solely responsible for design and creation of fully responsive landing and about the team web pages. </li>
+</ul>
+
+export const NNLInfo = <ul>
+<li> Numbers Never Lie is a web application for viewing NBA players' stats. </li>
+<li> Users can search for individual, or multiple players' stats and view or compare them in various displays.</li>
+<li> Soley responsible for implementation, pulling data from API, and overall page flow.</li>
 </ul>
 
 export const TodoInfo = <ul> 

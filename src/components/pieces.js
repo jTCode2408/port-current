@@ -14,7 +14,8 @@ import advGame_opt from '../images/advGame_opt.jpg';
 import portSS from '../images/portSS.jpg';
 import dmQuiz from '../images/dmQuiz.jpg';
 import audioPlayer from '../images/js-audio.jpg';
-import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo, QuizInfo, audioPlayerInfo} from './helpers'
+import NNLSS1 from '../images/NNL-SS1.jpg';
+import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, TodoInfo, SpotifyInfo, RefugeeInfo, QuizInfo, audioPlayerInfo, NNLInfo} from './helpers'
 import Popup from 'reactjs-popup';
 import Navigation from './nav';
 
@@ -45,7 +46,7 @@ const Pieces = () => {
          <ProjectTitle>StorySquad</ProjectTitle>
          
         </a>
-          <TechUsed> ReactJS/TypeScript/TypeORM/DS  </TechUsed>
+          <TechUsed> ReactJS/TypeScript/TypeORM  </TechUsed>
   
         <a href="https://github.com/Lambda-School-Labs/story-squad-fe" title="github repo">
           <img src={SSDash} alt='spotify song suggestory screenshot' className ="images"/>
@@ -101,7 +102,7 @@ const Pieces = () => {
    <ProjectTitle> Symphinity </ProjectTitle>
    
         </a>
-          <TechUsed>ReactJS/Styled Components/NodeJS/DS </TechUsed>
+          <TechUsed>ReactJS/Redux/Styled Components </TechUsed>
         
         <a href="https://github.com/Spotify-Song-Suggester/Front-End-SSS" title="github repo">
          <img src={spotify} alt='spotify song suggestory screenshot' className ="images"></img>
@@ -152,6 +153,37 @@ const Pieces = () => {
         </ProjectCont> {/*refugees end */}
 
         <ProjectCont>
+        <a href="https://lets-argue-nba.vercel.app/"
+        title="visit project">
+         <ProjectTitle> Numbers Never Lie</ProjectTitle>
+  
+        </a>
+          <TechUsed> ReactJS/Reactstrap/Styled Components </TechUsed>
+    
+        <a href="https://github.com/jTCode2408/lets-argue-NBA" title="github repo">
+          <img src={NNLSS1} alt='todo app screenshot' className ="images"></img>
+        </a>
+        <ProjectInfo>
+        <Popup trigger = {<ButtonDiv> <AboutButton> What's This? </AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {NNLInfo}
+<CloseButton onClick={close}>
+    &times;
+
+  </CloseButton>
+</Modal>
+
+)}
+       </Popup>
+          
+        </ProjectInfo>
+        </ProjectCont> {/*todo project end */}
+
+
+
+{/*
+        <ProjectCont>
         <a href="https://reducer-todo-alpha.vercel.app/"
         title="visit project">
          <ProjectTitle> To-Do App</ProjectTitle>
@@ -177,7 +209,7 @@ const Pieces = () => {
        </Popup>
           
         </ProjectInfo>
-        </ProjectCont> {/*todo project end */}
+        </ProjectCont> {/*todo project end NOT USING RN(8/18) */} 
 
         <ProjectCont>
         <a href="https://github.com/jTCode2408/Intro-Python-II"
