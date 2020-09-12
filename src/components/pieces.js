@@ -42,7 +42,7 @@ const Pieces = () => {
      
       <ProjectCont>
 
-      <a href="https://front-end-sss.now.sh/login" title="visit project">
+      <a href="https://master.d37ier1k83jxk6.amplifyapp.com" title="visit project">
          <ProjectTitle>StorySquad</ProjectTitle>
          
         </a>
