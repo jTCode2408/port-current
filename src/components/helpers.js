@@ -46,6 +46,7 @@ export const TodoInfo = <ul>
     <li> Implementation of Redux used for state handling. </li>
 
 </ul>
+//NOT USING TODO RN (9/30/20)
 
 export const AdvInfo = <ul> 
     <li> An in terminal 'adventure game' that allows users to enter commands and travel to various rooms and collect items. </li>
@@ -77,6 +78,23 @@ export const audioPlayerInfo= <ul>
 <li> Responsible for implementation of music player, styling, and deployment </li>
 
 </ul>
+
+///////History helpers///////
+export const WorkInfo= <div>
+    where i worked 
+</div>
+
+export const SchoolInfo = <div>
+    School info
+</div>
+
+export const LifeInfo = <div>
+          <h3> About Me: </h3>
+               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Institute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning, then attended a coding bootcamp to learn Full-Stack development techniques.
+                 When not fixing a bug in code (or creating one, I can be honest), I'm with my dog at the park or hiking, watching basketball or The Office, listening to music, or eating. </p>
+</div>
+
+
 
 ////////MEDIA QUERY SIZES//////
 

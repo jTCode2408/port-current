@@ -8,7 +8,7 @@ import {useClippy} from 'use-clippy-now'
 import Skills from './components/skills';
 import Pieces from './components/pieces';
 import Contact from './components/contact';
-import Resume from './components/resume';
+import History from './components/history';
 import Socials from './components/socials';
 import Header from './components/header';
 import TouchContact from './components/touchContact';
@@ -50,7 +50,7 @@ const detect_touch=()=>{
       <Skills/>
       </Route>
       <Route path ='/history'>
-      <Resume/>
+      <History/>
       </Route>
 
       <Route path ='/contact'>
