@@ -34,9 +34,9 @@ const History = () => {
             </ComputerHead>
 
              <ResumeDiv>
-               {/*TODO: replace with PDF **
-               <img src={resumeSS2} alt="jasmine terry resume"></img> */}
-           
+               {/*TODO: replace with PDF ** */}
+               <img src={resumeSS2} alt="jasmine terry resume"></img> 
+           {/*
 <div>
   <h3> Work </h3>
 <Popup trigger = {<ButtonDiv><AboutButton >Work History</AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
@@ -85,6 +85,8 @@ const History = () => {
        </Popup>
 
 </div>
+
+*/}
         </ResumeDiv>
         </ResumeCont>
         <Navigation/>
