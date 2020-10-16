@@ -3,13 +3,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,AboutButton,ButtonDiv, } from '../styles'
+import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,ButtonDiv, SchoolCont, WorkCont, LifeCont } from '../styles'
 import resumeSS2 from '../images/resumeSS2.png';
 import Navigation from './nav';
 import Popup from 'reactjs-popup';
 import {WorkInfo} from './helpers';
 import {SchoolInfo} from './helpers';
 import {LifeInfo} from './helpers';
+
 
 //refactor idea: have individual files to click/popup with info: work history, education history, personal history
 const History = () => {
@@ -34,12 +35,12 @@ const History = () => {
             </ComputerHead>
 
              <ResumeDiv>
-               {/*TODO: replace with PDF ** */}
-               <img src={resumeSS2} alt="jasmine terry resume"></img> 
-           {/*
-<div>
+               {/*TODO: replace with PDF ** 
+               <img src={resumeSS2} alt="jasmine terry resume"></img> */}
+           
+<WorkCont>
   <h3> Work </h3>
-<Popup trigger = {<ButtonDiv><AboutButton >Work History</AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+<Popup trigger = {<ButtonDiv><button >Work History</button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {WorkInfo}
@@ -51,14 +52,15 @@ const History = () => {
 )}
        </Popup>
 
-</div>
-<div>
+</WorkCont>
+
+<SchoolCont>
   <h3> Education </h3>
 
-<Popup trigger = {<ButtonDiv><AboutButton >Education History</AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+<Popup trigger = {<ButtonDiv><button >Education History</button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
- {WorkInfo}
+ {SchoolInfo}
 <CloseButton onClick={close}>
     &times;
   </CloseButton>
@@ -66,16 +68,16 @@ const History = () => {
 
 )}
        </Popup>
-</div>
+</SchoolCont>
 
-<div> 
+<LifeCont> 
   
   <h3>Life </h3>
 
-<Popup trigger = {<ButtonDiv><AboutButton > Life History</AboutButton> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+<Popup trigger = {<ButtonDiv><button > Life History </button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
- {WorkInfo}
+ {LifeInfo}
 <CloseButton onClick={close}>
     &times;
   </CloseButton>
@@ -84,9 +86,8 @@ const History = () => {
 )}
        </Popup>
 
-</div>
+</LifeCont>
 
-*/}
         </ResumeDiv>
         </ResumeCont>
         <Navigation/>

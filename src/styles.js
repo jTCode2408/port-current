@@ -802,7 +802,7 @@ align-content:center;
 ///////RESUME STYLES//////////
 export const ResumeCont =styled.div`
 background-color:#05668d;
-border:none;
+border:2px solid orange;
 `
 
 export const ResumeDiv = styled.div`
@@ -812,4 +812,17 @@ align-items:center;
 background-color:#05668d;
 margin:0 auto;
 margin-bottom:2px;
+border:2px solid purple;
+`
+
+export const LifeCont = styled.div`
+border:2px solid green;
+`
+
+export const SchoolCont =styled.div`
+border:2px solid blue;
+`
+
+export const WorkCont=styled.div`
+border:2px solid red;
 `

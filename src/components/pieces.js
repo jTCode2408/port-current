@@ -14,7 +14,7 @@ import portSS from '../images/portSS.jpg';
 import dmQuiz from '../images/dmQuiz.jpg';
 import audioPlayer from '../images/js-audio.jpg';
 import NNLSS1 from '../images/NNL-SS1.jpg';
-import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, SpotifyInfo, RefugeeInfo, QuizInfo, audioPlayerInfo, NNLInfo} from './helpers'
+import {SSInfo, GOLInfo, AdvInfo, PortInfo, NewsInfo, SpotifyInfo, RefugeeInfo, QuizInfo, audioPlayerInfo, NNLInfo} from './helpers';
 import Popup from 'reactjs-popup';
 import Navigation from './nav';
 
