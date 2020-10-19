@@ -1,9 +1,9 @@
 //resume//history page
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd } from '@fortawesome/free-solid-svg-icons';
+import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faBriefcase, faGraduationCap, faHeartbeat } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,ButtonDiv, SchoolCont, WorkCont, LifeCont } from '../styles'
+import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,ButtonDiv, SchoolCont, WorkCont, LifeCont, HistoryTrigger } from '../styles'
 import resumeSS2 from '../images/resumeSS2.png';
 import Navigation from './nav';
 import Popup from 'reactjs-popup';
@@ -40,7 +40,8 @@ const History = () => {
            
 <WorkCont>
   <h3> Work </h3>
-<Popup trigger = {<ButtonDiv><button >Work History</button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+ 
+<Popup trigger = {<HistoryTrigger>  <FontAwesomeIcon icon={faBriefcase} size='6x' /></HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {WorkInfo}
@@ -54,27 +55,12 @@ const History = () => {
 
 </WorkCont>
 
-<SchoolCont>
-  <h3> Education </h3>
-
-<Popup trigger = {<ButtonDiv><button >Education History</button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
-{close=>(
-<Modal>
- {SchoolInfo}
-<CloseButton onClick={close}>
-    &times;
-  </CloseButton>
-</Modal>
-
-)}
-       </Popup>
-</SchoolCont>
 
 <LifeCont> 
   
   <h3>Life </h3>
 
-<Popup trigger = {<ButtonDiv><button > Life History </button> </ButtonDiv>} position ="top" modal="true" repositionOnResize="true">
+<Popup trigger = {<HistoryTrigger>  <FontAwesomeIcon icon={faHeartbeat} size='6x' /> </HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
 <Modal>
  {LifeInfo}
@@ -87,6 +73,22 @@ const History = () => {
        </Popup>
 
 </LifeCont>
+
+<SchoolCont>
+  <h3> Education </h3>
+ 
+<Popup trigger = {<HistoryTrigger> <FontAwesomeIcon icon={faGraduationCap} size='6x'/> </HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
+{close=>(
+<Modal>
+ {SchoolInfo}
+<CloseButton onClick={close}>
+    &times;
+  </CloseButton>
+</Modal>
+
+)}
+       </Popup>
+</SchoolCont>
 
         </ResumeDiv>
         </ResumeCont>

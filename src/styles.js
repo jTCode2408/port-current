@@ -74,6 +74,9 @@ align-items:center;
 
  `;
 
+
+/////////NAV STYLES/////
+
  export const NavSideCont=styled.div`
  display: flex;
 	flex-direction: row;
@@ -803,6 +806,7 @@ align-content:center;
 export const ResumeCont =styled.div`
 background-color:#05668d;
 border:2px solid orange;
+max-width:100%;
 `
 
 export const ResumeDiv = styled.div`
@@ -813,16 +817,28 @@ background-color:#05668d;
 margin:0 auto;
 margin-bottom:2px;
 border:2px solid purple;
+text-align:center;
 `
 
 export const LifeCont = styled.div`
 border:2px solid green;
+width:100%;
+
 `
 
 export const SchoolCont =styled.div`
 border:2px solid blue;
+width:100%;
 `
 
 export const WorkCont=styled.div`
 border:2px solid red;
+width:100%;
+`
+
+export const HistoryTrigger = styled.div`
+&:hover{
+  color:grey;
+  cursor: help;
+}
 `
