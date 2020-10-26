@@ -807,6 +807,9 @@ export const ResumeCont =styled.div`
 background-color:#05668d;
 border:2px solid orange;
 max-width:100%;
+height:auto;
+
+
 `
 
 export const ResumeDiv = styled.div`
@@ -818,21 +821,26 @@ margin:0 auto;
 margin-bottom:2px;
 border:2px solid purple;
 text-align:center;
+margin-bottom:2%;
+`
+
+export const ResumeTitles=styled.div`
+font-family: 'VT323', monospace;
+font-size:3rem;
 `
 
 export const LifeCont = styled.div`
-border:2px solid green;
-width:100%;
 
+width:100%;
 `
 
 export const SchoolCont =styled.div`
-border:2px solid blue;
+
 width:100%;
 `
 
 export const WorkCont=styled.div`
-border:2px solid red;
+
 width:100%;
 `
 

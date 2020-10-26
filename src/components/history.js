@@ -3,7 +3,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { faWindowRestore, faWindowMinimize, faWindowClose, faHdd, faBriefcase, faGraduationCap, faHeartbeat } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,ButtonDiv, SchoolCont, WorkCont, LifeCont, HistoryTrigger } from '../styles'
+import {ResumeDiv, ComputerHead, IconsBar, ExitBar, ResumeCont, Modal, CloseButton,ButtonDiv, SchoolCont, WorkCont, LifeCont, ResumeTitles, HistoryTrigger } from '../styles'
 import resumeSS2 from '../images/resumeSS2.png';
 import Navigation from './nav';
 import Popup from 'reactjs-popup';
@@ -39,7 +39,7 @@ const History = () => {
                <img src={resumeSS2} alt="jasmine terry resume"></img> */}
            
 <WorkCont>
-  <h3> Work </h3>
+  <ResumeTitles> Work </ResumeTitles>
  
 <Popup trigger = {<HistoryTrigger>  <FontAwesomeIcon icon={faBriefcase} size='6x' /></HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
@@ -58,7 +58,7 @@ const History = () => {
 
 <LifeCont> 
   
-  <h3>Life </h3>
+  <ResumeTitles>Life</ResumeTitles>
 
 <Popup trigger = {<HistoryTrigger>  <FontAwesomeIcon icon={faHeartbeat} size='6x' /> </HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
@@ -75,7 +75,7 @@ const History = () => {
 </LifeCont>
 
 <SchoolCont>
-  <h3> Education </h3>
+  <ResumeTitles> Education </ResumeTitles>
  
 <Popup trigger = {<HistoryTrigger> <FontAwesomeIcon icon={faGraduationCap} size='6x'/> </HistoryTrigger>} position ="top" modal="true" repositionOnResize="true">
 {close=>(
