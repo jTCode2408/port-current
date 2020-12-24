@@ -2,7 +2,7 @@
 My current portfolio built from scratch
 
 # Deployed At
-https://jasmineterry92.com
+https://port-current.vercel.app
 
 # Built With:
 * ReactJS, Styled Components, CSS. Bootstrapped with CRA. 
