@@ -822,6 +822,7 @@ margin-bottom:2px;
 border:2px solid purple;
 text-align:center;
 margin-bottom:2%;
+height:100vh;
 `
 
 export const ResumeTitles=styled.div`

@@ -47,7 +47,7 @@ const Main=()=> {
                <Services>
         <h3>Services: </h3>
         <p>I specialize in crafting fully functional, user friendly websites and technical writing for user and developer documentation. From static sites, frontend applications,  to full stack applications, I can help to create the website of your dreams!</p> 
-          <p> With interests in technical writing, teaching, and overall service driven work, my goal is to be able to enrich as many lives as possible through technology. </p>
+         
         </Services>
         </AboutInfo>
          </About>
