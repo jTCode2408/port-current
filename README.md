@@ -31,4 +31,3 @@ https://port-current.vercel.app
 
 **Todo: code cleanup, add scroll in window for projects display, polish styling more!
 
-**Technical Writing page coming soon!
