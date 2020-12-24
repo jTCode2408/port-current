@@ -74,6 +74,9 @@ align-items:center;
 
  `;
 
+
+/////////NAV STYLES/////
+
  export const NavSideCont=styled.div`
  display: flex;
 	flex-direction: row;
@@ -802,7 +805,11 @@ align-content:center;
 ///////RESUME STYLES//////////
 export const ResumeCont =styled.div`
 background-color:#05668d;
-border:none;
+border:2px solid orange;
+max-width:100%;
+height:auto;
+
+
 `
 
 export const ResumeDiv = styled.div`
@@ -812,4 +819,35 @@ align-items:center;
 background-color:#05668d;
 margin:0 auto;
 margin-bottom:2px;
+border:2px solid purple;
+text-align:center;
+margin-bottom:2%;
+height:100vh;
+`
+
+export const ResumeTitles=styled.div`
+font-family: 'VT323', monospace;
+font-size:3rem;
+`
+
+export const LifeCont = styled.div`
+
+width:100%;
+`
+
+export const SchoolCont =styled.div`
+
+width:100%;
+`
+
+export const WorkCont=styled.div`
+
+width:100%;
+`
+
+export const HistoryTrigger = styled.div`
+&:hover{
+  color:grey;
+  cursor: help;
+}
 `

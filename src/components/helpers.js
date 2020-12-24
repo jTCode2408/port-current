@@ -81,17 +81,45 @@ export const audioPlayerInfo= <ul>
 
 ///////History helpers///////
 export const WorkInfo= <div>
-    where i worked 
+    <h3>Work Experience: </h3>
+    <p>I have experience working in many different fields such as retail, customer service, warehousing, and music. I enjoy work that is challenging, fast paced, and working both in teams or individually. Some of my most recent work experience is listed below. </p>
+    <h5> Lambda School - Team Lead (Mar 2020-Present)</h5>
+    <ul>
+    <li>Mentored 8-10 students in problem-solving, effective learning, and agile development production environments </li>
+    <li>Led 1:1 code reviews, team stand-ups, and provided daily technical support via Slack and Zoom</li>
+    <li>Provided supplemental education and resources on various topics related to web development </li>
+    </ul>
+
+    <h5> LifeStation Medical Alert - Product Specialist (Jan 2017-Sep 2019)</h5>
+    <ul>
+    <li>Updated software, troubleshoot, restored, and tested medical alert devices </li>
+    <li>Innovated new regulations and processes for product specialist position</li>
+    <li>Solely responsible for the updating and troubleshooting of over 100 devices daily</li>
+    <li>Assisted in other warehouse operations such as shipping, refurbishing, data entry, and processing returned devices into the company system</li>
+    </ul>
+
+    <h5> Target - Team Member (Feb 2014-May 2016)</h5>
+    <ul>
+    <li>Led instocks team and trained new team members on policies and procedures of the position</li>
+    <li>Cross-trained and supported various teams such as instocks, backroom, and sales floor</li>
+    <li>Provided exceptional customer service, displayed the ability to quickly solve problems, and work under pressure </li>
+    </ul>
 </div>
 
 export const SchoolInfo = <div>
-    School info
+    <h3>Education History: </h3>
+        <ul>
+        <li> Lambda School (Oct 2019-Sep 2020): Full Stack Web Development and Computer Science </li>
+          <li>SAE Institute (Jan 2011-Oct 2011): Audio Engineering </li>
+          <li>Bayside High School (Sep 2006-June 2010)</li>
+        </ul>
+
 </div>
 
 export const LifeInfo = <div>
           <h3> About Me: </h3>
-               <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Institute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning, then attended a coding bootcamp to learn Full-Stack development techniques.
-                 When not fixing a bug in code (or creating one, I can be honest), I'm with my dog at the park or hiking, watching basketball or The Office, listening to music, or eating. </p>
+         <p> Technology has always been a point of intrigue for me. After high school, I attended SAE Institute in NYC for Audio Engineering. Soon after interning in a NYC studio, my thirst for the technical side of things increased and I began self-learning, then attended a coding bootcamp to learn Full-Stack development techniques. </p>
+        <p> When not fixing a bug in code (or creating one, I can be honest), I'm with my dog at the park or hiking, watching basketball or The Office, listening to music, or eating. </p>
 </div>
 
 
